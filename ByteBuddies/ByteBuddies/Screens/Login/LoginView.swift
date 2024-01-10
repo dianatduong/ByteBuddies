@@ -24,7 +24,7 @@ struct LoginView: View {
                 Text("Welcome to Byte Buddies!")
                     .font(.system(size: 40))
                     .fontWeight(.bold)
-                    .padding(EdgeInsets(top: 20, leading: 30, bottom: 15, trailing: 20))
+                    .padding(EdgeInsets(top: 70, leading: 30, bottom: 30, trailing: 20))
 
                 Form {
                     Section(header: Text("Login")) {
@@ -37,17 +37,10 @@ struct LoginView: View {
                                 .foregroundColor(.white)
                                 .padding()
                                 .frame(maxWidth: .infinity)
-                                .background(
-                                    LinearGradient(gradient: Gradient(
-                                        colors: [Color.blue, Color.green]),
-                                                   startPoint: .leading,
-                                                   endPoint: .trailing)
-                                )
+                                .background(Color.cyan)
                                 .cornerRadius(8)
                         }
-                    }
-
-                    Section {
+                        
                         Button(action: {
                             print("Continue with LinkedIn")
                         }) {
@@ -55,12 +48,7 @@ struct LoginView: View {
                                 .foregroundColor(.white)
                                 .padding()
                                 .frame(maxWidth: .infinity)
-                                .background(
-                                    LinearGradient(gradient: Gradient(
-                                        colors: [Color.blue, Color.green]),
-                                                   startPoint: .leading,
-                                                   endPoint: .trailing)
-                                )
+                                .background(Color.cyan)
                                 .cornerRadius(8)
                         }
                     }
@@ -74,12 +62,19 @@ struct LoginView: View {
                         print("Sign Up")
                     }) {
                         Text("Sign Up")
-                            .foregroundColor(.blue)
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.cyan)
+                            .cornerRadius(8)
+                        }
                     }
-                }
+                    
+                  
                 } // end Form
               
             } // end VStack
+            .background(LinearGradient(colors: [Color.cyan, Color.paleYellow], startPoint: .leading, endPoint: .trailing))
             .navigationBarTitle("", displayMode: .inline)
         } // end NavigationView
 
