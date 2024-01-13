@@ -24,9 +24,8 @@ struct LoginView: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
-                Spacer()
 
-                Text("[Code] Haven")
+                Text("[kowd] Haven")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
