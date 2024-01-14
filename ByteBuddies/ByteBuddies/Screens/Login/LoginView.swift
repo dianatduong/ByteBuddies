@@ -17,22 +17,41 @@ struct LoginView: View {
     @State private var userNameSignup = ""
     @State private var passwordSignup = ""
     
+    @State private var selectedLogin = ""
+    
+    var loginOptions = ["Login", "Sign Up"]
+    
+    
     var body: some View {
         ZStack {
             
             LinearGradient(colors: [Color.cyan, Color.paleYellow], startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
             
+           
+                    
+            
             VStack {
+                
 
                 Text("[kowd] Haven")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
                 
-
+                
                 VStack(spacing: 15){
-                    Section(header: Text("Login       |       Create an Account")) {
+                    VStack {
+                        Picker("Select how to sign in", selection: $selectedLogin) {
+                            ForEach(loginOptions, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                        .pickerStyle(.segmented)
+                    }
+
+                    
+                    Section() {
                         TextField("Email", text: $emailLogin)
                             .padding()
                             .background(Color.white)
