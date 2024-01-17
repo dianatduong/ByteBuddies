@@ -12,13 +12,11 @@ struct LoginView: View {
     
     @State private var emailLogin = ""
     @State private var passwordLogin = ""
-    
     @State private var nameSignup = ""
     @State private var userNameSignup = ""
     @State private var passwordSignup = ""
     
     @State private var selectedLogin = ""
-    
     var loginOptions = ["Login", "Sign Up"]
     
     
@@ -28,17 +26,12 @@ struct LoginView: View {
             LinearGradient(colors: [Color.cyan, Color.paleYellow], startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
             
-           
-                    
-            
             VStack {
                 
-
                 Text("[kowd] Haven")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
-                
                 
                 VStack(spacing: 15){
                     VStack {
@@ -48,10 +41,10 @@ struct LoginView: View {
                             }
                         }
                         .pickerStyle(.segmented)
+                        
                     }
 
-                    
-                    Section() {
+                    Section {
                         TextField("Email", text: $emailLogin)
                             .padding()
                             .background(Color.white)
@@ -97,6 +90,7 @@ struct LoginView: View {
                             .foregroundColor(.cyan)
                             .fontWeight(.bold)
                     }
+                    
                 } //end vstack
                 .frame(width: 320, height: 360)
                 .padding(20)
