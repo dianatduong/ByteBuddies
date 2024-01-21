@@ -27,20 +27,13 @@ struct LoginView: View {
             //Color.black.ignoresSafeArea()
             
             VStack(alignment: .leading) {
-                Text("Kode")                    .foregroundColor(.magenta)                    .font(Font.system(size: 30, weight: .bold))
+                Text("Kode")                    
+                    .foregroundColor(.magenta)
+                    .font(Font.system(size: 30, weight: .bold))
                     +
                 Text("Haus")
                     .foregroundColor(.blue2)
                     .font(Font.system(size: 30, weight: .light))
-
-                Spacer()
-            }
-            .padding(.top, 10)
-
-            
-            VStack {
-                
-                Spacer()
                 
                 Text("Share your tech journey.")
                     .foregroundColor(.gray)
@@ -49,9 +42,16 @@ struct LoginView: View {
                         "Brush Script Mt Italic",
                         fixedSize: 20)
                     )
-                    .padding(.bottom, 50)
-                  
+                
+                Spacer()
+            }
+            .padding(.top, 10)
+
             
+            VStack {
+                
+
+                
                 Section {
                     TextField("Email", text: $emailLogin)
                         .foregroundColor(.white)
@@ -83,6 +83,25 @@ struct LoginView: View {
                                     endPoint: .trailing))
                         .cornerRadius(28)
                 }
+                .padding(.bottom, 5)
+                
+                Button(action: {
+                    print("Create an Account")
+                }) {
+                    Text("Create an Account")
+                        .foregroundColor(.magenta)
+                        .fontWeight(.semibold)
+                        .padding()
+                        .frame(width:300, height:50)
+                        .background(
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(Color.clear)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .stroke(LinearGradient(colors: [Color.magenta, Color.blue2], startPoint: .leading, endPoint: .trailing), lineWidth: 3)
+                                )
+                        )
+                }
                
                 Text("Forgot your password?")
                     .font(.subheadline)
@@ -91,25 +110,9 @@ struct LoginView: View {
                     .padding(.top, 10)
                     .padding(.bottom, 50)
                 
-                Spacer()
+        
                 
-                Button(action: {
-                    print("Create an Account")
-                        }) {
-                            Text("Create an Account")
-                                .foregroundColor(.magenta)
-                                .fontWeight(.semibold)
-                                .padding()
-                                .frame(width:300, height:50)
-                                .background(
-                                    RoundedRectangle(cornerRadius: 20)
-                                        .fill(Color.clear)
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 20)
-                                                .stroke(LinearGradient(colors: [Color.magenta, Color.blue2], startPoint: .leading, endPoint: .trailing), lineWidth: 3)
-                                        )
-                                )
-                        }
+                
                 
             } // end vstack
 
