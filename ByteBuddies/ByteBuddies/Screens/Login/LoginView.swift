@@ -12,96 +12,87 @@ struct LoginView: View {
     
     @State private var emailLogin = ""
     @State private var passwordLogin = ""
-    @State private var nameSignup = ""
-    @State private var userNameSignup = ""
-    @State private var passwordSignup = ""
     
-    @State private var selectedLogin = ""
-    var loginOptions = ["Login", "Sign Up"]
+    
+    //@State private var nameSignup = ""
+   // @State private var userNameSignup = ""
+    //@State private var passwordSignup = ""
+    
+    //@State private var selectedLogin = ""
+    //var loginOptions = ["Login", "Sign Up"]
     
     
     var body: some View {
         ZStack {
-            
-            LinearGradient(colors: [Color.cyan, Color.paleYellow], startPoint: .top, endPoint: .bottom)
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                
-                Text("[kowd] Haven")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
-                
-                VStack(spacing: 15){
-                    VStack {
-                        Picker("Select how to sign in", selection: $selectedLogin) {
-                            ForEach(loginOptions, id: \.self) {
-                                Text($0)
-                            }
-                        }
-                        .pickerStyle(.segmented)
-                        
-                    }
+            //Color.black.ignoresSafeArea()
 
-                    Section {
-                        TextField("Email", text: $emailLogin)
-                            .padding()
-                            .background(Color.white)
-                            .cornerRadius(8)
-                        
-                        TextField("Password", text: $passwordLogin)
-                            .padding()
-                            .background(Color.white)
-                            .cornerRadius(8)
-                        
-                        Button(action: {
-                            print("Login Button Tapped")
-                        }) {
-                            Text("Login")
-                                .font(.subheadline)
-                                .foregroundColor(.white)
-                                .fontWeight(.bold)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(Color.cyan)
-                                .cornerRadius(8)
-                        }
-                        
-                        Text("or")
-                        
-                        Button(action: {
-                            print("Continue with LinkedIn")
-                        }) {
-                            Text("Continue with LinkedIn")
-                                .font(.subheadline)
-                                .foregroundColor(.white)
-                                .fontWeight(.bold)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(Color.cyan)
-                                .cornerRadius(8)
-                        }
-                    } //end Section
+            VStack {
+                Text("[KodeHaus]")
+                                .font(Font.system(size: 45, weight: .bold))
+                                .foregroundColor(.magenta)
+                                .padding(.bottom, 50)
+
+                Section {
+                    TextField("Email", text: $emailLogin)
+                        .foregroundColor(.white)
+                    Rectangle()
+                        .frame(height: 3)
+                        .foregroundColor(.magenta)
+                        .padding(.bottom, 30)
                     
-                    Section {
-                        Text("Forgot your password?")
-                            .font(.subheadline)
-                            .foregroundColor(.cyan)
-                            .fontWeight(.bold)
-                    }
-                    
-                } //end vstack
-                .frame(width: 320, height: 360)
-                .padding(20)
-                .background(Color.white.opacity(0.4))
-                .cornerRadius(10)
-                .padding(.top, 15)
+                    SecureField("Password", text: $passwordLogin)
+                        .foregroundColor(.white)
+                    Rectangle()
+                        .frame(height: 3)
+                        .foregroundColor(.magenta)
+                        .padding(.bottom, 30)
+                }
+                .frame(width: 300)
+                
+                
+                Button(action: {
+                    print("Login Button Tapped")
+                }) {
+                    Text("Login")
+                        .foregroundColor(.white)
+                        .fontWeight(.bold)
+                        .padding()
+                        .frame(width:300, height:50)
+                        .background(LinearGradient(colors: [Color.magenta, Color.hotPink],
+                                    startPoint: .leading,
+                                    endPoint: .trailing))
+                        .cornerRadius(28)
+                       
+                }.padding(.bottom, 5)
+                
+                Button(action: {
+                    print("Create a New Account")
+                        }) {
+                            Text("Create a New Account")
+                                .foregroundColor(.magenta)
+                                .fontWeight(.semibold)
+                                .padding()
+                                .frame(width:300, height:50)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .fill(Color.clear)
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 20)
+                                                .stroke(LinearGradient(colors: [Color.magenta, Color.hotPink], startPoint: .leading, endPoint: .trailing), lineWidth: 3)
+                                        )
+                                )
+                        }
+               
+                Text("Forgot your password?")
+                    .font(.subheadline)
+                    .foregroundColor(.magenta)
+                    .fontWeight(.bold)
+                    .padding()
+                
             } // end vstack
-        }
+        } // end Zstack
     }
 }
-                
      
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
