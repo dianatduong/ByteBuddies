@@ -23,15 +23,35 @@ struct LoginView: View {
     
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: .leading) {
             //Color.black.ignoresSafeArea()
+            
+            VStack(alignment: .leading) {
+                Text("Kode")                    .foregroundColor(.magenta)                    .font(Font.system(size: 30, weight: .bold))
+                    +
+                Text("Haus")
+                    .foregroundColor(.blue2)
+                    .font(Font.system(size: 30, weight: .light))
 
+                Spacer()
+            }
+            .padding(.top, 10)
+
+            
             VStack {
-                Text("[KodeHaus]")
-                                .font(Font.system(size: 45, weight: .bold))
-                                .foregroundColor(.magenta)
-                                .padding(.bottom, 50)
-
+                
+                Spacer()
+                
+                Text("Share your tech journey.")
+                    .foregroundColor(.gray)
+                    .font(
+                        .custom(
+                        "Brush Script Mt Italic",
+                        fixedSize: 20)
+                    )
+                    .padding(.bottom, 50)
+                  
+            
                 Section {
                     TextField("Email", text: $emailLogin)
                         .foregroundColor(.white)
@@ -62,13 +82,21 @@ struct LoginView: View {
                                     startPoint: .leading,
                                     endPoint: .trailing))
                         .cornerRadius(28)
-                       
-                }.padding(.bottom, 5)
+                }
+               
+                Text("Forgot your password?")
+                    .font(.subheadline)
+                    .foregroundColor(.magenta)
+                    .fontWeight(.bold)
+                    .padding(.top, 10)
+                    .padding(.bottom, 50)
+                
+                Spacer()
                 
                 Button(action: {
-                    print("Create a New Account")
+                    print("Create an Account")
                         }) {
-                            Text("Create a New Account")
+                            Text("Create an Account")
                                 .foregroundColor(.magenta)
                                 .fontWeight(.semibold)
                                 .padding()
@@ -78,18 +106,14 @@ struct LoginView: View {
                                         .fill(Color.clear)
                                         .overlay(
                                             RoundedRectangle(cornerRadius: 20)
-                                                .stroke(LinearGradient(colors: [Color.magenta, Color.hotPink], startPoint: .leading, endPoint: .trailing), lineWidth: 3)
+                                                .stroke(LinearGradient(colors: [Color.magenta, Color.blue2], startPoint: .leading, endPoint: .trailing), lineWidth: 3)
                                         )
                                 )
                         }
-               
-                Text("Forgot your password?")
-                    .font(.subheadline)
-                    .foregroundColor(.magenta)
-                    .fontWeight(.bold)
-                    .padding()
                 
             } // end vstack
+
+          
         } // end Zstack
     }
 }
