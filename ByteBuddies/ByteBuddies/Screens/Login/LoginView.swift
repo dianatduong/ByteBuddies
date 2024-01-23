@@ -71,17 +71,10 @@ struct LoginView: View {
                 Button(action: {
                     print("Login Button Tapped")
                 }) {
-                    Text("Login")
-                        .foregroundColor(.white)
-                        .fontWeight(.bold)
-                        .padding()
-                        .frame(width:350, height:50)
-                        .background(LinearGradient(colors: [Color.magenta, Color.hotPink],
-                                    startPoint: .leading,
-                                    endPoint: .trailing))
-                        .cornerRadius(28)
+                    DefaultButton(title: "Login")
                 }
                 .padding(.bottom, 10)
+                
                 
                 Button(action: {
                     print("Create an Account")
