@@ -37,7 +37,7 @@ struct LoginView: View {
                     .foregroundColor(.blue2)
                     .font(Font.system(size: 30, weight: .light))
                 
-                Text("Where techies unite.")
+                Text("where techies unite.")
                     .foregroundColor(.gray)
                     .font(
                         .custom(
