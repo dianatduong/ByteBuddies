@@ -55,6 +55,7 @@
 		A33EE77B2B4F260400937593 /* ByteBuddies */ = {
 			isa = PBXGroup;
 			children = (
+				A3E0278C2B5F82B30083821C /* Views */,
 				A33EE78B2B4F265700937593 /* Screens */,
 				A33EE77C2B4F260400937593 /* ByteBuddiesApp.swift */,
 				A33EE7802B4F260700937593 /* Assets.xcassets */,
@@ -95,6 +96,13 @@
 				A33EE7912B4F278100937593 /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		A3E0278C2B5F82B30083821C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

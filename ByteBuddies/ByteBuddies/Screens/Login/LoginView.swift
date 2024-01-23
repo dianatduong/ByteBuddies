@@ -24,11 +24,12 @@ struct LoginView: View {
     
     var body: some View {
         ZStack(alignment: .leading) {
+            
             //Color.black.ignoresSafeArea()
             
             VStack(alignment: .leading) {
                 Text("Kode")                    
-                    .foregroundColor(.magenta)
+                    .foregroundColor(.hotPink)
                     .font(Font.system(size: 30, weight: .bold))
                     +
                 Text("Haus")
@@ -49,9 +50,6 @@ struct LoginView: View {
 
             
             VStack {
-                
-
-                
                 Section {
                     TextField("Email", text: $emailLogin)
                         .foregroundColor(.white)
@@ -65,9 +63,9 @@ struct LoginView: View {
                     Rectangle()
                         .frame(height: 3)
                         .foregroundColor(.magenta)
-                        .padding(.bottom, 30)
+                        .padding(.bottom, 20)
                 }
-                .frame(width: 300)
+                .frame(width: 350)
                 
                 
                 Button(action: {
@@ -77,13 +75,13 @@ struct LoginView: View {
                         .foregroundColor(.white)
                         .fontWeight(.bold)
                         .padding()
-                        .frame(width:300, height:50)
+                        .frame(width:350, height:50)
                         .background(LinearGradient(colors: [Color.magenta, Color.hotPink],
                                     startPoint: .leading,
                                     endPoint: .trailing))
                         .cornerRadius(28)
                 }
-                .padding(.bottom, 5)
+                .padding(.bottom, 10)
                 
                 Button(action: {
                     print("Create an Account")
@@ -92,12 +90,12 @@ struct LoginView: View {
                         .foregroundColor(.magenta)
                         .fontWeight(.semibold)
                         .padding()
-                        .frame(width:300, height:50)
+                        .frame(width:350, height:50)
                         .background(
-                            RoundedRectangle(cornerRadius: 20)
+                            RoundedRectangle(cornerRadius: 28)
                                 .fill(Color.clear)
                                 .overlay(
-                                    RoundedRectangle(cornerRadius: 20)
+                                    RoundedRectangle(cornerRadius: 28)
                                         .stroke(LinearGradient(colors: [Color.magenta, Color.blue2], startPoint: .leading, endPoint: .trailing), lineWidth: 3)
                                 )
                         )
@@ -109,14 +107,7 @@ struct LoginView: View {
                     .fontWeight(.bold)
                     .padding(.top, 10)
                     .padding(.bottom, 50)
-                
-        
-                
-                
-                
             } // end vstack
-
-          
         } // end Zstack
     }
 }
