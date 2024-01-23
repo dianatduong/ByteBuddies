@@ -27,6 +27,7 @@ struct LoginView: View {
             
             //Color.black.ignoresSafeArea()
             
+
             VStack(alignment: .leading) {
                 Text("Kode")                    
                     .foregroundColor(.hotPink)
@@ -36,34 +37,34 @@ struct LoginView: View {
                     .foregroundColor(.blue2)
                     .font(Font.system(size: 30, weight: .light))
                 
-                Text("Share your tech journey.")
+                Text("Where techies unite.")
                     .foregroundColor(.gray)
                     .font(
                         .custom(
                         "Brush Script Mt Italic",
                         fixedSize: 20)
                     )
-                
                 Spacer()
             }
             .padding(.top, 10)
-
+            
             
             VStack {
                 Section {
                     TextField("Email", text: $emailLogin)
                         .foregroundColor(.white)
-                    Rectangle()
-                        .frame(height: 3)
-                        .foregroundColor(.magenta)
-                        .padding(.bottom, 30)
+                        Rectangle()
+                            .frame(height: 3)
+                            .foregroundColor(.magenta)
+                            .padding(.bottom, 30)
+
                     
                     SecureField("Password", text: $passwordLogin)
                         .foregroundColor(.white)
-                    Rectangle()
-                        .frame(height: 3)
-                        .foregroundColor(.magenta)
-                        .padding(.bottom, 20)
+                        Rectangle()
+                            .frame(height: 3)
+                            .foregroundColor(.magenta)
+                            .padding(.bottom, 20)
                 }
                 .frame(width: 350)
                 
@@ -87,7 +88,6 @@ struct LoginView: View {
                     .foregroundColor(.magenta)
                     .fontWeight(.bold)
                     .padding(.top, 10)
-                    .padding(.bottom, 50)
             } // end vstack
         } // end Zstack
     }
