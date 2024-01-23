@@ -13,6 +13,8 @@
 		A33EE78D2B4F267000937593 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE78C2B4F267000937593 /* LoginView.swift */; };
 		A33EE78F2B4F26C000937593 /* TabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE78E2B4F26C000937593 /* TabViews.swift */; };
 		A33EE7922B4F278100937593 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE7912B4F278100937593 /* ProfileView.swift */; };
+		A3E0278F2B5F83510083821C /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E0278E2B5F83510083821C /* DefaultButton.swift */; };
+		A3E027912B5F835F0083821C /* GhostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E027902B5F835F0083821C /* GhostButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		A33EE78C2B4F267000937593 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A33EE78E2B4F26C000937593 /* TabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViews.swift; sourceTree = "<group>"; };
 		A33EE7912B4F278100937593 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A3E0278E2B5F83510083821C /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
+		A3E027902B5F835F0083821C /* GhostButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,18 @@
 		A3E0278C2B5F82B30083821C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A3E0278D2B5F82E00083821C /* Buttons */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A3E0278D2B5F82E00083821C /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				A3E0278E2B5F83510083821C /* DefaultButton.swift */,
+				A3E027902B5F835F0083821C /* GhostButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,10 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E0278F2B5F83510083821C /* DefaultButton.swift in Sources */,
 				A33EE78D2B4F267000937593 /* LoginView.swift in Sources */,
 				A33EE7922B4F278100937593 /* ProfileView.swift in Sources */,
 				A33EE78F2B4F26C000937593 /* TabViews.swift in Sources */,
 				A33EE77D2B4F260400937593 /* ByteBuddiesApp.swift in Sources */,
+				A3E027912B5F835F0083821C /* GhostButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

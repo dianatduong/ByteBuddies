@@ -86,19 +86,7 @@ struct LoginView: View {
                 Button(action: {
                     print("Create an Account")
                 }) {
-                    Text("Create an Account")
-                        .foregroundColor(.magenta)
-                        .fontWeight(.semibold)
-                        .padding()
-                        .frame(width:350, height:50)
-                        .background(
-                            RoundedRectangle(cornerRadius: 28)
-                                .fill(Color.clear)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 28)
-                                        .stroke(LinearGradient(colors: [Color.magenta, Color.blue2], startPoint: .leading, endPoint: .trailing), lineWidth: 3)
-                                )
-                        )
+                    GhostButton(title: "Create an Account")
                 }
                
                 Text("Forgot your password?")
