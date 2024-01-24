@@ -37,7 +37,7 @@ struct LoginView: View {
                     .foregroundColor(.blue2)
                     .font(Font.system(size: 30, weight: .light))
                 
-                Text("where techies unite.")
+                Text("A community for techies.")
                     .foregroundColor(.gray)
                     .font(
                         .custom(
@@ -88,6 +88,7 @@ struct LoginView: View {
                     .foregroundColor(.magenta)
                     .fontWeight(.bold)
                     .padding(.top, 10)
+                
             } // end vstack
         } // end Zstack
     }
@@ -101,3 +102,4 @@ struct LoginView_Previews: PreviewProvider {
 
 
 //insets, geometry reader - dynamic heights, uiscreens, SegmentedController
+//where techies play
