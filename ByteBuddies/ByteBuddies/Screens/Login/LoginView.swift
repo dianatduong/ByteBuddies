@@ -13,21 +13,9 @@ struct LoginView: View {
     @State private var emailLogin = ""
     @State private var passwordLogin = ""
     
-    
-    //@State private var nameSignup = ""
-   // @State private var userNameSignup = ""
-    //@State private var passwordSignup = ""
-    
-    //@State private var selectedLogin = ""
-    //var loginOptions = ["Login", "Sign Up"]
-    
-    
     var body: some View {
         ZStack(alignment: .leading) {
             
-            //Color.black.ignoresSafeArea()
-            
-
             VStack(alignment: .leading) {
                 Text("Kode")                    
                     .foregroundColor(.hotPink)
@@ -99,7 +87,3 @@ struct LoginView_Previews: PreviewProvider {
         LoginView()
     }
 }
-
-
-//insets, geometry reader - dynamic heights, uiscreens, SegmentedController
-//where techies play
