@@ -40,7 +40,7 @@ struct LoginView: View {
             VStack {
                 Section {
                     TextField("Email", text: $emailLogin)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         Rectangle()
                             .frame(height: 3)
                             .foregroundColor(.magenta)
