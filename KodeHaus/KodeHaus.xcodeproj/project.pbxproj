@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A33EE77D2B4F260400937593 /* ByteBuddiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE77C2B4F260400937593 /* ByteBuddiesApp.swift */; };
+		A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE77C2B4F260400937593 /* KodeHausApp.swift */; };
 		A33EE7812B4F260700937593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7802B4F260700937593 /* Assets.xcassets */; };
 		A33EE7842B4F260700937593 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7832B4F260700937593 /* Preview Assets.xcassets */; };
 		A33EE78D2B4F267000937593 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE78C2B4F267000937593 /* LoginView.swift */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A33EE7792B4F260400937593 /* ByteBuddies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByteBuddies.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A33EE77C2B4F260400937593 /* ByteBuddiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteBuddiesApp.swift; sourceTree = "<group>"; };
+		A33EE7792B4F260400937593 /* KodeHaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KodeHaus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33EE77C2B4F260400937593 /* KodeHausApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodeHausApp.swift; sourceTree = "<group>"; };
 		A33EE7802B4F260700937593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A33EE7832B4F260700937593 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A33EE78C2B4F267000937593 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		A33EE7702B4F260400937593 = {
 			isa = PBXGroup;
 			children = (
-				A33EE77B2B4F260400937593 /* ByteBuddies */,
+				A33EE77B2B4F260400937593 /* KodeHaus */,
 				A33EE77A2B4F260400937593 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,29 +51,29 @@
 		A33EE77A2B4F260400937593 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A33EE7792B4F260400937593 /* ByteBuddies.app */,
+				A33EE7792B4F260400937593 /* KodeHaus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A33EE77B2B4F260400937593 /* ByteBuddies */ = {
+		A33EE77B2B4F260400937593 /* KodeHaus */ = {
 			isa = PBXGroup;
 			children = (
 				A3E0278C2B5F82B30083821C /* Views */,
 				A33EE78B2B4F265700937593 /* Screens */,
-				A33EE77C2B4F260400937593 /* ByteBuddiesApp.swift */,
+				A33EE77C2B4F260400937593 /* KodeHausApp.swift */,
 				A33EE7802B4F260700937593 /* Assets.xcassets */,
-				A33EE7822B4F260700937593 /* Preview Content */,
+				A33EE7822B4F260700937593 /* Preview_Content */,
 			);
-			path = ByteBuddies;
+			path = KodeHaus;
 			sourceTree = "<group>";
 		};
-		A33EE7822B4F260700937593 /* Preview Content */ = {
+		A33EE7822B4F260700937593 /* Preview_Content */ = {
 			isa = PBXGroup;
 			children = (
 				A33EE7832B4F260700937593 /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content";
+			path = Preview_Content;
 			sourceTree = "<group>";
 		};
 		A33EE78A2B4F264E00937593 /* Login */ = {
@@ -122,9 +122,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A33EE7782B4F260400937593 /* ByteBuddies */ = {
+		A33EE7782B4F260400937593 /* KodeHaus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A33EE7872B4F260700937593 /* Build configuration list for PBXNativeTarget "ByteBuddies" */;
+			buildConfigurationList = A33EE7872B4F260700937593 /* Build configuration list for PBXNativeTarget "KodeHaus" */;
 			buildPhases = (
 				A33EE7752B4F260400937593 /* Sources */,
 				A33EE7762B4F260400937593 /* Frameworks */,
@@ -134,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = ByteBuddies;
+			name = KodeHaus;
 			productName = ByteBuddies;
-			productReference = A33EE7792B4F260400937593 /* ByteBuddies.app */;
+			productReference = A33EE7792B4F260400937593 /* KodeHaus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -154,7 +154,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A33EE7742B4F260400937593 /* Build configuration list for PBXProject "ByteBuddies" */;
+			buildConfigurationList = A33EE7742B4F260400937593 /* Build configuration list for PBXProject "KodeHaus" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -167,7 +167,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A33EE7782B4F260400937593 /* ByteBuddies */,
+				A33EE7782B4F260400937593 /* KodeHaus */,
 			);
 		};
 /* End PBXProject section */
@@ -193,7 +193,7 @@
 				A33EE78D2B4F267000937593 /* LoginView.swift in Sources */,
 				A33EE7922B4F278100937593 /* ProfileView.swift in Sources */,
 				A33EE78F2B4F26C000937593 /* TabViews.swift in Sources */,
-				A33EE77D2B4F260400937593 /* ByteBuddiesApp.swift in Sources */,
+				A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */,
 				A3E027912B5F835F0083821C /* GhostButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ByteBuddies/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"KodeHaus/Preview_Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -341,7 +341,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.DianaDee.ByteBuddies;
+				PRODUCT_BUNDLE_IDENTIFIER = co.DianaDee.KodeHaus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -356,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ByteBuddies/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"KodeHaus/Preview_Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -370,7 +370,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.DianaDee.ByteBuddies;
+				PRODUCT_BUNDLE_IDENTIFIER = co.DianaDee.KodeHaus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -381,7 +381,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A33EE7742B4F260400937593 /* Build configuration list for PBXProject "ByteBuddies" */ = {
+		A33EE7742B4F260400937593 /* Build configuration list for PBXProject "KodeHaus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A33EE7852B4F260700937593 /* Debug */,
@@ -390,7 +390,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A33EE7872B4F260700937593 /* Build configuration list for PBXNativeTarget "ByteBuddies" */ = {
+		A33EE7872B4F260700937593 /* Build configuration list for PBXNativeTarget "KodeHaus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A33EE7882B4F260700937593 /* Debug */,

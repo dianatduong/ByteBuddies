@@ -1,6 +1,6 @@
 //
-//  ByteBuddiesApp.swift
-//  ByteBuddies
+//  KodeHausApp.swift
+//  KodeHaus
 //
 //  Created by Diana Duong on 1/10/24.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct ByteBuddiesApp: App {
+struct KodeHausApp: App {
     var body: some Scene {
         WindowGroup {
             LoginView()

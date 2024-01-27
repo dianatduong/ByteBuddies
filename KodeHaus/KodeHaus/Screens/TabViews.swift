@@ -1,6 +1,6 @@
 //
 //  TabViews.swift
-//  ByteBuddies
+//  KodeHaus
 //
 //  Created by Diana Duong on 1/10/24.
 //
