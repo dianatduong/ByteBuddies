@@ -1,19 +1,17 @@
 # KodeHaus
 A project-sharing app for individuals from non-technical backgrounds to help foster collaboration and confidence-building connections. 
 
-### MVP Tech Features
+### Tech Stack
+SWIFT | SWIFTUI | API |
+
+### MVP Tech Features 🚧
 * Implement login functionality and utilize LinkedIn API for user profile data.
 * Dynamically access project-related data from repositories using GitHub API.
 * Integrate AI for efficient responses in chat conversations.
 
-
-### Tech Stack
-SWIFT | SWIFTUI | API |
-
 <br>
 
 ### Figma Mockup  | <a href ="https://www.figma.com/file/FHyypYlfzNHzps1uh2gaYl/KodeHaus?type=design&node-id=0-1&mode=design">Link </a>
-<br>
 <img width="792" alt="Screenshot 2024-01-30 at 12 37 38 PM" src="https://github.com/dianatduong/KodeHaus/assets/14034457/97776b57-a32d-41e9-a1ee-26921e4ea816">
 
 
