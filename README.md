@@ -20,9 +20,7 @@ SWIFT | SWIFTUI | API |
 
 ### Login Screen
 <img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/bf9641e9-c50a-4727-aa92-57abebbc7055" width="225">
-
-
-
+<br>
 
 
 ## Inspiration
