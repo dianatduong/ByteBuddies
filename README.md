@@ -17,7 +17,7 @@ SWIFT | SWIFTUI | API |
 <img width="792" alt="Screenshot 2024-01-30 at 12 37 38 PM" src="https://github.com/dianatduong/KodeHaus/assets/14034457/97776b57-a32d-41e9-a1ee-26921e4ea816">
 
 
-### Inspiration
+## Inspiration
 The journey into tech without a technical background can be lonely and a constant battle of imposter syndrome. Inspired by my own journey and other passionate techies I've connected with along the way, I wanted to create an app to help foster connection and to celebrate each other's victories, both big and small.
 
 ### Key Features
