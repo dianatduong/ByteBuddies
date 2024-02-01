@@ -23,17 +23,11 @@ struct LoginView: View {
                     +
                 Text("Haus")
                     .foregroundColor(.blue2)
-                
                     .font(Font.system(size: 30, weight: .light))
                 
-                    
                 Text("A community for techies.")
                     .foregroundColor(.gray)
-                    .font(
-                        .custom(
-                        "Brush Script Mt Italic",
-                        fixedSize: 18)
-                    )
+                    .font(Font.system(size: 22, weight: .light))
                 Spacer()
             }
             .padding(.top, 10)
@@ -51,7 +45,6 @@ struct LoginView: View {
                             .foregroundColor(.magenta)
                             .padding(.bottom, 30)
 
-                    
                     SecureField("Password", text: $viewModel.passwordLogin)
                         .foregroundColor(.black)
                         Rectangle()
