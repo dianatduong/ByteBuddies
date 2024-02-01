@@ -16,7 +16,10 @@ struct LoginView: View {
     var body: some View {
         ZStack(alignment: .center) {
             
+            
+            
             VStack(alignment: .center) {
+                
                 Text("Kode")
                     .foregroundColor(.magenta)
                     .font(Font.system(size: 30, weight: .bold))

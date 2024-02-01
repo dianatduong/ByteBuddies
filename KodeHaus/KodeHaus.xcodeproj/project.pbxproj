@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A31BA0EC2B6B577D00636655 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BA0EB2B6B577D00636655 /* Alerts.swift */; };
 		A31BA0EE2B6B57FF00636655 /* KHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BA0ED2B6B57FF00636655 /* KHError.swift */; };
+		A31BA0F12B6C3FF600636655 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BA0F02B6C3FF600636655 /* String+Ext.swift */; };
 		A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE77C2B4F260400937593 /* KodeHausApp.swift */; };
 		A33EE7812B4F260700937593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7802B4F260700937593 /* Assets.xcassets */; };
 		A33EE7842B4F260700937593 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7832B4F260700937593 /* Preview Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		A31BA0EB2B6B577D00636655 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		A31BA0ED2B6B57FF00636655 /* KHError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KHError.swift; sourceTree = "<group>"; };
+		A31BA0F02B6C3FF600636655 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		A33EE7792B4F260400937593 /* KodeHaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KodeHaus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33EE77C2B4F260400937593 /* KodeHausApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodeHausApp.swift; sourceTree = "<group>"; };
 		A33EE7802B4F260700937593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,9 +58,18 @@
 		A31BA0EA2B6B574600636655 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A31BA0EF2B6C3FE500636655 /* Extensions */,
 				A31BA0E92B6B570200636655 /* Alerts */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A31BA0EF2B6C3FE500636655 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A31BA0F02B6C3FF600636655 /* String+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A33EE7702B4F260400937593 = {
@@ -211,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31BA0F12B6C3FF600636655 /* String+Ext.swift in Sources */,
 				A3E0278F2B5F83510083821C /* DefaultButton.swift in Sources */,
 				A31BA0EE2B6B57FF00636655 /* KHError.swift in Sources */,
 				A33EE78D2B4F267000937593 /* LoginView.swift in Sources */,
