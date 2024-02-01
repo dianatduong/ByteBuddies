@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31BA0EC2B6B577D00636655 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BA0EB2B6B577D00636655 /* Alerts.swift */; };
 		A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE77C2B4F260400937593 /* KodeHausApp.swift */; };
 		A33EE7812B4F260700937593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7802B4F260700937593 /* Assets.xcassets */; };
 		A33EE7842B4F260700937593 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7832B4F260700937593 /* Preview Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A31BA0EB2B6B577D00636655 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		A33EE7792B4F260400937593 /* KodeHaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KodeHaus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33EE77C2B4F260400937593 /* KodeHausApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodeHausApp.swift; sourceTree = "<group>"; };
 		A33EE7802B4F260700937593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 		A31BA0E92B6B570200636655 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
+				A31BA0EB2B6B577D00636655 /* Alerts.swift */,
 			);
 			path = Alerts;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				A33EE7922B4F278100937593 /* ProfileView.swift in Sources */,
 				A33EE78F2B4F26C000937593 /* TabViews.swift in Sources */,
 				A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */,
+				A31BA0EC2B6B577D00636655 /* Alerts.swift in Sources */,
 				A3E027912B5F835F0083821C /* GhostButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
