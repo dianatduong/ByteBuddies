@@ -15,25 +15,44 @@ struct LoginView: View {
     var body: some View {
         ZStack(alignment: .center) {
         
+        
+            
             VStack(alignment: .center) {
+               // Spacer()
                 
                 Text("Kode")
                     .foregroundColor(.magenta)
-                    .font(Font.system(size: 30, weight: .bold))
+                    .font(Font.system(size: 40, weight: .bold))
                     +
                 Text("Haus")
                     .foregroundColor(.blue2)
-                    .font(Font.system(size: 30, weight: .light))
+                    .font(Font.system(size: 40, weight: .light))
                 
                 Text("A community for techies.")
                     .foregroundColor(.gray)
-                    .font(Font.system(size: 22, weight: .light))
+                    .font(Font.system(size: 24, weight: .light))
+                  
+                
+                Image("LoginImage")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 320, height: 200)
+                    .padding(.top, 40)
+                
+                Text("Illustration by Icons 8 from Ouch!")
+                    .foregroundColor(.gray)
+                    .font(.system(size: 7))
+                
                 Spacer()
             }
-            .padding(.top, 10)
+            //.offset(y: 60)
+            .padding(.top, 30)
             
             
+          
             VStack {
+                Spacer()
+                
                 Section {
                     TextField("Email", text: $viewModel.emailLogin)
                         .keyboardType(.emailAddress)
@@ -78,6 +97,8 @@ struct LoginView: View {
                     .padding(.top, 10)
                 
             } // end vstack
+            .offset(y: -40)
+            
         } // end Zstack
         
         //implementing the alerts for the form fields

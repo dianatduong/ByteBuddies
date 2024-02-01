@@ -10,10 +10,21 @@ import SwiftUI
 struct ProfileView: View {
     var body: some View {
         
-        NavigationView {
-            Text("My Profile")
-                .navigationTitle("My Profile")
-        }
+        ZStack {
+                  // Background view
+                  Color.blue.edgesIgnoringSafeArea(.all)
+                  
+                  // Overlay text
+                  Text("Hello, SwiftUI!")
+                      .font(.largeTitle)
+                      .foregroundColor(.white)
+                      .offset(y: -50)
+              }
+        
+       // NavigationView {
+          //  Text("My Profile")
+               // .navigationTitle("My Profile")
+       // }
     }
 }
 
