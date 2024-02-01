@@ -10,14 +10,11 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State private var emailLogin = ""
-    @State private var passwordLogin = ""
+    @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
         ZStack(alignment: .center) {
-            
-            
-            
+        
             VStack(alignment: .center) {
                 
                 Text("Kode")
@@ -44,7 +41,10 @@ struct LoginView: View {
             
             VStack {
                 Section {
-                    TextField("Email", text: $emailLogin)
+                    TextField("Email", text: $viewModel.emailLogin)
+                        .keyboardType(.emailAddress)
+                        .textInputAutocapitalization(.none)
+                        .disableAutocorrection(true)
                         .foregroundColor(.black)
                         Rectangle()
                             .frame(height: 3)
@@ -52,8 +52,8 @@ struct LoginView: View {
                             .padding(.bottom, 30)
 
                     
-                    SecureField("Password", text: $passwordLogin)
-                        .foregroundColor(.white)
+                    SecureField("Password", text: $viewModel.passwordLogin)
+                        .foregroundColor(.black)
                         Rectangle()
                             .frame(height: 3)
                             .foregroundColor(.magenta)
@@ -64,6 +64,8 @@ struct LoginView: View {
                 
                 Button(action: {
                     print("Login Button Tapped")
+                    //func to check if form is valid
+                    viewModel.saveChanges()
                 }) {
                     DefaultButton(title: "Login")
                 }
@@ -84,6 +86,13 @@ struct LoginView: View {
                 
             } // end vstack
         } // end Zstack
+        
+        //implementing the alerts for the form fields
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
+        }
     }
 }
      
