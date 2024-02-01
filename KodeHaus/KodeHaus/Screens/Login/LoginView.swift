@@ -14,11 +14,8 @@ struct LoginView: View {
     
     var body: some View {
         ZStack(alignment: .center) {
-        
-        
             
             VStack(alignment: .center) {
-               // Spacer()
                 
                 Text("Kode")
                     .foregroundColor(.magenta)
@@ -32,21 +29,19 @@ struct LoginView: View {
                     .foregroundColor(.gray)
                     .font(Font.system(size: 24, weight: .light))
                   
-                
                 Image("LoginImage")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 320, height: 200)
-                    .padding(.top, 40)
+                    .frame(width: 300, height: 200)
+                    .padding(.top, 20)
                 
                 Text("Illustration by Icons 8 from Ouch!")
                     .foregroundColor(.gray)
-                    .font(.system(size: 7))
+                    .font(.system(size: 8))
                 
                 Spacer()
             }
-            //.offset(y: 60)
-            .padding(.top, 30)
+            .padding(.top, 100)
             
             
           
@@ -97,7 +92,7 @@ struct LoginView: View {
                     .padding(.top, 10)
                 
             } // end vstack
-            .offset(y: -40)
+            .offset(y: -70)
             
         } // end Zstack
         
