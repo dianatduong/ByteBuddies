@@ -40,11 +40,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A31BA0E92B6B570200636655 /* AAlerts */ = {
+		A31BA0E92B6B570200636655 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = AAlerts;
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		A31BA0EA2B6B574600636655 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A31BA0E92B6B570200636655 /* Alerts */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		A33EE7702B4F260400937593 = {
@@ -66,7 +74,7 @@
 		A33EE77B2B4F260400937593 /* KodeHaus */ = {
 			isa = PBXGroup;
 			children = (
-				A31BA0E92B6B570200636655 /* AAlerts */,
+				A31BA0EA2B6B574600636655 /* Utilities */,
 				A3E0278C2B5F82B30083821C /* Views */,
 				A33EE78B2B4F265700937593 /* Screens */,
 				A33EE77C2B4F260400937593 /* KodeHausApp.swift */,
