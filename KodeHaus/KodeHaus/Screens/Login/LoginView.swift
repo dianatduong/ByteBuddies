@@ -14,23 +14,25 @@ struct LoginView: View {
     @State private var passwordLogin = ""
     
     var body: some View {
-        ZStack(alignment: .leading) {
+        ZStack(alignment: .center) {
             
-            VStack(alignment: .leading) {
-                Text("Kode")                    
-                    .foregroundColor(.hotPink)
+            VStack(alignment: .center) {
+                Text("Kode")
+                    .foregroundColor(.magenta)
                     .font(Font.system(size: 30, weight: .bold))
                     +
                 Text("Haus")
                     .foregroundColor(.blue2)
+                
                     .font(Font.system(size: 30, weight: .light))
                 
+                    
                 Text("A community for techies.")
                     .foregroundColor(.gray)
                     .font(
                         .custom(
                         "Brush Script Mt Italic",
-                        fixedSize: 20)
+                        fixedSize: 18)
                     )
                 Spacer()
             }
