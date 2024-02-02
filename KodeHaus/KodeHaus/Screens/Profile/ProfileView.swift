@@ -11,15 +11,26 @@ struct ProfileView: View {
     var body: some View {
         
         ZStack {
-                  // Background view
-                  Color.blue.edgesIgnoringSafeArea(.all)
+           
+            VStack {
+                Image("profile-bkgrd")
+                    .resizable()
+                    .frame(width:420, height:300)
+                    .aspectRatio(contentMode: .fit)
+
+                Spacer()
+            }
                   
-                  // Overlay text
-                  Text("Hello, SwiftUI!")
-                      .font(.largeTitle)
-                      .foregroundColor(.white)
-                      .offset(y: -50)
-              }
+            VStack {
+
+                // Overlay text
+                Text("Hello, SwiftUI!")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                
+            }
+                 
+        } // end ZStack
         
        // NavigationView {
           //  Text("My Profile")

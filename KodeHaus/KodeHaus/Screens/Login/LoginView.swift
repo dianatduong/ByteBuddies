@@ -18,22 +18,25 @@ struct LoginView: View {
             VStack(alignment: .center) {
                 
                 Text("Kode")
-                    .foregroundColor(.magenta)
+                    .foregroundColor(Color.magenta)
                     .font(Font.system(size: 40, weight: .bold))
                     +
                 Text("Haus")
-                    .foregroundColor(.blue2)
+                    .foregroundColor(Color.blue)
                     .font(Font.system(size: 40, weight: .light))
                 
-                Text("A community for techies.")
+                Text("Join the tech community.")
                     .foregroundColor(.gray)
                     .font(Font.system(size: 24, weight: .light))
+                    .multilineTextAlignment(.center)
+                    .padding(.leading, 24)
+                    .padding(.trailing, 24)
                   
                 Image("LoginImage")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 300, height: 200)
-                    .padding(.top, 20)
+                    .padding(.top, 25)
                 
                 Text("Illustration by Icons 8 from Ouch!")
                     .foregroundColor(.gray)
@@ -56,14 +59,14 @@ struct LoginView: View {
                         .foregroundColor(.black)
                         Rectangle()
                             .frame(height: 3)
-                            .foregroundColor(.magenta)
+                            .foregroundColor(Color.magenta)
                             .padding(.bottom, 30)
 
                     SecureField("Password", text: $viewModel.passwordLogin)
                         .foregroundColor(.black)
                         Rectangle()
                             .frame(height: 3)
-                            .foregroundColor(.magenta)
+                            .foregroundColor(Color.magenta)
                             .padding(.bottom, 20)
                 }
                 .frame(width: 350)
@@ -87,7 +90,7 @@ struct LoginView: View {
                
                 Text("Forgot your password?")
                     .font(.subheadline)
-                    .foregroundColor(.magenta)
+                    .foregroundColor(Color.magenta)
                     .fontWeight(.bold)
                     .padding(.top, 10)
                 
