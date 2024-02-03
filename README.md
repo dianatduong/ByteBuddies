@@ -1,5 +1,5 @@
 # KodeHaus
-A project-sharing app for individuals from non-technical backgrounds to help foster collaboration and confidence-building connections. 
+A project-sharing app for career changers with non-technical backgrounds to help foster collaboration and confidence-building connections. 
 
 ### Tech Stack
 SWIFT | SWIFTUI | API |
