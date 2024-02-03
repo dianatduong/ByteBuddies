@@ -12,14 +12,13 @@ SWIFT | SWIFTUI | API |
 <br>
 
 ### Figma Mockup  | <a href ="https://www.figma.com/file/FHyypYlfzNHzps1uh2gaYl/KodeHaus?type=design&node-id=0-1&mode=design">Link </a>
-<img width="792" alt="Screenshot 2024-01-30 at 12 37 38 PM" src="https://github.com/dianatduong/KodeHaus/assets/14034457/97776b57-a32d-41e9-a1ee-26921e4ea816">
-
+<img width="792" alt="Figma Mockup" src="https://github.com/dianatduong/KodeHaus/assets/14034457/97776b57-a32d-41e9-a1ee-26921e4ea816">
 
 <br>
 <br>
 
 ### Login Screen
-<img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/a0dfa125-9f26-4a6f-ba2f-982c12ac75e1v" width="225">
+<img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/7c5965af-f38b-4d97-a0dc-b1c9376d9ccb" width="225">
 <br>
 
 ## Inspiration
