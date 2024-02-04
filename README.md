@@ -1,10 +1,10 @@
-# KodeHaus
+# KodeHaus 
 A project-sharing app for career changers with non-technical backgrounds to help foster collaboration and confidence-building connections. 
 
 ### Tech Stack
-SWIFT | SWIFTUI | API |
+SWIFT | SWIFTUI | API | Firebase
 
-### MVP Tech Features 🚧
+### MVP Tech Features 🚧🚧🚧
 * Implement login functionality and utilize LinkedIn API for user profile data.
 * Dynamically access project-related data from repositories using GitHub API.
 * Integrate AI for efficient responses in chat conversations.
