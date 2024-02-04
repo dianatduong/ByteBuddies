@@ -58,9 +58,41 @@ struct ProfileView: View {
                     .padding(.trailing, 20)
             }
             .frame(width: 360, height: 120)
-            .background(Color.grayBkgrd)
-            .clipShape(RoundedRectangle(cornerRadius: 22))     
-                 
+            .background(Color.btnGray1)
+            .clipShape(RoundedRectangle(cornerRadius: 22))
+            .padding(.bottom, 10)
+            
+            VStack {
+                ScrollView(.horizontal) {
+                    HStack(spacing: 10) {
+                        Button(action: {
+                             print("project btn pressed")
+                        }) {
+                            ProfileButton(title: "Projects", backgroundColor: .btnGray2)
+                        }
+                        
+                        Button(action: {
+                            print("experiences btn pressed")
+                        }) {
+                            ProfileButton(title: "Experiences", backgroundColor: .btnGray3)
+                        }
+                        
+                        Button(action: {
+                            print("favorites btn pressed")
+                        }) {
+                            ProfileButton(title: "Favorite Resources", backgroundColor: .btnGray2)
+                        }
+                    }
+                    .padding()
+                }
+                .offset(y: 105)
+            }
+            .padding()
+            
+            
+       
+            
+            
         } // end ZStack
     }
 }

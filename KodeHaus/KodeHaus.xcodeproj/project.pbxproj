@@ -11,6 +11,7 @@
 		A31BA0EE2B6B57FF00636655 /* KHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BA0ED2B6B57FF00636655 /* KHError.swift */; };
 		A31BA0F12B6C3FF600636655 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BA0F02B6C3FF600636655 /* String+Ext.swift */; };
 		A31BA0F32B6C429400636655 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BA0F22B6C429400636655 /* LoginViewModel.swift */; };
+		A335FEC42B70304E000DB157 /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FEC32B70304E000DB157 /* ProfileButton.swift */; };
 		A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE77C2B4F260400937593 /* KodeHausApp.swift */; };
 		A33EE7812B4F260700937593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7802B4F260700937593 /* Assets.xcassets */; };
 		A33EE7842B4F260700937593 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7832B4F260700937593 /* Preview Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		A31BA0ED2B6B57FF00636655 /* KHError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KHError.swift; sourceTree = "<group>"; };
 		A31BA0F02B6C3FF600636655 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		A31BA0F22B6C429400636655 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A335FEC32B70304E000DB157 /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
 		A33EE7792B4F260400937593 /* KodeHaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KodeHaus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33EE77C2B4F260400937593 /* KodeHausApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodeHausApp.swift; sourceTree = "<group>"; };
 		A33EE7802B4F260700937593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				A3E0278E2B5F83510083821C /* DefaultButton.swift */,
 				A3E027902B5F835F0083821C /* GhostButton.swift */,
+				A335FEC32B70304E000DB157 /* ProfileButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				A31BA0F12B6C3FF600636655 /* String+Ext.swift in Sources */,
 				A3E0278F2B5F83510083821C /* DefaultButton.swift in Sources */,
 				A31BA0EE2B6B57FF00636655 /* KHError.swift in Sources */,
+				A335FEC42B70304E000DB157 /* ProfileButton.swift in Sources */,
 				A33EE78D2B4F267000937593 /* LoginView.swift in Sources */,
 				A33EE7922B4F278100937593 /* ProfileView.swift in Sources */,
 				A33EE78F2B4F26C000937593 /* TabViews.swift in Sources */,
