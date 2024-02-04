@@ -60,6 +60,33 @@ struct ProfileView: View {
                 .padding(.bottom, 10)
                 .offset(y: 300)
                 
+                VStack {
+                    ScrollView(.horizontal) {
+                        HStack(spacing: 10) {
+                            Button(action: {
+                                print("project btn pressed")
+                            }) {
+                                ProfileButton(title: "Projects", backgroundColor: .btnGray2)
+                            }
+                            
+                            Button(action: {
+                                print("experiences btn pressed")
+                            }) {
+                                ProfileButton(title: "Experiences", backgroundColor: .btnGray3)
+                            }
+                            
+                            Button(action: {
+                                print("favorites btn pressed")
+                            }) {
+                                ProfileButton(title: "Favorite Resources", backgroundColor: .btnGray2)
+                            }
+                        }
+                        .padding()
+                    }
+                    .offset(y: 400)
+                }
+                .padding()
+                
             } // end ZStack
         } // end ScrollView
         .edgesIgnoringSafeArea(.all)
