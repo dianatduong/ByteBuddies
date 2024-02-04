@@ -38,9 +38,28 @@ struct ProfileView: View {
             
             VStack {
                 Text("Diana Duong")
-                    .foreground
+                    .font(.system(size: 40))
+                    .fontWeight(.heavy)
+                    .offset(y: -120)
+                
+                Text("iOS Software Engineer")
+                    .font(.system(size: 18))
+                    .offset(y: -115)
             }
-           
+            
+            VStack {
+                Text("I am passionate about creating digital solutions that address real-world challenges. Let's connect!")
+                    .multilineTextAlignment(.center)
+                    .font(.subheadline)
+                    .italic()
+                    .padding(.top, 10)
+                    .padding(.bottom, 10)
+                    .padding(.leading, 20)
+                    .padding(.trailing, 20)
+            }
+            .frame(width: 360, height: 120)
+            .background(Color.grayBkgrd)
+            .clipShape(RoundedRectangle(cornerRadius: 22))     
                  
         } // end ZStack
     }
