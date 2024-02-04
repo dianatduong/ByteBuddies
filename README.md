@@ -17,9 +17,11 @@ SWIFT | SWIFTUI | API |
 <br>
 <br>
 
-### Login Screen
-<img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/7c5965af-f38b-4d97-a0dc-b1c9376d9ccb" width="225">
+### Light Mode
+<img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/7c5965af-f38b-4d97-a0dc-b1c9376d9ccb" width="225">...<img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/534289e4-8b97-487a-a662-58c9a53cd52c" width="225">
+
 <br>
+
 
 ## Inspiration
 The journey into tech without a technical background can be lonely and a constant battle of imposter syndrome. Inspired by my own journey and other passionate techies I've connected with along the way, I wanted to create an app to help foster connection and to celebrate each other's victories, both big and small.
