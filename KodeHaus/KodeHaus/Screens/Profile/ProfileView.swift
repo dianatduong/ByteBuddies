@@ -44,6 +44,22 @@ struct ProfileView: View {
                 }
                 .offset(y: 185)
                 
+                VStack {
+                    Text("I am passionate about creating digital solutions that address real-world challenges. Let's connect!")
+                        .multilineTextAlignment(.center)
+                        .font(.subheadline)
+                        .italic()
+                        .padding(.top, 10)
+                        .padding(.bottom, 10)
+                        .padding(.leading, 20)
+                        .padding(.trailing, 20)
+                }
+                .frame(width: 360, height: 120)
+                .background(Color.btnGray1)
+                .clipShape(RoundedRectangle(cornerRadius: 22))
+                .padding(.bottom, 10)
+                .offset(y: 300)
+                
             } // end ZStack
         } // end ScrollView
         .edgesIgnoringSafeArea(.all)
