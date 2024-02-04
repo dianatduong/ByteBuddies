@@ -36,7 +36,10 @@ struct ProfileView: View {
                 Spacer()
             }
             
-          
+            VStack {
+                Text("Diana Duong")
+                    .foreground
+            }
            
                  
         } // end ZStack
