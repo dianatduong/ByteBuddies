@@ -13,7 +13,7 @@ struct ProfileView: View {
         ZStack {
            
             VStack {
-                Image("profile-bkgrd")
+                Image("pink-bkgrd")
                     .resizable()
                     .frame(width:420, height:200)
                     .aspectRatio(contentMode: .fit)
@@ -22,21 +22,10 @@ struct ProfileView: View {
                 Spacer()
             }
                   
-            VStack {
-
-                // Overlay text
-                Text("Hello, SwiftUI!")
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-                
-            }
+           
+           
                  
         } // end ZStack
-        
-       // NavigationView {
-          //  Text("My Profile")
-               // .navigationTitle("My Profile")
-       // }
     }
 }
 
