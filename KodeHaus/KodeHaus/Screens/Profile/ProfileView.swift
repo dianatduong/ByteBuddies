@@ -90,7 +90,20 @@ struct ProfileView: View {
             .padding()
             
             
-       
+            VStack(alignment: .leading) {
+                Text("Technologies")
+                    .font(.headline)
+                    .multilineTextAlignment(.leading)
+                
+                VStack {
+                }
+                .frame(width: 360, height: 120)
+                .background(Color.btnGray1)
+                .clipShape(RoundedRectangle(cornerRadius: 22))
+                
+            }
+            .offset(y: 240)
+           
             
             
         } // end ZStack
