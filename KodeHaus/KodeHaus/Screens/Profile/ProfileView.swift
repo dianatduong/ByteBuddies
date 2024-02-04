@@ -32,6 +32,17 @@ struct ProfileView: View {
                         )
                         .offset(y: 55)
                 }
+                VStack {
+                    Text("Diana Duong")
+                        .font(.system(size: 40))
+                        .fontWeight(.heavy)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("iOS Software Engineer")
+                        .font(.system(size: 18))
+                        .multilineTextAlignment(.center)
+                }
+                .offset(y: 185)
                 
             } // end ZStack
         } // end ScrollView
