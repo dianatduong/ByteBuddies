@@ -25,12 +25,12 @@ struct LoginView: View {
                     .foregroundColor(Color.blue)
                     .font(Font.system(size: 40, weight: .light))
                 
-                Text("Join the tech community.")
+                Text("A community for career changers.")
                     .foregroundColor(.gray)
-                    .font(Font.system(size: 24, weight: .light))
+                    .font(Font.system(size: 20, weight: .light))
                     .multilineTextAlignment(.center)
-                    .padding(.leading, 24)
-                    .padding(.trailing, 24)
+                    .padding(.leading, 30)
+                    .padding(.trailing, 30)
                   
                 Image("LoginImage")
                     .resizable()
@@ -44,7 +44,7 @@ struct LoginView: View {
                 
                 Spacer()
             }
-            .padding(.top, 100)
+            .padding(.top, 40)
             
             
           
@@ -79,7 +79,7 @@ struct LoginView: View {
                 }) {
                     DefaultButton(title: "Login")
                 }
-                .padding(.bottom, 10)
+                .padding(.bottom, 20)
                 
                 
                 Button(action: {
@@ -95,7 +95,7 @@ struct LoginView: View {
                     .padding(.top, 10)
                 
             } // end vstack
-            .offset(y: -70)
+            .offset(y: -40)
             
         } // end Zstack
         

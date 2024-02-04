@@ -15,8 +15,9 @@ struct ProfileView: View {
             VStack {
                 Image("profile-bkgrd")
                     .resizable()
-                    .frame(width:420, height:300)
+                    .frame(width:420, height:200)
                     .aspectRatio(contentMode: .fit)
+                    .edgesIgnoringSafeArea(.top)
 
                 Spacer()
             }
