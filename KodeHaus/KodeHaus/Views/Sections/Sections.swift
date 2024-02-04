@@ -16,12 +16,13 @@ struct Sections: View {
         Text(title)
             .font(.headline)
             .multilineTextAlignment(.leading)
+            .padding(.leading, 5)
         
         VStack {
         }
             .frame(width: 360, height: 120)
             .background(Color.btnGray1)
-            .clipShape(RoundedRectangle(cornerRadius: 22))
+            .clipShape(RoundedRectangle(cornerRadius: 12))
             
     }
 }

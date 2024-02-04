@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ProfileButton: View {
     
+    @State var isPressed = false
+    
     var title: LocalizedStringKey
     var backgroundColor: UIColor
     
@@ -19,10 +21,18 @@ struct ProfileButton: View {
             .foregroundColor(.black)
             .fontWeight(.semibold)
             .padding()
+            .background(isPressed ? Color.btnGray3.opacity(0.9) : Color.btnGray3)
             .frame(minWidth: 0, maxWidth: .infinity)
-            .background(Color(backgroundColor))
-            .clipShape(RoundedRectangle(cornerRadius: 22))
-    }
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .shadow(radius: isPressed ? 2 : 0)
+            //.border(isPressed ? Color.white : Color.clear, width: 2)
+            .scaleEffect(isPressed ? 0.90 : 1.0)
+    
+        .onTapGesture {
+            isPressed.toggle()
+        }
+}
+    
 }
 
 struct ProfileButton_Previews: PreviewProvider {

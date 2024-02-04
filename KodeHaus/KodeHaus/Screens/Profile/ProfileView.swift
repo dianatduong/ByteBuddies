@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfileView: View {
-    
+
     var body: some View {
         
         ScrollView {
@@ -32,6 +32,7 @@ struct ProfileView: View {
                         )
                         .offset(y: 55)
                 }
+                
                 VStack {
                     Text("Diana Duong")
                         .font(.system(size: 40))
@@ -56,7 +57,7 @@ struct ProfileView: View {
                 }
                 .frame(width: 360, height: 120)
                 .background(Color.btnGray1)
-                .clipShape(RoundedRectangle(cornerRadius: 22))
+                .clipShape(RoundedRectangle(cornerRadius: 12))
                 .padding(.bottom, 10)
                 .offset(y: 300)
                 
@@ -86,6 +87,23 @@ struct ProfileView: View {
                     .offset(y: 400)
                 }
                 .padding()
+                
+                VStack(alignment: .leading) {
+                    Sections(title: "Technologies")
+                }
+                .offset(y: 525)
+                
+                VStack(alignment: .leading) {
+                    Sections(title: "Ideal Opportunities")
+                }
+                .offset(y: 690)
+                
+                VStack(alignment: .leading) {
+                    Sections(title: "Non-Tech Interests")
+                }
+                .offset(y: 860)
+                
+               
                 
             } // end ZStack
         } // end ScrollView
