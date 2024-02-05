@@ -18,8 +18,7 @@ SWIFT | SWIFTUI | API | Firebase
 <br>
 
 ### Light Mode
-<img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/7c5965af-f38b-4d97-a0dc-b1c9376d9ccb" width="225">...<img alt="Profile" src="https://github.com/dianatduong/KodeHaus/assets/14034457/534289e4-8b97-487a-a662-58c9a53cd52c" width="225">...<img alt="Refactor Profile" src="https://github.com/dianatduong/KodeHaus/assets/14034457/7b401fc3-3dd7-49f0-8bd1-8a9cfe4981cf" width="225">
-
+<img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/7c5965af-f38b-4d97-a0dc-b1c9376d9ccb" width="225">...<img alt="Profile" src="https://github.com/dianatduong/KodeHaus/assets/14034457/534289e4-8b97-487a-a662-58c9a53cd52c" width="225">...<img alt="Refactor Profile" src="https://github.com/dianatduong/KodeHaus/assets/14034457/ffc4771c-346b-4e54-a364-d8787de6b939" width="225">
 
 <br>
 
