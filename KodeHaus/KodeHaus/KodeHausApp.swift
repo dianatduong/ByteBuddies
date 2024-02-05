@@ -11,7 +11,7 @@ import SwiftUI
 struct KodeHausApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            ProfileView()
         }
     }
 }

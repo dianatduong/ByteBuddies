@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AppetizerTabView: View {
+struct KodeHausTabView: View {
     var body: some View {
         
         TabView {
@@ -17,11 +17,22 @@ struct AppetizerTabView: View {
                     Image(systemName: "person")
                     Text("Profile")
                 }
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Profile")
+                }
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Profile")
+                }
         }
+      
 
     }
 }
 
 #Preview {
-    AppetizerTabView()
+    KodeHausTabView()
 }

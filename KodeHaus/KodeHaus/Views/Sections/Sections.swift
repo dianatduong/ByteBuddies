@@ -20,10 +20,9 @@ struct Sections: View {
         
         VStack {
         }
-            .frame(width: 360, height: 120)
+            .frame(width: 400, height: 120)
             .background(Color.btnGray1)
             .clipShape(RoundedRectangle(cornerRadius: 12))
-            
     }
 }
 
