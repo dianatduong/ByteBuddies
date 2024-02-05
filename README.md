@@ -22,6 +22,8 @@ SWIFT | SWIFTUI | API | Firebase
 
 <br>
 
+### Refactor
+<img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/7b401fc3-3dd7-49f0-8bd1-8a9cfe4981cf" width="225">
 
 ## Inspiration
 The journey into tech without a technical background can be lonely and a constant battle of imposter syndrome. Inspired by my own journey and other passionate techies I've connected with along the way, I wanted to create an app to help foster connection and to celebrate each other's victories, both big and small.
