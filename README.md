@@ -18,7 +18,14 @@ SWIFT | SWIFTUI | API | Firebase
 <br>
 
 ### Light Mode
-<img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/7c5965af-f38b-4d97-a0dc-b1c9376d9ccb" width="225">...<img alt="Profile" src="https://github.com/dianatduong/KodeHaus/assets/14034457/534289e4-8b97-487a-a662-58c9a53cd52c" width="225">...<img alt="Refactor Profile" src="https://github.com/dianatduong/KodeHaus/assets/14034457/ffc4771c-346b-4e54-a364-d8787de6b939" width="225">
+* Login > Create an Account Modal
+<br><img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/7c5965af-f38b-4d97-a0dc-b1c9376d9ccb" width="225">...<img alt="Create an Account Modal" src="https://github.com/dianatduong/KodeHaus/assets/14034457/07ece8f0-106d-4fb8-abf5-cbc955a0dcfd" width="225">...
+
+<br><br>
+
+
+* Original UI Design > Refactored UI Design
+<br><img alt="Profile" src="https://github.com/dianatduong/KodeHaus/assets/14034457/534289e4-8b97-487a-a662-58c9a53cd52c" width="225">...<img alt="Refactor Profile" src="https://github.com/dianatduong/KodeHaus/assets/14034457/ffc4771c-346b-4e54-a364-d8787de6b939" width="225">
 
 <br>
 
