@@ -72,7 +72,7 @@ struct LoginView: View {
                 Button(action: {
                     print("Login Button Tapped")
                     //func to check if form is valid
-                    viewModel.saveChanges()
+                    viewModel.loginAccount()
                 }) {
                     PrimaryBtn(title: "Login")
                 }
@@ -86,7 +86,7 @@ struct LoginView: View {
                     SecondaryBtn(title: "Create an Account")
                         .sheet(isPresented: $showModal) {
                             CreateAccountView()
-                                }
+                    }
                 }
                
                 Text("Forgot your password?")

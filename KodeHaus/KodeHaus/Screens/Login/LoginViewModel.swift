@@ -33,10 +33,16 @@ final class LoginViewModel: ObservableObject {
         return true //if pass
     }
     
-    func saveChanges() {
+    func loginAccount() {
         guard isValidForm else { return }
         
-        print("Changes have been saved succesfully")
+        print("Login successful")
+    }
+    
+    func createAccount() {
+        guard isValidForm else { return }
+        
+        print("Create new account successful")
     }
     
 }

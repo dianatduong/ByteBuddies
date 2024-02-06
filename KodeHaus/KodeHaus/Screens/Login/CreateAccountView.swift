@@ -10,13 +10,10 @@ import SwiftUI
 
 struct CreateAccountView: View {
     
-    @State var emailLogin = ""
-    @State var passwordLogin = ""
-    
+    @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
         
-   
 
         VStack {
             KHName()
@@ -37,7 +34,7 @@ struct CreateAccountView: View {
         .padding(.bottom, 80)
         
         VStack {
-            TextField("Email", text: $emailLogin)
+            TextField("Email", text: $viewModel.emailLogin)
                 .keyboardType(.emailAddress)
                 .textInputAutocapitalization(.none)
                 .disableAutocorrection(true)
@@ -47,7 +44,7 @@ struct CreateAccountView: View {
                     .foregroundColor(Color.magenta)
                     .padding(.bottom, 30)
 
-            SecureField("Password", text: $passwordLogin)
+            SecureField("Password", text: $viewModel.passwordLogin)
                 .foregroundColor(.black)
                 Rectangle()
                     .frame(height: 3)
@@ -60,13 +57,17 @@ struct CreateAccountView: View {
         
             Button(action: {
                    print("Button tapped!")
+                viewModel.createAccount()
             }) {
                SecondaryBtn(title: "Create an Account")
         }
-        
-       
+        //implementing the alerts for the form fields
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
+        }
     }
-    
 }
 
 

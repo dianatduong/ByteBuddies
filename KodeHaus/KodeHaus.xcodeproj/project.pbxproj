@@ -93,14 +93,6 @@
 			path = SectionView;
 			sourceTree = "<group>";
 		};
-		A335FECA2B729F74000DB157 /* CreateAccount */ = {
-			isa = PBXGroup;
-			children = (
-				A335FECB2B729FA1000DB157 /* CreateAccountView.swift */,
-			);
-			path = CreateAccount;
-			sourceTree = "<group>";
-		};
 		A33EE7702B4F260400937593 = {
 			isa = PBXGroup;
 			children = (
@@ -141,9 +133,9 @@
 		A33EE78A2B4F264E00937593 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				A335FECA2B729F74000DB157 /* CreateAccount */,
 				A31BA0F22B6C429400636655 /* LoginViewModel.swift */,
 				A33EE78C2B4F267000937593 /* LoginView.swift */,
+				A335FECB2B729FA1000DB157 /* CreateAccountView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
