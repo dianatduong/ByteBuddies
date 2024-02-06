@@ -34,18 +34,18 @@ struct ProfileView: View {
                                                            startPoint: .leading,
                                                            endPoint: .trailing), lineWidth: 5)
                                )
-                               .offset(y: -100)
+                               .offset(y: -140)
                        } //end Vstack
                        
                    VStack(spacing: 10) {
                            VStack {
                                Text("Jane Doe")
-                                   .font(.system(size: 35))
+                                   .font(.system(size: 26))
                                    .fontWeight(.heavy)
                                    .multilineTextAlignment(.center)
                                
                                Text("iOS Software Engineer")
-                                   .font(.system(size: 18))
+                                   .font(.system(size: 16))
                                    .multilineTextAlignment(.center)
                                
                                HStack(spacing: 2) {
@@ -64,17 +64,16 @@ struct ProfileView: View {
                              }
                            .padding(.top, 10)
                        } // end Profile VStack
-                       .offset(y: -100)
+                       .offset(y: -135)
                        
-                   VStack {
-                       SectionView(title: "Tech Stack", subtitle: "Swift, SwiftUI, UIKit, Firebase, XCode")
+                   VStack(spacing: 15) {
+                       SectionView(title: "Tech Stack", subtitle: "Swift, SwiftUI, Xcode, Firebase")
+                       
+                       SectionView(title: "Hobbies", subtitle: "Traveling, Pickleball, Hiking, Exploring new restaurants")
+                       
+                       SectionView(title: "Previous Experience", subtitle: "Ecommerce, Digital Marketing, Web Design, Email Design, UX/UI Design")
                    }
-                   .offset(y: -80)
-                   
-                   VStack {
-                       SectionView(title: "Hobbies", subtitle: "Traveling, Pickleball, Explore new restaurants and coffee shops, Hiking")
-                   }
-                   .offset(y: -70)
+                   .offset(y: -120)
                    
                } // end ScrollView
             } // end Zstack

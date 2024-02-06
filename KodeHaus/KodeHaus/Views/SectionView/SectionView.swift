@@ -13,18 +13,20 @@ struct SectionView: View {
     var subtitle: String
     
     var body: some View {
-            VStack(alignment: .leading) {
-                Text(title)
-                    .font(.system(size: 18))
-                    .bold()
-                    .padding(.bottom, 20)
-                
-                Text(subtitle)
-                    .font(.system(size: 16))
-            }
-        
-        .padding()
-        .frame(width: 400, height: 200)
+        VStack(alignment: .leading) {
+            
+            Text(title)
+                .font(.system(size: 18))
+                .bold()
+                .padding(.bottom, 10)
+            Text(subtitle)
+                .font(.system(size: 16))
+                .lineLimit(nil) // Allow the text to wrap onto the next line
+                .fixedSize(horizontal: false, vertical: true)
+               
+        }
+        .padding(30)
+        .frame(width: 400, height: 150, alignment: .leading)
         .background(.white)
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }

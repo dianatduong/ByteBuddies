@@ -29,7 +29,7 @@ struct SmallDefaultButton: View {
                          .bold()
                      
                  }
-                 .frame(width: 155, height: 45)
+                 .frame(width: 155, height: 40)
                  .background(LinearGradient(colors: [Color.magenta, Color.pink],
                                             startPoint: .leading,
                                             endPoint: .trailing))
