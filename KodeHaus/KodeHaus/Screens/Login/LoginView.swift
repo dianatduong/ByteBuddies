@@ -79,7 +79,7 @@ struct LoginView: View {
                 }) {
                     DefaultButton(title: "Login")
                 }
-                .padding(.bottom, 20)
+                .padding(.bottom, 5)
                 
                 
                 Button(action: {
