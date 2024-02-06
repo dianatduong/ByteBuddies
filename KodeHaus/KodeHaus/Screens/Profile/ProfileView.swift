@@ -58,8 +58,8 @@ struct ProfileView: View {
                        
                            VStack {
                                  HStack(spacing: 15) {
-                                     SmallDefaultButton(icon: "message-50", title: "Message")
-                                     SmallDefaultButton(icon: "follow-50", title: "Follow")
+                                     SmallPrimaryBtn(icon: "message-50", title: "Message")
+                                     SmallPrimaryBtn(icon: "follow-50", title: "Follow")
                                  }
                              }
                            .padding(.top, 10)

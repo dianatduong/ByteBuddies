@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct GhostButton: View {
+struct SecondaryBtn: View {
     
-    var title: LocalizedStringKey
+    var title: String
     
     var body: some View {
         
@@ -32,7 +32,7 @@ struct GhostButton: View {
 struct GhostButton_Previews: PreviewProvider {
     
     static var previews: some View {
-        GhostButton(title: "Create an Account")
+        SecondaryBtn(title: "Create an Account")
     }
 }
 

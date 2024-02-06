@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SmallDefaultButton: View {
+struct SmallPrimaryBtn: View {
     
     var icon: String
     var title: LocalizedStringKey
@@ -42,5 +42,5 @@ struct SmallDefaultButton: View {
 }
 
 #Preview {
-    SmallDefaultButton(icon: "message-50", title: "Message")
+    SmallPrimaryBtn(icon: "message-50", title: "Message")
 }

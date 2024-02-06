@@ -12,18 +12,15 @@ struct LoginView: View {
     
     @StateObject var viewModel = LoginViewModel()
     
+    @State private var showModal = false
+
+    
     var body: some View {
         ZStack(alignment: .center) {
             
             VStack(alignment: .center) {
                 
-                Text("Kode")
-                    .foregroundColor(Color.magenta)
-                    .font(Font.system(size: 40, weight: .bold))
-                    +
-                Text("Haus")
-                    .foregroundColor(Color.blue)
-                    .font(Font.system(size: 40, weight: .light))
+                KHName()
                 
                 Text("A community for career changers.")
                     .foregroundColor(.gray)
@@ -69,7 +66,7 @@ struct LoginView: View {
                             .foregroundColor(Color.magenta)
                             .padding(.bottom, 20)
                 }
-                .frame(width: 350)
+                .frame(width: 350, alignment: .leading)
                 
                 
                 Button(action: {
@@ -77,15 +74,19 @@ struct LoginView: View {
                     //func to check if form is valid
                     viewModel.saveChanges()
                 }) {
-                    DefaultButton(title: "Login")
+                    PrimaryBtn(title: "Login")
                 }
                 .padding(.bottom, 5)
                 
                 
                 Button(action: {
                     print("Create an Account")
+                    showModal = true
                 }) {
-                    GhostButton(title: "Create an Account")
+                    SecondaryBtn(title: "Create an Account")
+                        .sheet(isPresented: $showModal) {
+                            CreateAccountView()
+                                }
                 }
                
                 Text("Forgot your password?")

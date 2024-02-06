@@ -13,15 +13,17 @@
 		A31BA0F32B6C429400636655 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BA0F22B6C429400636655 /* LoginViewModel.swift */; };
 		A335FEC42B70304E000DB157 /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FEC32B70304E000DB157 /* ProfileButton.swift */; };
 		A335FEC62B7039C5000DB157 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FEC52B7039C5000DB157 /* SectionView.swift */; };
-		A335FEC92B715098000DB157 /* SmallDefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FEC82B715098000DB157 /* SmallDefaultButton.swift */; };
+		A335FEC92B715098000DB157 /* SmallPrimaryBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FEC82B715098000DB157 /* SmallPrimaryBtn.swift */; };
+		A335FECC2B729FA1000DB157 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FECB2B729FA1000DB157 /* CreateAccountView.swift */; };
+		A335FECE2B72B01C000DB157 /* KHName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FECD2B72B01C000DB157 /* KHName.swift */; };
 		A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE77C2B4F260400937593 /* KodeHausApp.swift */; };
 		A33EE7812B4F260700937593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7802B4F260700937593 /* Assets.xcassets */; };
 		A33EE7842B4F260700937593 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7832B4F260700937593 /* Preview Assets.xcassets */; };
 		A33EE78D2B4F267000937593 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE78C2B4F267000937593 /* LoginView.swift */; };
 		A33EE78F2B4F26C000937593 /* TabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE78E2B4F26C000937593 /* TabViews.swift */; };
 		A33EE7922B4F278100937593 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE7912B4F278100937593 /* ProfileView.swift */; };
-		A3E0278F2B5F83510083821C /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E0278E2B5F83510083821C /* DefaultButton.swift */; };
-		A3E027912B5F835F0083821C /* GhostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E027902B5F835F0083821C /* GhostButton.swift */; };
+		A3E0278F2B5F83510083821C /* PrimaryBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E0278E2B5F83510083821C /* PrimaryBtn.swift */; };
+		A3E027912B5F835F0083821C /* SecondaryBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E027902B5F835F0083821C /* SecondaryBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +33,9 @@
 		A31BA0F22B6C429400636655 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		A335FEC32B70304E000DB157 /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
 		A335FEC52B7039C5000DB157 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
-		A335FEC82B715098000DB157 /* SmallDefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallDefaultButton.swift; sourceTree = "<group>"; };
+		A335FEC82B715098000DB157 /* SmallPrimaryBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPrimaryBtn.swift; sourceTree = "<group>"; };
+		A335FECB2B729FA1000DB157 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		A335FECD2B72B01C000DB157 /* KHName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KHName.swift; sourceTree = "<group>"; };
 		A33EE7792B4F260400937593 /* KodeHaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KodeHaus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33EE77C2B4F260400937593 /* KodeHausApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodeHausApp.swift; sourceTree = "<group>"; };
 		A33EE7802B4F260700937593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,8 +43,8 @@
 		A33EE78C2B4F267000937593 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A33EE78E2B4F26C000937593 /* TabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViews.swift; sourceTree = "<group>"; };
 		A33EE7912B4F278100937593 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		A3E0278E2B5F83510083821C /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
-		A3E027902B5F835F0083821C /* GhostButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostButton.swift; sourceTree = "<group>"; };
+		A3E0278E2B5F83510083821C /* PrimaryBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryBtn.swift; sourceTree = "<group>"; };
+		A3E027902B5F835F0083821C /* SecondaryBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryBtn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +88,17 @@
 			isa = PBXGroup;
 			children = (
 				A335FEC52B7039C5000DB157 /* SectionView.swift */,
+				A335FECD2B72B01C000DB157 /* KHName.swift */,
 			);
 			path = SectionView;
+			sourceTree = "<group>";
+		};
+		A335FECA2B729F74000DB157 /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				A335FECB2B729FA1000DB157 /* CreateAccountView.swift */,
+			);
+			path = CreateAccount;
 			sourceTree = "<group>";
 		};
 		A33EE7702B4F260400937593 = {
@@ -128,6 +141,7 @@
 		A33EE78A2B4F264E00937593 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				A335FECA2B729F74000DB157 /* CreateAccount */,
 				A31BA0F22B6C429400636655 /* LoginViewModel.swift */,
 				A33EE78C2B4F267000937593 /* LoginView.swift */,
 			);
@@ -164,9 +178,9 @@
 		A3E0278D2B5F82E00083821C /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				A3E0278E2B5F83510083821C /* DefaultButton.swift */,
-				A335FEC82B715098000DB157 /* SmallDefaultButton.swift */,
-				A3E027902B5F835F0083821C /* GhostButton.swift */,
+				A3E0278E2B5F83510083821C /* PrimaryBtn.swift */,
+				A335FEC82B715098000DB157 /* SmallPrimaryBtn.swift */,
+				A3E027902B5F835F0083821C /* SecondaryBtn.swift */,
 				A335FEC32B70304E000DB157 /* ProfileButton.swift */,
 			);
 			path = Buttons;
@@ -244,17 +258,19 @@
 			files = (
 				A31BA0F12B6C3FF600636655 /* String+Ext.swift in Sources */,
 				A335FEC62B7039C5000DB157 /* SectionView.swift in Sources */,
-				A3E0278F2B5F83510083821C /* DefaultButton.swift in Sources */,
+				A3E0278F2B5F83510083821C /* PrimaryBtn.swift in Sources */,
 				A31BA0EE2B6B57FF00636655 /* KHError.swift in Sources */,
 				A335FEC42B70304E000DB157 /* ProfileButton.swift in Sources */,
 				A33EE78D2B4F267000937593 /* LoginView.swift in Sources */,
 				A33EE7922B4F278100937593 /* ProfileView.swift in Sources */,
 				A33EE78F2B4F26C000937593 /* TabViews.swift in Sources */,
 				A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */,
-				A335FEC92B715098000DB157 /* SmallDefaultButton.swift in Sources */,
+				A335FEC92B715098000DB157 /* SmallPrimaryBtn.swift in Sources */,
+				A335FECC2B729FA1000DB157 /* CreateAccountView.swift in Sources */,
 				A31BA0EC2B6B577D00636655 /* Alerts.swift in Sources */,
 				A31BA0F32B6C429400636655 /* LoginViewModel.swift in Sources */,
-				A3E027912B5F835F0083821C /* GhostButton.swift in Sources */,
+				A3E027912B5F835F0083821C /* SecondaryBtn.swift in Sources */,
+				A335FECE2B72B01C000DB157 /* KHName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

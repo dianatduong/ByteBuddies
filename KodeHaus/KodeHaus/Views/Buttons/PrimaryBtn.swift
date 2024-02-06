@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DefaultButton: View {
+struct PrimaryBtn: View {
     
     var title: LocalizedStringKey
     
@@ -26,5 +26,5 @@ struct DefaultButton: View {
 }
 
 #Preview {
-    DefaultButton(title: "Login")
+    PrimaryBtn(title: "Login")
 }
