@@ -52,8 +52,8 @@ struct ProfileView: View {
                                    Image("location-50")
                                    Text("Minneapolis, MN ")
                                        .font(.system(size: 15))
+                                       .multilineTextAlignment(.center)
                                }
-                               .padding(.top, -2)
                            }
                        
                            VStack {
