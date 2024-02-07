@@ -18,11 +18,17 @@ struct CreateAccountView: View {
         VStack {
             KHName()
             
+            Image("person-img")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 300, height: 200)
+                .padding(.top, 5)
+            
             Text("Welcome to KodeHaus!")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .bold()
                 .foregroundColor(.black)
-                .padding(.top, 80)
+                .padding(.top, 30)
                 .padding(.bottom, 5)
             
             Text("Enter your email and password to create an account.")

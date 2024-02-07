@@ -11,10 +11,8 @@ import SwiftUI
 struct LoginView: View {
     
     @StateObject var viewModel = LoginViewModel()
-    
     @State private var showModal = false
 
-    
     var body: some View {
         ZStack(alignment: .center) {
             
@@ -35,7 +33,7 @@ struct LoginView: View {
                     .frame(width: 300, height: 200)
                     .padding(.top, 25)
                 
-                Text("Illustration by Icons 8 from Ouch!")
+                Text("All Illustrations by Icons 8 from Ouch!")
                     .foregroundColor(.gray)
                     .font(.system(size: 8))
                 

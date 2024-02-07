@@ -12,6 +12,7 @@ final class LoginViewModel: ObservableObject {
     
     @Published var emailLogin = ""
     @Published var passwordLogin = ""
+    //@Published var confirmPasswordLogin = ""
     
     @Published var alertItem: AlertItem?
    
@@ -24,6 +25,14 @@ final class LoginViewModel: ObservableObject {
             //if any of these fields are empty
             return false
         }
+        
+        guard !passwordLogin.isEmpty else {
+            //alert for invalid Form
+            alertItem = AlertContext.invalidPassword
+            //if any of these fields are empty
+            return false
+        }
+        
         //check to see if email is valid
         guard emailLogin.isValidEmail else {
             //alert for invalid Email

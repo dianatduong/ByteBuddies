@@ -22,6 +22,10 @@ struct AlertContext {
                                             message: Text("Please ensure your email is correct."),
                                             dismissButton: .default(Text("OK")))
     
+    static let invalidPassword    = AlertItem(title: Text("Invalid Password"),
+                                            message: Text("Please ensure your password is correct."),
+                                            dismissButton: .default(Text("OK")))
+    
     static let invalidForm      = AlertItem(title: Text("Invalid Form"),
                                             message: Text("Please ensure all fields in the form have been completed."),
                                             dismissButton: .default(Text("OK")))
