@@ -14,9 +14,9 @@ struct LoginView: View {
     @State private var showModal = false
 
     var body: some View {
-        ZStack(alignment: .center) {
+        ZStack {
             
-            VStack(alignment: .center) {
+            VStack{
                 
                 KHName()
                 
