@@ -24,7 +24,7 @@ SWIFT | SWIFTUI | API | Firebase
 <br><br>
 
 
-* Original UI Design > Refactored UI Design
+* Original UI Design > Refactored MVP UI Design
 <br><img alt="Profile" src="https://github.com/dianatduong/KodeHaus/assets/14034457/534289e4-8b97-487a-a662-58c9a53cd52c" width="225">...<img alt="Refactor Profile" src="https://github.com/dianatduong/KodeHaus/assets/14034457/ffc4771c-346b-4e54-a364-d8787de6b939" width="225">
 
 <br>
