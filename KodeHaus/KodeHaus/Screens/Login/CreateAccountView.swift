@@ -44,10 +44,11 @@ struct CreateAccountView: View {
         
         VStack {
             TextField("Email", text: $viewModel.emailLogin)
+                .foregroundColor(.black)
                 .keyboardType(.emailAddress)
                 .textInputAutocapitalization(.none)
                 .disableAutocorrection(true)
-                .foregroundColor(.black)
+                .multilineTextAlignment(.leading)
                 Rectangle()
                     .frame(height: 3)
                     .foregroundColor(Color.magenta)
@@ -55,14 +56,15 @@ struct CreateAccountView: View {
 
             SecureField("Password", text: $viewModel.passwordLogin)
                 .foregroundColor(.black)
+                .textInputAutocapitalization(.none)
+                .disableAutocorrection(true)
+                .multilineTextAlignment(.leading)
                 Rectangle()
                     .frame(height: 3)
                     .foregroundColor(Color.magenta)
                     .padding(.bottom, 20)
             }
         .frame(width: 350, alignment: .leading)
-            
-        Spacer()
         
             Button(action: {
                    print("Button tapped!")
