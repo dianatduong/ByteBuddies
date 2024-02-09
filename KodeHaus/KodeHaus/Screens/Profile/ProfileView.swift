@@ -71,7 +71,7 @@ struct ProfileView: View {
                        
                        SectionView(title: "Hobbies", subtitle: "Traveling, Pickleball, Hiking, Exploring new restaurants")
                        
-                       SectionView(title: "Previous Experience", subtitle: "Ecommerce, Digital Marketing, Web Design, Email Design, UX/UI Design")
+                       SectionView(title: "Previous Experience", subtitle: "Ecommerce, Digital Marketing, Web Design, Email Development, UX/UI Design")
                    }
                    .offset(y: -120)
                    
