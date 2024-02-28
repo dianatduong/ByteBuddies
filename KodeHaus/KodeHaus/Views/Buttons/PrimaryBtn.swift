@@ -18,10 +18,10 @@ struct PrimaryBtn: View {
             .fontWeight(.bold)
             .padding()
             .frame(width:350, height:50)
-            .background(LinearGradient(colors: [Color.magenta, Color.hotPink],
-                                       startPoint: .leading,
-                                       endPoint: .trailing))
-            .cornerRadius(28)
+            .background {
+                   RoundedRectangle(cornerRadius: 28, style:.continuous)
+                       .fill(LinearGradient(colors: [Color.magenta, Color.hotPink], startPoint: .leading, endPoint: .trailing))
+        }
     }
 }
 
