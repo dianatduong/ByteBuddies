@@ -7,6 +7,8 @@
 
 
 import SwiftUI
+import FirebaseCore
+import FirebaseAuth
 
 
 struct LoginView: View {
@@ -80,6 +82,7 @@ struct LoginView: View {
                     print("Login Button Tapped")
                     //func to check if form is valid
                     viewModel.loginAccount()
+                    login()
                 }) {
                     PrimaryBtn(title: "Login")
                 }
@@ -89,6 +92,7 @@ struct LoginView: View {
                 Button(action: {
                     print("Create an Account")
                     showModal = true
+                    createAccount()
                 }) {
                     SecondaryBtn(title: "Create an Account")
                         .sheet(isPresented: $showModal) {
@@ -112,8 +116,28 @@ struct LoginView: View {
             Alert(title: alertItem.title,
                   message: alertItem.message,
                   dismissButton: alertItem.dismissButton)
-        }
+        } //end alert
     }
+    
+    func login() {
+        Auth.auth().signIn(withEmail: viewModel.emailLogin, password: viewModel.passwordLogin) { result, error in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+            } else {
+                print("success")
+            }
+        }
+    } // end func
+    
+    func createAccount() {
+        Auth.auth().createUser(withEmail: viewModel.emailLogin, password: viewModel.passwordLogin) { result, error in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+            } else {
+                print("success")
+            }
+        }
+    } // end func
 }
      
 struct LoginView_Previews: PreviewProvider {
@@ -121,5 +145,6 @@ struct LoginView_Previews: PreviewProvider {
         LoginView()
     }
 }
+
 
 
