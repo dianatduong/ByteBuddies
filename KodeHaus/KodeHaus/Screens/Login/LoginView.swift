@@ -39,7 +39,7 @@ struct LoginView: View {
                 
                 Spacer()
             }
-            .padding(.top, 40)
+            .padding(.top, 50)
             
             
           
@@ -51,14 +51,21 @@ struct LoginView: View {
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.none)
                         .disableAutocorrection(true)
-                        .foregroundColor(.black)
+                        .textFieldStyle(.plain)
+                        .placeholder(when: viewModel.emailLogin.isEmpty) {
+                            Text("Email")
+                                .foregroundColor(.white)
+                        }
                         Rectangle()
                             .frame(height: 3)
                             .foregroundColor(Color.magenta)
                             .padding(.bottom, 30)
 
                     SecureField("Password", text: $viewModel.passwordLogin)
-                        .foregroundColor(.black)
+                        .placeholder(when: viewModel.passwordLogin.isEmpty) {
+                            Text("Password")
+                                .foregroundColor(.white)
+                        }
                         Rectangle()
                             .frame(height: 3)
                             .foregroundColor(Color.magenta)
@@ -110,5 +117,19 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
+    }
+}
+
+
+extension View {
+    func placeholder<Content: View>(
+        when shouldShow: Bool,
+        alignment: Alignment = .leading,
+        @ViewBuilder placeholder: () -> Content) -> some View {
+
+        ZStack(alignment: alignment) {
+            placeholder().opacity(shouldShow ? 1 : 0)
+            self
+        }
     }
 }
