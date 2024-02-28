@@ -27,6 +27,7 @@
 		A335FEE12B742FD8000DB157 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A335FEE02B742FD8000DB157 /* FirebaseFirestoreSwift */; };
 		A335FEE32B742FD8000DB157 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = A335FEE22B742FD8000DB157 /* FirebaseFunctions */; };
 		A335FEE52B742FD8000DB157 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A335FEE42B742FD8000DB157 /* FirebaseStorage */; };
+		A335FF0C2B8FC536000DB157 /* TextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF0B2B8FC536000DB157 /* TextField+Ext.swift */; };
 		A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE77C2B4F260400937593 /* KodeHausApp.swift */; };
 		A33EE7812B4F260700937593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7802B4F260700937593 /* Assets.xcassets */; };
 		A33EE7842B4F260700937593 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7832B4F260700937593 /* Preview Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		A335FECB2B729FA1000DB157 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		A335FECD2B72B01C000DB157 /* KHName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KHName.swift; sourceTree = "<group>"; };
 		A335FECF2B742DCE000DB157 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A335FF0B2B8FC536000DB157 /* TextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Ext.swift"; sourceTree = "<group>"; };
 		A33EE7792B4F260400937593 /* KodeHaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KodeHaus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33EE77C2B4F260400937593 /* KodeHausApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodeHausApp.swift; sourceTree = "<group>"; };
 		A33EE7802B4F260700937593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				A31BA0F02B6C3FF600636655 /* String+Ext.swift */,
+				A335FF0B2B8FC536000DB157 /* TextField+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				A31BA0F12B6C3FF600636655 /* String+Ext.swift in Sources */,
 				A335FEC62B7039C5000DB157 /* SectionView.swift in Sources */,
 				A3E0278F2B5F83510083821C /* PrimaryBtn.swift in Sources */,
+				A335FF0C2B8FC536000DB157 /* TextField+Ext.swift in Sources */,
 				A31BA0EE2B6B57FF00636655 /* KHError.swift in Sources */,
 				A335FEC42B70304E000DB157 /* ProfileButton.swift in Sources */,
 				A33EE78D2B4F267000937593 /* LoginView.swift in Sources */,

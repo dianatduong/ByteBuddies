@@ -8,11 +8,12 @@
 
 import SwiftUI
 
+
 struct LoginView: View {
     
     @StateObject var viewModel = LoginViewModel()
     @State private var showModal = false
-
+    
     var body: some View {
         ZStack {
             
@@ -49,9 +50,7 @@ struct LoginView: View {
                 Section {
                     TextField("Email", text: $viewModel.emailLogin)
                         .keyboardType(.emailAddress)
-                        .textInputAutocapitalization(.none)
-                        .disableAutocorrection(true)
-                        .textFieldStyle(.plain)
+                        .textFieldStyling()
                         .placeholder(when: viewModel.emailLogin.isEmpty) {
                             Text("Email")
                                 .foregroundColor(.white)
@@ -62,6 +61,7 @@ struct LoginView: View {
                             .padding(.bottom, 30)
 
                     SecureField("Password", text: $viewModel.passwordLogin)
+                        .textFieldStyling()
                         .placeholder(when: viewModel.passwordLogin.isEmpty) {
                             Text("Password")
                                 .foregroundColor(.white)
@@ -121,15 +121,3 @@ struct LoginView_Previews: PreviewProvider {
 }
 
 
-extension View {
-    func placeholder<Content: View>(
-        when shouldShow: Bool,
-        alignment: Alignment = .leading,
-        @ViewBuilder placeholder: () -> Content) -> some View {
-
-        ZStack(alignment: alignment) {
-            placeholder().opacity(shouldShow ? 1 : 0)
-            self
-        }
-    }
-}
