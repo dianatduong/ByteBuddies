@@ -44,21 +44,23 @@ struct CreateAccountView: View {
         
         VStack {
             TextField("Email", text: $viewModel.emailLogin)
-                .foregroundColor(.black)
                 .keyboardType(.emailAddress)
-                .textInputAutocapitalization(.none)
-                .disableAutocorrection(true)
-                .multilineTextAlignment(.leading)
+                .textFieldStyling()
+                .placeholder(when: viewModel.emailLogin.isEmpty) {
+                    Text("Email")
+                        .foregroundColor(.white)
+                }
                 Rectangle()
                     .frame(height: 3)
                     .foregroundColor(Color.magenta)
                     .padding(.bottom, 30)
 
             SecureField("Password", text: $viewModel.passwordLogin)
-                .foregroundColor(.black)
-                .textInputAutocapitalization(.none)
-                .disableAutocorrection(true)
-                .multilineTextAlignment(.leading)
+                .textFieldStyling()
+                .placeholder(when: viewModel.passwordLogin.isEmpty) {
+                    Text("Password")
+                        .foregroundColor(.white)
+                }
                 Rectangle()
                     .frame(height: 3)
                     .foregroundColor(Color.magenta)

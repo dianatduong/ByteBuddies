@@ -14,6 +14,7 @@ extension View {
             .textInputAutocapitalization(.none)
             .disableAutocorrection(true)
             .textFieldStyle(.plain)
+            .multilineTextAlignment(.leading)
     }
     
     func placeholder<Content: View>(
