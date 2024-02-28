@@ -16,7 +16,7 @@ struct KHName: View {
             .font(Font.system(size: 40, weight: .bold))
             +
         Text("Haus")
-            .foregroundColor(Color.blue)
+            .foregroundColor(Color.blue1)
             .font(Font.system(size: 40, weight: .light))
     }
 }
