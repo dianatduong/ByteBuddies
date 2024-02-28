@@ -11,6 +11,8 @@ import SwiftUI
 
 struct LoginView: View {
     
+    @Environment(\.colorScheme) var colorScheme
+    
     @StateObject var viewModel = LoginViewModel()
     @State private var showModal = false
     
@@ -96,7 +98,7 @@ struct LoginView: View {
                
                 Text("Forgot your password?")
                     .font(.subheadline)
-                    .foregroundColor(Color.magenta)
+                    .foregroundColor(colorScheme == .dark ? .white : .magenta)
                     .fontWeight(.bold)
                     .padding(.top, 10)
                 

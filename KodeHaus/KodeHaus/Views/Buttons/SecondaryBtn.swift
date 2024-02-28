@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct SecondaryBtn: View {
+    @Environment(\.colorScheme) var colorScheme
+
     
     var title: String
     
     var body: some View {
         
         Text(title)
-            .foregroundColor(.magenta)
+            .foregroundColor(colorScheme == .dark ? .white : .magenta)
             .fontWeight(.semibold)
             .padding()
             .frame(width:350, height:50)

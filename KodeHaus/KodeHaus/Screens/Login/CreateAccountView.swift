@@ -10,6 +10,8 @@ import SwiftUI
 
 struct CreateAccountView: View {
     
+    @Environment(\.colorScheme) var colorScheme
+    
     @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
@@ -27,7 +29,7 @@ struct CreateAccountView: View {
             Text("Welcome to KodeHaus!")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .bold()
-                .foregroundColor(.black)
+                .foregroundColor(colorScheme == .dark ? .white : .black)
                 .padding(.top, 30)
                 .padding(.bottom, 5)
             
@@ -73,7 +75,7 @@ struct CreateAccountView: View {
                 viewModel.createAccount()
             }) {
                SecondaryBtn(title: "Create an Account")
-        }
+            }
         //implementing the alerts for the form fields
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,
