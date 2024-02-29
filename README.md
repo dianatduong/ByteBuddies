@@ -29,6 +29,13 @@ SWIFT | SWIFTUI | API | Firebase
 
 <br>
 
+### Dark Mode
+* Login > Create an Account Modal
+<br><img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/643f31ca-74b7-42f1-a9e4-e5c589fcf677" width="225">...<img alt="Create an Account Modal" src="https://github.com/dianatduong/KodeHaus/assets/14034457/d0ed1f3b-4462-4026-ba43-a1816c92576a" width="225">
+<br>
+
+
+
 
 ## Inspiration
 The journey into tech without a technical background can be lonely and a constant battle of imposter syndrome. Inspired by my own journey and other passionate techies I've connected with along the way, I wanted to create an app to help foster connection and to celebrate each other's victories, both big and small.
