@@ -63,8 +63,8 @@ struct LoginView: View {
                         
                         SecureField("Password", text: $viewModel.passwordLogin)
                             .textFieldStyling()
-                            .placeholder(when: viewModel.emailLogin.isEmpty) {
-                                Text("Email")
+                            .placeholder(when: viewModel.passwordLogin.isEmpty) {
+                                Text("Password")
                                     .foregroundColor(.white)
                             }
                         
