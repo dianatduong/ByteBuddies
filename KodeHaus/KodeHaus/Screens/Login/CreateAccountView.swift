@@ -63,8 +63,8 @@ struct CreateAccountView: View {
                 
                 SecureField("Password", text: $viewModel.passwordLogin)
                     .textFieldStyling()
-                    .placeholder(when: viewModel.passwordLogin.isEmpty) {
-                        Text("Password")
+                    .placeholder(when: viewModel.emailLogin.isEmpty) {
+                        Text("Email")
                             .foregroundColor(.white)
                     }
                 Rectangle()

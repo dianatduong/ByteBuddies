@@ -52,6 +52,10 @@ struct LoginView: View {
                         
                         TextField("Email", text: $viewModel.emailLogin)
                             .textFieldStyling()
+                            .placeholder(when: viewModel.emailLogin.isEmpty) {
+                                Text("Email")
+                                    .foregroundColor(.white)
+                            }
                         
                         Rectangle()
                             .frame(height: 3)
@@ -59,6 +63,10 @@ struct LoginView: View {
                         
                         SecureField("Password", text: $viewModel.passwordLogin)
                             .textFieldStyling()
+                            .placeholder(when: viewModel.emailLogin.isEmpty) {
+                                Text("Email")
+                                    .foregroundColor(.white)
+                            }
                         
                         Rectangle()
                             .frame(height: 3)
