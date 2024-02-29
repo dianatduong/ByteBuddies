@@ -13,6 +13,7 @@ import FirebaseAuth
 
 struct LoginView: View {
     
+    
     @Environment(\.colorScheme) var colorScheme
     
     @StateObject var viewModel = LoginViewModel()
@@ -20,13 +21,10 @@ struct LoginView: View {
     
     var body: some View {
         ZStack {
-            
             ScrollView {
-                
                 Spacer()
                 
                 VStack{
-                    
                     KHName()
                     
                     Text("A community for career changers.")
@@ -45,15 +43,11 @@ struct LoginView: View {
                     Text("All Illustrations by Icons 8 from Ouch!")
                         .foregroundColor(.gray)
                         .font(.system(size: 8))
-                    
-                   
                 }
                 .padding(.top, 50)
              
                 
-                
                 VStack {
-                  
                     Spacer()
 
                         TextField("Email", text: $viewModel.emailLogin)
@@ -62,10 +56,10 @@ struct LoginView: View {
                                 Text("Email")
                                     .foregroundColor(.white)
                             }
-                        Rectangle()
-                            .frame(height: 3)
-                            .foregroundColor(Color.magenta1)
-                            .padding(.bottom, 30)
+                            Rectangle()
+                                .frame(height: 3)
+                                .foregroundColor(Color.magenta1)
+                                .padding(.bottom, 30)
                         
                         SecureField("Password", text: $viewModel.passwordLogin)
                             .textFieldStyling()
@@ -73,40 +67,40 @@ struct LoginView: View {
                                 Text("Password")
                                     .foregroundColor(.white)
                             }
-                        Rectangle()
-                            .frame(height: 3)
-                            .foregroundColor(Color.magenta1)
-                            .padding(.bottom, 20)
+                            Rectangle()
+                                .frame(height: 3)
+                                .foregroundColor(Color.magenta1)
+                                .padding(.bottom, 20)
                     
                     
-                    Button(action: {
-                        print("Login Button Tapped")
-                        //func to check if form is valid
-                        viewModel.loginAccount()
-                        login()
-                    }) {
-                        PrimaryBtn(title: "Login")
-                    }
-                    .padding(.bottom, 5)
-                    
-                    
-                    Button(action: {
-                        print("Create an Account")
-                        showModal = true
-                        createAccount()
-                    }) {
-                        SecondaryBtn(title: "Create an Account")
-                            .sheet(isPresented: $showModal) {
-                                CreateAccountView()
-                            }
-                    }
-                    
-                    Text("Forgot your password?")
-                        .font(.subheadline)
-                        .foregroundColor(colorScheme == .dark ? .white : .magenta1)
-                        .fontWeight(.bold)
-                        .padding(.top, 15)
-                    
+                        Button(action: {
+                            print("Login Button Tapped")
+                            //func to check if form is valid
+                            viewModel.loginValid()
+                            viewModel.loginAuth()
+                        }) {
+                            PrimaryBtn(title: "Login")
+                        }
+                        .padding(.bottom, 5)
+                        
+                        
+                        Button(action: {
+                            print("Create an Account")
+                            showModal = true
+                            viewModel.newAccountAuth()
+                        }) {
+                            SecondaryBtn(title: "Create an Account")
+                                .sheet(isPresented: $showModal) {
+                                    CreateAccountView()
+                                }
+                        }
+                        
+                        Text("Forgot your password?")
+                            .font(.subheadline)
+                            .foregroundColor(colorScheme == .dark ? .white : .magenta1)
+                            .fontWeight(.bold)
+                            .padding(.top, 15)
+                        
                 } // end vstack
                 .frame(width: 350, alignment: .leading)
                 .offset(y: 80)
@@ -122,26 +116,6 @@ struct LoginView: View {
                   dismissButton: alertItem.dismissButton)
         } //end alert
     }
-    
-    func login() {
-        Auth.auth().signIn(withEmail: viewModel.emailLogin, password: viewModel.passwordLogin) { result, error in
-            if error != nil {
-                print(error?.localizedDescription ?? "")
-            } else {
-                print("success")
-            }
-        }
-    } // end func
-    
-    func createAccount() {
-        Auth.auth().createUser(withEmail: viewModel.emailLogin, password: viewModel.passwordLogin) { result, error in
-            if error != nil {
-                print(error?.localizedDescription ?? "")
-            } else {
-                print("success")
-            }
-        }
-    } // end func
 }
      
 struct LoginView_Previews: PreviewProvider {

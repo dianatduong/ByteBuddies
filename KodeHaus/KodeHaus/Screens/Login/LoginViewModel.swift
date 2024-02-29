@@ -7,6 +7,8 @@
 
 
 import SwiftUI
+import FirebaseCore
+import FirebaseAuth
 
 final class LoginViewModel: ObservableObject {
     
@@ -42,16 +44,36 @@ final class LoginViewModel: ObservableObject {
         return true //if pass
     }
     
-    func loginAccount() {
+    func loginValid() {
         guard isValidForm else { return }
         
         print("Login successful")
     }
     
-    func createAccount() {
+    func newAccountValid() {
         guard isValidForm else { return }
         
         print("Create new account successful")
     }
+    
+    func loginAuth() {
+        Auth.auth().signIn(withEmail: emailLogin, password: passwordLogin) { result, error in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+            } else {
+                print("success")
+            }
+        }
+    } // end func
+    
+    func newAccountAuth() {
+        Auth.auth().createUser(withEmail: emailLogin, password: passwordLogin) { result, error in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+            } else {
+                print("success")
+            }
+        }
+    } // end func
     
 }
