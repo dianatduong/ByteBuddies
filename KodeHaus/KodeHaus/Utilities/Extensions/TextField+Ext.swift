@@ -9,6 +9,7 @@ import SwiftUI
 
 extension View {
     
+    //TEXTFIELD STYLES
     func textFieldStyling() -> some View {
         self
             .keyboardType(.emailAddress)
@@ -18,6 +19,8 @@ extension View {
             .multilineTextAlignment(.leading)
     }
     
+    
+    //PLACEHOLDER TEXT
     func placeholder<Content: View>(
         when shouldShow: Bool,
         alignment: Alignment = .leading,

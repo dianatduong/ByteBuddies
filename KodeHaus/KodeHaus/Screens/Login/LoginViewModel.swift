@@ -14,13 +14,12 @@ final class LoginViewModel: ObservableObject {
     
     @Published var emailLogin = ""
     @Published var passwordLogin = ""
-    //@Published var confirmPasswordLogin = ""
     
     @Published var alertItem: AlertItem?
    
-    //error handling
+    //ERROR HANDLING
     var isValidForm: Bool {
-        //check to see if these fields are empty
+        //check to see if fields are empty
         guard !emailLogin.isEmpty else {
             //alert for invalid Form
             alertItem = AlertContext.invalidForm
@@ -44,7 +43,7 @@ final class LoginViewModel: ObservableObject {
         return true //if pass
     }
     
-    //VALID FORM FIELDS
+    //CHECK VALID FORM FIELDS
     func loginValid() {
         guard isValidForm else { return }
         
@@ -56,7 +55,7 @@ final class LoginViewModel: ObservableObject {
         
         print("Create new account successful")
     }
-    //VALID FORM FIELDS END
+    //CHECK VALID FORM FIELDS END
     
     
     //FIREBASE AUTHORIZATION START
@@ -68,7 +67,7 @@ final class LoginViewModel: ObservableObject {
                 print("success")
             }
         }
-    } // end func
+    }
     
     func newAccountAuth() {
         Auth.auth().createUser(withEmail: emailLogin, password: passwordLogin) { result, error in
@@ -78,7 +77,7 @@ final class LoginViewModel: ObservableObject {
                 print("success")
             }
         }
-    } // end func
+    }
     //FIREBASE AUTHORIZATION END
     
 }
