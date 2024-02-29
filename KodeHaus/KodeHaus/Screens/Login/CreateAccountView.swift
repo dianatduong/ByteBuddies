@@ -46,7 +46,7 @@ struct CreateAccountView: View {
         
         VStack {
             TextField("Email", text: $viewModel.emailLogin)
-                .keyboardType(.emailAddress)
+                //.keyboardType(.emailAddress)
                 .textFieldStyling()
                 .placeholder(when: viewModel.emailLogin.isEmpty) {
                     Text("Email")
@@ -54,7 +54,7 @@ struct CreateAccountView: View {
                 }
                 Rectangle()
                     .frame(height: 3)
-                    .foregroundColor(Color.magenta)
+                    .foregroundColor(Color.magenta1)
                     .padding(.bottom, 30)
 
             SecureField("Password", text: $viewModel.passwordLogin)
@@ -65,7 +65,7 @@ struct CreateAccountView: View {
                 }
                 Rectangle()
                     .frame(height: 3)
-                    .foregroundColor(Color.magenta)
+                    .foregroundColor(Color.magenta1)
                     .padding(.bottom, 20)
             }
         .frame(width: 350, alignment: .leading)

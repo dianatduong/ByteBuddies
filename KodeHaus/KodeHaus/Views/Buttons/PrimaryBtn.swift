@@ -20,7 +20,7 @@ struct PrimaryBtn: View {
             .frame(width:350, height:50)
             .background {
                    RoundedRectangle(cornerRadius: 28, style:.continuous)
-                       .fill(LinearGradient(colors: [Color.magenta, Color.hotPink], startPoint: .leading, endPoint: .trailing))
+                       .fill(LinearGradient(colors: [Color.magenta1, Color.hotPink], startPoint: .leading, endPoint: .trailing))
         }
     }
 }

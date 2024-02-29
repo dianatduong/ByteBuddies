@@ -30,7 +30,7 @@ struct ProfileView: View {
                                .clipShape(Circle())
                                .overlay(
                                 Circle()
-                                    .stroke(LinearGradient(colors: [Color.magenta, Color.pink],
+                                    .stroke(LinearGradient(colors: [Color.magenta1, Color.pink],
                                                            startPoint: .leading,
                                                            endPoint: .trailing), lineWidth: 5)
                                )

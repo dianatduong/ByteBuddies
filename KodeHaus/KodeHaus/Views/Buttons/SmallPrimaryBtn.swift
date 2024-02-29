@@ -30,7 +30,7 @@ struct SmallPrimaryBtn: View {
                      
                  }
                  .frame(width: 155, height: 40)
-                 .background(LinearGradient(colors: [Color.magenta, Color.pink],
+                 .background(LinearGradient(colors: [Color.magenta1, Color.pink],
                                             startPoint: .leading,
                                             endPoint: .trailing))
                  .cornerRadius(28)

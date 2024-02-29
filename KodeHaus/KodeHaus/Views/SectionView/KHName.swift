@@ -12,7 +12,7 @@ struct KHName: View {
     var body: some View {
         
         Text("Kode")
-            .foregroundColor(Color.magenta)
+            .foregroundColor(Color.magenta1)
             .font(Font.system(size: 40, weight: .bold))
             +
         Text("Haus")

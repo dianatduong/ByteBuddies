@@ -16,7 +16,7 @@ struct SecondaryBtn: View {
     var body: some View {
         
         Text(title)
-            .foregroundColor(colorScheme == .dark ? .white : .magenta)
+            .foregroundColor(colorScheme == .dark ? .white : .magenta1)
             .fontWeight(.semibold)
             .padding()
             .frame(width:350, height:50)
@@ -25,7 +25,7 @@ struct SecondaryBtn: View {
                     .fill(Color.clear)
                     .overlay(
                         RoundedRectangle(cornerRadius: 28)
-                            .stroke(LinearGradient(colors: [Color.magenta, Color.blue1], startPoint: .leading, endPoint: .trailing), lineWidth: 3)
+                            .stroke(LinearGradient(colors: [Color.magenta1, Color.blue1], startPoint: .leading, endPoint: .trailing), lineWidth: 3)
                     )
             )
     }

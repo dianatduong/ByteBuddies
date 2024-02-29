@@ -21,93 +21,95 @@ struct LoginView: View {
     var body: some View {
         ZStack {
             
-            VStack{
+            ScrollView {
+                VStack{
+                    
+                    KHName()
+                    
+                    Text("A community for career changers.")
+                        .foregroundColor(.gray)
+                        .font(Font.system(size: 20, weight: .light))
+                        .multilineTextAlignment(.center)
+                        .padding(.leading, 30)
+                        .padding(.trailing, 30)
+                    
+                    Image("LoginImage")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 300, height: 200)
+                        .padding(.top, 25)
+                    
+                    Text("All Illustrations by Icons 8 from Ouch!")
+                        .foregroundColor(.gray)
+                        .font(.system(size: 8))
+                    
+                    Spacer()
+                }
+                .padding(.top, 20)
+             
                 
-                KHName()
                 
-                Text("A community for career changers.")
-                    .foregroundColor(.gray)
-                    .font(Font.system(size: 20, weight: .light))
-                    .multilineTextAlignment(.center)
-                    .padding(.leading, 30)
-                    .padding(.trailing, 30)
+                VStack {
                   
-                Image("LoginImage")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 300, height: 200)
-                    .padding(.top, 25)
-                
-                Text("All Illustrations by Icons 8 from Ouch!")
-                    .foregroundColor(.gray)
-                    .font(.system(size: 8))
-                
-                Spacer()
-            }
-            .padding(.top, 50)
-            
-            
-          
-            VStack {
-                Spacer()
-                
-                Section {
-                    TextField("Email", text: $viewModel.emailLogin)
-                        .keyboardType(.emailAddress)
-                        .textFieldStyling()
-                        .placeholder(when: viewModel.emailLogin.isEmpty) {
-                            Text("Email")
-                                .foregroundColor(.white)
-                        }
-                        Rectangle()
-                            .frame(height: 3)
-                            .foregroundColor(Color.magenta)
-                            .padding(.bottom, 30)
+                    Spacer()
 
-                    SecureField("Password", text: $viewModel.passwordLogin)
-                        .textFieldStyling()
-                        .placeholder(when: viewModel.passwordLogin.isEmpty) {
-                            Text("Password")
-                                .foregroundColor(.white)
-                        }
+                        TextField("Email", text: $viewModel.emailLogin)
+                        //.keyboardType(.emailAddress)
+                            .textFieldStyling()
+                            .placeholder(when: viewModel.emailLogin.isEmpty) {
+                                Text("Email")
+                                    .foregroundColor(.white)
+                            }
                         Rectangle()
                             .frame(height: 3)
-                            .foregroundColor(Color.magenta)
+                            .foregroundColor(Color.magenta1)
+                            .padding(.bottom, 30)
+                        
+                        SecureField("Password", text: $viewModel.passwordLogin)
+                            .textFieldStyling()
+                            .placeholder(when: viewModel.passwordLogin.isEmpty) {
+                                Text("Password")
+                                    .foregroundColor(.white)
+                            }
+                        Rectangle()
+                            .frame(height: 3)
+                            .foregroundColor(Color.magenta1)
                             .padding(.bottom, 20)
-                }
-                .frame(width: 350, alignment: .leading)
-                
-                
-                Button(action: {
-                    print("Login Button Tapped")
-                    //func to check if form is valid
-                    viewModel.loginAccount()
-                    login()
-                }) {
-                    PrimaryBtn(title: "Login")
-                }
-                .padding(.bottom, 5)
-                
-                
-                Button(action: {
-                    print("Create an Account")
-                    showModal = true
-                    createAccount()
-                }) {
-                    SecondaryBtn(title: "Create an Account")
-                        .sheet(isPresented: $showModal) {
-                            CreateAccountView()
+                    
+                    
+                    Button(action: {
+                        print("Login Button Tapped")
+                        //func to check if form is valid
+                        viewModel.loginAccount()
+                        login()
+                    }) {
+                        PrimaryBtn(title: "Login")
                     }
-                }
-               
-                Text("Forgot your password?")
-                    .font(.subheadline)
-                    .foregroundColor(colorScheme == .dark ? .white : .magenta)
-                    .fontWeight(.bold)
-                    .padding(.top, 10)
+                    .padding(.bottom, 5)
+                    
+                    
+                    Button(action: {
+                        print("Create an Account")
+                        showModal = true
+                        createAccount()
+                    }) {
+                        SecondaryBtn(title: "Create an Account")
+                            .sheet(isPresented: $showModal) {
+                                CreateAccountView()
+                            }
+                    }
+                    
+                    Text("Forgot your password?")
+                        .font(.subheadline)
+                        .foregroundColor(colorScheme == .dark ? .white : .magenta1)
+                        .fontWeight(.bold)
+                        .padding(.top, 10)
+                    
+                } // end vstack
+                .frame(width: 350, alignment: .leading)
+                .offset(y: 110)
                 
-            } // end vstack
-            .offset(y: -40)
+            } //end scrollview
             
         } // end Zstack
         
