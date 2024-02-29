@@ -13,10 +13,12 @@ import FirebaseAuth
 
 struct LoginView: View {
     
-    
+    //dark mode
     @Environment(\.colorScheme) var colorScheme
     
     @StateObject var viewModel = LoginViewModel()
+    
+    //modal for CreateAcountView
     @State private var showModal = false
     
     var body: some View {
@@ -24,6 +26,7 @@ struct LoginView: View {
             ScrollView {
                 Spacer()
                 
+                //HEADER START
                 VStack{
                     KHName()
                     
@@ -45,8 +48,9 @@ struct LoginView: View {
                         .font(.system(size: 8))
                 }
                 .padding(.top, 50)
+                //HEADER END
              
-                
+                //TEXTFIELDS START
                 VStack {
                     Spacer()
 
@@ -104,17 +108,20 @@ struct LoginView: View {
                 } // end vstack
                 .frame(width: 350, alignment: .leading)
                 .offset(y: 80)
+                //TEXTFIELDS END
                 
             } //end scrollview
             
         } // end Zstack
         
-        //implementing the alerts for the form fields
+        
+        //ALERTS FOR FORM FIELDS
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,
                   message: alertItem.message,
                   dismissButton: alertItem.dismissButton)
-        } //end alert
+        } 
+        //ALERTS END
     }
 }
      

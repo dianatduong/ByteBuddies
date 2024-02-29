@@ -18,6 +18,7 @@ struct CreateAccountView: View {
         
         ScrollView {
             
+            //HEADER START
             VStack {
                 KHName()
                 
@@ -44,7 +45,9 @@ struct CreateAccountView: View {
             }// end vstack
             .padding(.top, 40)
             .padding(.bottom, 80)
+            //HEADER END
             
+            //FORM FIELDS START
             VStack {
                 TextField("Email", text: $viewModel.emailLogin)
                     .textFieldStyling()
@@ -77,14 +80,16 @@ struct CreateAccountView: View {
                 
             } // end Vstack
             .frame(width: 350, alignment: .leading)
+            //FORM FIELDS END
             
             
-            //the alerts for the form fields
+            //ALERTS FOR FORM FIELDS
             .alert(item: $viewModel.alertItem) { alertItem in
                 Alert(title: alertItem.title,
                       message: alertItem.message,
                       dismissButton: alertItem.dismissButton)
             }
+            //END ALERTS 
         }
     }
 }

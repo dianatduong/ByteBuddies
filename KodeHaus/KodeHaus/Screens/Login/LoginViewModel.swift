@@ -44,6 +44,7 @@ final class LoginViewModel: ObservableObject {
         return true //if pass
     }
     
+    //VALID FORM FIELDS
     func loginValid() {
         guard isValidForm else { return }
         
@@ -55,7 +56,10 @@ final class LoginViewModel: ObservableObject {
         
         print("Create new account successful")
     }
+    //VALID FORM FIELDS END
     
+    
+    //FIREBASE AUTHORIZATION START
     func loginAuth() {
         Auth.auth().signIn(withEmail: emailLogin, password: passwordLogin) { result, error in
             if error != nil {
@@ -75,5 +79,6 @@ final class LoginViewModel: ObservableObject {
             }
         }
     } // end func
+    //FIREBASE AUTHORIZATION END
     
 }
