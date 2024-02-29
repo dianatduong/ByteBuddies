@@ -47,6 +47,7 @@ struct CreateAccountView: View {
             .padding(.bottom, 80)
             //HEADER END
             
+            
             //FORM FIELDS START
             VStack {
                 TextField("Email", text: $viewModel.emailLogin)
@@ -73,8 +74,7 @@ struct CreateAccountView: View {
                 
                 Button(action: {
                     print("Create an Account button tapped!")
-                    viewModel.newAccountValid()
-                    viewModel.newAccountAuth()
+                    viewModel.createAccount()
                 }) {
                     SecondaryBtn(title: "Create an Account")
                 }

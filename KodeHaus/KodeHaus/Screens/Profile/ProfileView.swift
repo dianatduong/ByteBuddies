@@ -37,7 +37,43 @@ struct ProfileView: View {
                                .offset(y: -140)
                        } //end Vstack
                        
-                 
+                   VStack(spacing: 10) {
+                           VStack {
+                               Text("Jane Doe")
+                                   .font(.system(size: 26))
+                                   .fontWeight(.heavy)
+                                   .multilineTextAlignment(.center)
+                               
+                               Text("iOS Software Engineer")
+                                   .font(.system(size: 16))
+                                   .multilineTextAlignment(.center)
+                               
+                               HStack(spacing: 2) {
+                                   Image("location-50")
+                                   Text("Minneapolis, MN ")
+                                       .font(.system(size: 15))
+                                       .multilineTextAlignment(.center)
+                               }
+                           }
+                       
+                           VStack {
+                                 HStack(spacing: 15) {
+                                     SmallPrimaryBtn(icon: "message-50", title: "Message")
+                                     SmallPrimaryBtn(icon: "follow-50", title: "Follow")
+                                 }
+                             }
+                           .padding(.top, 10)
+                       } // end Profile VStack
+                       .offset(y: -135)
+                       
+                   VStack(spacing: 15) {
+                       SectionView(title: "Tech Stack", subtitle: "Swift, SwiftUI, Xcode, Firebase")
+                       
+                       SectionView(title: "Hobbies", subtitle: "Traveling, Pickleball, Hiking, Exploring new restaurants")
+                       
+                       SectionView(title: "Previous Experience", subtitle: "Ecommerce, Digital Marketing, Web Design, Email Development, UX/UI Design")
+                   }
+                   .offset(y: -120)
                    
                } // end ScrollView
             } // end Zstack

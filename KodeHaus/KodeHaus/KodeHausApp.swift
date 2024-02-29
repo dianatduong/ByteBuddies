@@ -13,19 +13,12 @@ import FirebaseAuth
 struct KodeHausApp: App {
     
     @StateObject var viewModel = LoginViewModel()
-
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
     var body: some Scene {
         
         WindowGroup {
-            
             LoginView()
-
-            .onAppear {
-                viewModel.newAccountAuth()
-                viewModel.loginAuth()
-            }
         }
     }
 }

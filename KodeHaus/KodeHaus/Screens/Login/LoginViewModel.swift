@@ -14,10 +14,10 @@ final class LoginViewModel: ObservableObject {
     
     @Published var emailLogin = ""
     @Published var passwordLogin = ""
-    
     @Published var alertItem: AlertItem?
    
-    //ERROR HANDLING
+    // MARK: - Form Validation
+
     var isValidForm: Bool {
         //check to see if fields are empty
         guard !emailLogin.isEmpty else {
@@ -43,41 +43,32 @@ final class LoginViewModel: ObservableObject {
         return true //if pass
     }
     
-    //CHECK VALID FORM FIELDS
-    func loginValid() {
+    
+    
+    // MARK: - Authentication
+    
+    func login() {
         guard isValidForm else { return }
         
-        print("Login successful")
-    }
-    
-    func newAccountValid() {
-        guard isValidForm else { return }
-        
-        print("Create new account successful")
-    }
-    //CHECK VALID FORM FIELDS END
-    
-    
-    //FIREBASE AUTHORIZATION START
-    func loginAuth() {
         Auth.auth().signIn(withEmail: emailLogin, password: passwordLogin) { result, error in
-            if error != nil {
-                print(error?.localizedDescription ?? "")
+            if let error = error {
+                print("Login error:", error.localizedDescription)
             } else {
-                print("success")
+                print("Login successful")
             }
         }
     }
     
-    func newAccountAuth() {
+    func createAccount() {
+        guard isValidForm else { return }
+        
         Auth.auth().createUser(withEmail: emailLogin, password: passwordLogin) { result, error in
-            if error != nil {
-                print(error?.localizedDescription ?? "")
-            } else {
-                print("success")
-            }
+            if let error = error {
+                print("Create account error:", error.localizedDescription)
+           } else {
+               print("Account creation successful")
+           }
         }
+        
     }
-    //FIREBASE AUTHORIZATION END
-    
 }

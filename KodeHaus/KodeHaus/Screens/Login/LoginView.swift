@@ -64,8 +64,7 @@ struct LoginView: View {
                     Button(action: {
                         print("Login Button Tapped")
                         //func to check if form is valid
-                        viewModel.loginValid()
-                        viewModel.loginAuth()
+                        viewModel.login()
                     }) {
                         PrimaryBtn(title: "Login")
                     }
@@ -73,7 +72,6 @@ struct LoginView: View {
                     Button(action: {
                         print("Create an Account")
                         showModal = true
-                        viewModel.newAccountAuth()
                     }) {
                         SecondaryBtn(title: "Create an Account")
                     }
@@ -89,9 +87,7 @@ struct LoginView: View {
                 } // end vstack
                 .padding(.horizontal, 30)
                 //TEXTFIELDS END
-                
             } //end scrollview
-            
         } // end Zstack
         
         //ALERTS FOR FORM FIELDS
@@ -101,7 +97,6 @@ struct LoginView: View {
                   dismissButton: alertItem.dismissButton)
         }
         //ALERTS END
-        
     }
 }
      
