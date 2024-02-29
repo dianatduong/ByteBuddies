@@ -72,8 +72,9 @@ struct CreateAccountView: View {
                     .padding(.bottom, 20)
                 
                 Button(action: {
-                    print("Button tapped!")
+                    print("Create an Account button tapped!")
                     viewModel.newAccountValid()
+                    viewModel.newAccountAuth()
                 }) {
                     SecondaryBtn(title: "Create an Account")
                 }
@@ -89,7 +90,7 @@ struct CreateAccountView: View {
                       message: alertItem.message,
                       dismissButton: alertItem.dismissButton)
             }
-            //END ALERTS 
+            //END ALERTS
         }
     }
 }
