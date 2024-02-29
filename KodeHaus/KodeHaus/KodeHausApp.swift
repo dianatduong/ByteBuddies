@@ -6,19 +6,37 @@
 //
 
 import SwiftUI
-import Firebase
+import FirebaseCore
+import FirebaseAuth
 
 @main
 struct KodeHausApp: App {
     
-    init() {
-        FirebaseApp.configure()
-    }
-    
+    @StateObject var viewModel = LoginViewModel()
+
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
     var body: some Scene {
+        
         WindowGroup {
+            
             LoginView()
+
+            .onAppear {
+                viewModel.newAccountAuth()
+                viewModel.loginAuth()
+            }
         }
     }
 }
 
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    
+      func application(_ application: UIApplication,
+                       didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+            FirebaseApp.configure()
+
+            return true
+      }
+}

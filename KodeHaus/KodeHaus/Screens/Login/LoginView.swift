@@ -7,121 +7,101 @@
 
 
 import SwiftUI
-import FirebaseCore
-import FirebaseAuth
-
+import Firebase
 
 struct LoginView: View {
-    
-    //dark mode
-    @Environment(\.colorScheme) var colorScheme
-    
+    @Environment(\.colorScheme) var colorScheme  //dark mode
     @StateObject var viewModel = LoginViewModel()
-    
-    //modal for CreateAcountView
-    @State private var showModal = false
+    @State private var showModal = false //modal for CreateAcountView
     
     var body: some View {
         ZStack {
             ScrollView {
-                Spacer()
                 
                 //HEADER START
-                VStack{
+                VStack {
                     KHName()
                     
                     Text("A community for career changers.")
-                        .foregroundColor(.gray)
                         .font(Font.system(size: 20, weight: .light))
                         .multilineTextAlignment(.center)
-                        .padding(.leading, 30)
-                        .padding(.trailing, 30)
+                        .padding(.horizontal, 30)
+                        .foregroundColor(.gray)
                     
                     Image("LoginImage")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 300, height: 200, alignment: .center)
+                        .frame(width: 300, height: 200)
+                        .padding(.horizontal, 30)
                         .padding(.top, 25)
                     
                     Text("All Illustrations by Icons 8 from Ouch!")
-                        .foregroundColor(.gray)
                         .font(.system(size: 8))
+                        .foregroundColor(.gray)
                 }
                 .padding(.top, 50)
                 //HEADER END
+                
              
                 //TEXTFIELDS START
-                VStack {
+                VStack(spacing: 20) {
                     Spacer()
-
-                        TextField("Email", text: $viewModel.emailLogin)
-                            .textFieldStyling()
-                            .placeholder(when: viewModel.emailLogin.isEmpty) {
-                                Text("Email")
-                                    .foregroundColor(.white)
-                            }
-                            Rectangle()
-                                .frame(height: 3)
-                                .foregroundColor(Color.magenta1)
-                                .padding(.bottom, 30)
-                        
-                        SecureField("Password", text: $viewModel.passwordLogin)
-                            .textFieldStyling()
-                            .placeholder(when: viewModel.passwordLogin.isEmpty) {
-                                Text("Password")
-                                    .foregroundColor(.white)
-                            }
-                            Rectangle()
-                                .frame(height: 3)
-                                .foregroundColor(Color.magenta1)
-                                .padding(.bottom, 20)
                     
+                    TextField("Email", text: $viewModel.emailLogin)
+                        .textFieldStyling()
                     
-                        Button(action: {
-                            print("Login Button Tapped")
-                            //func to check if form is valid
-                            viewModel.loginValid()
-                            viewModel.loginAuth()
-                        }) {
-                            PrimaryBtn(title: "Login")
-                        }
-                        .padding(.bottom, 5)
-                        
-                        
-                        Button(action: {
-                            print("Create an Account")
-                            showModal = true
-                            viewModel.newAccountAuth()
-                        }) {
-                            SecondaryBtn(title: "Create an Account")
-                                .sheet(isPresented: $showModal) {
-                                    CreateAccountView()
-                                }
-                        }
-                        
-                        Text("Forgot your password?")
-                            .font(.subheadline)
-                            .foregroundColor(colorScheme == .dark ? .white : .magenta1)
-                            .fontWeight(.bold)
-                            .padding(.top, 15)
-                        
+                        Rectangle()
+                            .frame(height: 3)
+                            .foregroundColor(Color.magenta1)
+                    
+                    SecureField("Password", text: $viewModel.passwordLogin)
+                        .textFieldStyling()
+                    
+                        Rectangle()
+                            .frame(height: 3)
+                            .foregroundColor(Color.magenta1)
+                    
+                    Button(action: {
+                        print("Login Button Tapped")
+                        //func to check if form is valid
+                        viewModel.loginValid()
+                        viewModel.loginAuth()
+                    }) {
+                        PrimaryBtn(title: "Login")
+                    }
+                    
+                    Button(action: {
+                        print("Create an Account")
+                        showModal = true
+                        viewModel.newAccountAuth()
+                    }) {
+                        SecondaryBtn(title: "Create an Account")
+                    }
+                    .sheet(isPresented: $showModal) {  //POP UP MODAL FOR CREATE AN ACCOUNT
+                        CreateAccountView()
+                    }
+                    
+                    Text("Forgot your password?")
+                        .font(.subheadline)
+                        .foregroundColor(colorScheme == .dark ? .white : .magenta1)
+                        .fontWeight(.bold)
+                        .padding(.top, 15)
                 } // end vstack
-                .frame(width: 350, alignment: .leading)
-                .offset(y: 80)
+                .padding(.horizontal, 30)
                 //TEXTFIELDS END
                 
             } //end scrollview
             
         } // end Zstack
         
-        
         //ALERTS FOR FORM FIELDS
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,
                   message: alertItem.message,
                   dismissButton: alertItem.dismissButton)
-        } 
+        }
         //ALERTS END
+        
     }
 }
      
@@ -130,6 +110,7 @@ struct LoginView_Previews: PreviewProvider {
         LoginView()
     }
 }
+
 
 
 
