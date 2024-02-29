@@ -11,6 +11,7 @@ extension View {
     
     func textFieldStyling() -> some View {
         self
+            .keyboardType(.emailAddress)
             .textInputAutocapitalization(.none)
             .disableAutocorrection(true)
             .textFieldStyle(.plain)

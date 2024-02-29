@@ -22,6 +22,9 @@ struct LoginView: View {
         ZStack {
             
             ScrollView {
+                
+                Spacer()
+                
                 VStack{
                     
                     KHName()
@@ -36,16 +39,16 @@ struct LoginView: View {
                     Image("LoginImage")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 300, height: 200)
+                        .frame(width: 300, height: 200, alignment: .center)
                         .padding(.top, 25)
                     
                     Text("All Illustrations by Icons 8 from Ouch!")
                         .foregroundColor(.gray)
                         .font(.system(size: 8))
                     
-                    Spacer()
+                   
                 }
-                .padding(.top, 20)
+                .padding(.top, 50)
              
                 
                 
@@ -54,7 +57,6 @@ struct LoginView: View {
                     Spacer()
 
                         TextField("Email", text: $viewModel.emailLogin)
-                        //.keyboardType(.emailAddress)
                             .textFieldStyling()
                             .placeholder(when: viewModel.emailLogin.isEmpty) {
                                 Text("Email")
@@ -103,11 +105,11 @@ struct LoginView: View {
                         .font(.subheadline)
                         .foregroundColor(colorScheme == .dark ? .white : .magenta1)
                         .fontWeight(.bold)
-                        .padding(.top, 10)
+                        .padding(.top, 15)
                     
                 } // end vstack
                 .frame(width: 350, alignment: .leading)
-                .offset(y: 110)
+                .offset(y: 80)
                 
             } //end scrollview
             
