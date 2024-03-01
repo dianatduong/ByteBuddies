@@ -10,7 +10,7 @@ import SwiftUI
 struct Users: Identifiable {
     
     var id: UUID
-    var name: String
-    var email: String
+    var fullName: String
+    var emailAddress: String
     
 }
