@@ -36,7 +36,9 @@
 		A335FF2F2B8FE857000DB157 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = A335FF2E2B8FE857000DB157 /* FirebasePerformance */; };
 		A335FF312B8FE857000DB157 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = A335FF302B8FE857000DB157 /* FirebaseRemoteConfig */; };
 		A335FF332B8FE857000DB157 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A335FF322B8FE857000DB157 /* FirebaseRemoteConfigSwift */; };
-		A335FF352B925A12000DB157 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF342B925A12000DB157 /* Users.swift */; };
+		A335FF352B925A12000DB157 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF342B925A12000DB157 /* User.swift */; };
+		A335FF372B92645B000DB157 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF362B92645B000DB157 /* DataManager.swift */; };
+		A335FF3A2B926AFA000DB157 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF392B926AFA000DB157 /* UsersView.swift */; };
 		A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE77C2B4F260400937593 /* KodeHausApp.swift */; };
 		A33EE7812B4F260700937593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7802B4F260700937593 /* Assets.xcassets */; };
 		A33EE7842B4F260700937593 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7832B4F260700937593 /* Preview Assets.xcassets */; };
@@ -59,7 +61,9 @@
 		A335FECD2B72B01C000DB157 /* KHName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KHName.swift; sourceTree = "<group>"; };
 		A335FF0B2B8FC536000DB157 /* TextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Ext.swift"; sourceTree = "<group>"; };
 		A335FF0D2B8FE4C3000DB157 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A335FF342B925A12000DB157 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		A335FF342B925A12000DB157 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A335FF362B92645B000DB157 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A335FF392B926AFA000DB157 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		A33EE7792B4F260400937593 /* KodeHaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KodeHaus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33EE77C2B4F260400937593 /* KodeHausApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodeHausApp.swift; sourceTree = "<group>"; };
 		A33EE7802B4F260700937593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +140,16 @@
 			path = SectionView;
 			sourceTree = "<group>";
 		};
+		A335FF382B926478000DB157 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A335FF342B925A12000DB157 /* User.swift */,
+				A335FF362B92645B000DB157 /* DataManager.swift */,
+				A335FF392B926AFA000DB157 /* UsersView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A33EE7702B4F260400937593 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +169,7 @@
 		A33EE77B2B4F260400937593 /* KodeHaus */ = {
 			isa = PBXGroup;
 			children = (
+				A335FF382B926478000DB157 /* Model */,
 				A31BA0EA2B6B574600636655 /* Utilities */,
 				A3E0278C2B5F82B30083821C /* Views */,
 				A33EE78B2B4F265700937593 /* Screens */,
@@ -198,7 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				A33EE7912B4F278100937593 /* ProfileView.swift */,
-				A335FF342B925A12000DB157 /* Users.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -317,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A335FF3A2B926AFA000DB157 /* UsersView.swift in Sources */,
 				A31BA0F12B6C3FF600636655 /* String+Ext.swift in Sources */,
 				A335FEC62B7039C5000DB157 /* SectionView.swift in Sources */,
 				A3E0278F2B5F83510083821C /* PrimaryBtn.swift in Sources */,
@@ -324,9 +339,10 @@
 				A31BA0EE2B6B57FF00636655 /* KHError.swift in Sources */,
 				A335FEC42B70304E000DB157 /* ProfileButton.swift in Sources */,
 				A33EE78D2B4F267000937593 /* LoginView.swift in Sources */,
+				A335FF372B92645B000DB157 /* DataManager.swift in Sources */,
 				A33EE7922B4F278100937593 /* ProfileView.swift in Sources */,
 				A33EE78F2B4F26C000937593 /* TabViews.swift in Sources */,
-				A335FF352B925A12000DB157 /* Users.swift in Sources */,
+				A335FF352B925A12000DB157 /* User.swift in Sources */,
 				A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */,
 				A335FEC92B715098000DB157 /* SmallPrimaryBtn.swift in Sources */,
 				A335FECC2B729FA1000DB157 /* CreateAccountView.swift in Sources */,

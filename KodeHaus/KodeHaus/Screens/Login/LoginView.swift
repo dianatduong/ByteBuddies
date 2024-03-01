@@ -21,6 +21,7 @@ struct LoginView: View {
         
         if userIsLoggedIn {
            // ProfileView()
+            UsersView()
         } else {
             content
         }
