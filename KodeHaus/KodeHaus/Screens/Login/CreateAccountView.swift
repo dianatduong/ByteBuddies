@@ -35,8 +35,8 @@ struct CreateAccountView: View {
                     .padding(.top, 30)
                     .padding(.bottom, 5)
                 
-                Text("Enter your email and password to create an account.")
-                    .font(.system(size: 20))
+                Text("Please enter your email and password to create an account.")
+                    .font(.system(size: 18))
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
                     .padding(.leading, 50)
