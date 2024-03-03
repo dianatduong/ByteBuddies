@@ -9,11 +9,13 @@ import SwiftUI
 
 struct ProfileView: View {
     
+    @Environment(\.colorScheme) var colorScheme  //dark mode
+
     var body: some View {
         
         ZStack {
-            Color.btnGray1// Set the background color for the entire screen
-
+            Color(colorScheme == .dark ? .black : .btnGray1)
+            
                ScrollView {
                
                        VStack {
@@ -43,19 +45,18 @@ struct ProfileView: View {
                                    .font(.system(size: 26))
                                    .fontWeight(.heavy)
                                    .multilineTextAlignment(.center)
-                                   .foregroundColor(.black)
+                                   .foregroundColor(colorScheme == .dark ? .white : .black)
                                
                                Text("iOS Software Engineer")
                                    .font(.system(size: 16))
                                    .multilineTextAlignment(.center)
-                                   .foregroundColor(.black)
+                                   .foregroundColor(colorScheme == .dark ? .white : .black)
                                
                                HStack(spacing: 2) {
-                                   Image("location-50")
+                                   Image(colorScheme == .dark ? "location-wht-50" : "location-blk-50" )
                                    Text("Minneapolis, MN ")
                                        .font(.system(size: 15))
                                        .multilineTextAlignment(.center)
-                                       .foregroundColor(.black)
                                }
                            }
                        

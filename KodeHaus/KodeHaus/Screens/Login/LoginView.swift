@@ -14,7 +14,7 @@ struct LoginView: View {
     @Environment(\.colorScheme) var colorScheme  //dark mode
     @StateObject var viewModel = LoginViewModel()
     @State private var showModal = false //modal for CreateAcountView
-    // @State private var isProfileViewPresented = false
+     @State private var isProfileViewPresented = false
     @State private var userIsLoggedIn = false
     
     
@@ -86,11 +86,11 @@ struct LoginView: View {
                             //func to check if form is valid
                             
                             viewModel.login()
-                            //isProfileViewPresented = true // Set flag to present ProfileView
+                            isProfileViewPresented = true // Set flag to present ProfileView
                         }) {
                             PrimaryBtn(title: "Login")
                         }
-                        //.background(NavigationLink("", destination: ProfileView(), isActive: $isProfileViewPresented))
+                        .background(NavigationLink("", destination: ProfileView(), isActive: $isProfileViewPresented))
                         
                         
                         Button(action: {
