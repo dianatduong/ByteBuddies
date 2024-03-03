@@ -12,21 +12,12 @@ struct KodeHausTabView: View {
         
         TabView {
             
-            ProfileView()
+            ProfileViewPink()
                 .tabItem {
                     Image(systemName: "person")
                     Text("Profile")
                 }
-            ProfileView()
-                .tabItem {
-                    Image(systemName: "person")
-                    Text("Profile")
-                }
-            ProfileView()
-                .tabItem {
-                    Image(systemName: "person")
-                    Text("Profile")
-                }
+         
         }
       
 

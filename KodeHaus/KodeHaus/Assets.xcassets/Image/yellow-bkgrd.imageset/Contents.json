@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "fruit-mix-over-green-background.jpg",
+      "filename" : "yellow-bkgrd.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "yellow-bkgrd 1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "yellow-bkgrd 2.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

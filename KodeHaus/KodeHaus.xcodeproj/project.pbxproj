@@ -37,7 +37,7 @@
 		A335FF312B8FE857000DB157 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = A335FF302B8FE857000DB157 /* FirebaseRemoteConfig */; };
 		A335FF332B8FE857000DB157 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A335FF322B8FE857000DB157 /* FirebaseRemoteConfigSwift */; };
 		A335FF3C2B950049000DB157 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF3B2B950049000DB157 /* ForgotPasswordView.swift */; };
-		A335FF3E2B951161000DB157 /* ProfileViewBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF3D2B951161000DB157 /* ProfileViewBlue.swift */; };
+		A335FF402B95159D000DB157 /* ProfileViewBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF3F2B95159D000DB157 /* ProfileViewBlue.swift */; };
 		A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE77C2B4F260400937593 /* KodeHausApp.swift */; };
 		A33EE7812B4F260700937593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7802B4F260700937593 /* Assets.xcassets */; };
 		A33EE7842B4F260700937593 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7832B4F260700937593 /* Preview Assets.xcassets */; };
@@ -61,7 +61,7 @@
 		A335FF0B2B8FC536000DB157 /* TextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Ext.swift"; sourceTree = "<group>"; };
 		A335FF0D2B8FE4C3000DB157 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A335FF3B2B950049000DB157 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
-		A335FF3D2B951161000DB157 /* ProfileViewBlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewBlue.swift; sourceTree = "<group>"; };
+		A335FF3F2B95159D000DB157 /* ProfileViewBlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewBlue.swift; sourceTree = "<group>"; };
 		A33EE7792B4F260400937593 /* KodeHaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KodeHaus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33EE77C2B4F260400937593 /* KodeHausApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodeHausApp.swift; sourceTree = "<group>"; };
 		A33EE7802B4F260700937593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -209,7 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				A33EE7912B4F278100937593 /* ProfileViewPink.swift */,
-				A335FF3D2B951161000DB157 /* ProfileViewBlue.swift */,
+				A335FF3F2B95159D000DB157 /* ProfileViewBlue.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -328,8 +328,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A335FF402B95159D000DB157 /* ProfileViewBlue.swift in Sources */,
 				A31BA0F12B6C3FF600636655 /* String+Ext.swift in Sources */,
-				A335FF3E2B951161000DB157 /* ProfileViewBlue.swift in Sources */,
 				A335FEC62B7039C5000DB157 /* SectionView.swift in Sources */,
 				A3E0278F2B5F83510083821C /* PrimaryBtn.swift in Sources */,
 				A335FF3C2B950049000DB157 /* ForgotPasswordView.swift in Sources */,

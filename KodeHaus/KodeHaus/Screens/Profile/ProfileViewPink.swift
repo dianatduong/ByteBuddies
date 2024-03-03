@@ -25,7 +25,7 @@ struct ProfileViewPink: View {
                                .aspectRatio(contentMode: .fit)
                                .edgesIgnoringSafeArea(.top)
                            
-                           Image("dog-profile")
+                           Image("bulldog-glasses")
                                .resizable()
                                .aspectRatio(contentMode: .fill)
                                .frame(width: 160, height: 160)
@@ -62,8 +62,8 @@ struct ProfileViewPink: View {
                        
                            VStack {
                                  HStack(spacing: 15) {
-                                     SmallPrimaryBtn(icon: "message-50", title: "Message")
-                                     SmallPrimaryBtn(icon: "follow-50", title: "Follow")
+                                     SmallPrimaryBtn(icon: "message-50", title: "Message",  color1: Color.magenta1, color2: Color.pink)
+                                     SmallPrimaryBtn(icon: "follow-50", title: "Follow",  color1: Color.magenta1, color2: Color.pink)
                                  }
                              }
                            .padding(.top, 10)
