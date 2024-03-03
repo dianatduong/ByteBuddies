@@ -19,12 +19,7 @@ struct LoginView: View {
     
     var body: some View {
         
-        if userIsLoggedIn {
-           // ProfileView()
-            UsersView()
-        } else {
-            content
-        }
+       content
         
     } //end body
         

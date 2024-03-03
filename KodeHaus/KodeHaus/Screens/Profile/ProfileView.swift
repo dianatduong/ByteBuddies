@@ -43,10 +43,12 @@ struct ProfileView: View {
                                    .font(.system(size: 26))
                                    .fontWeight(.heavy)
                                    .multilineTextAlignment(.center)
+                                   .foregroundColor(.black)
                                
                                Text("iOS Software Engineer")
                                    .font(.system(size: 16))
                                    .multilineTextAlignment(.center)
+                                   .foregroundColor(.black)
                                
                                HStack(spacing: 2) {
                                    Image("location-50")

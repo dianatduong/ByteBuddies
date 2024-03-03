@@ -19,10 +19,13 @@ struct SectionView: View {
                 .font(.system(size: 18))
                 .bold()
                 .padding(.bottom, 10)
+                .foregroundColor(.black)
             Text(subtitle)
                 .font(.system(size: 16))
                 .lineLimit(nil) // Allow the text to wrap onto the next line
                 .fixedSize(horizontal: false, vertical: true)
+                .foregroundColor(.black)
+
                
         }
         .padding(30)
