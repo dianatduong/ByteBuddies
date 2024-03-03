@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProfileView: View {
+struct ProfileViewPink: View {
     
     @Environment(\.colorScheme) var colorScheme  //dark mode
 
@@ -86,5 +86,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView()
+    ProfileViewPink()
 }

@@ -90,7 +90,7 @@ struct LoginView: View {
                         }) {
                             PrimaryBtn(title: "Login")
                         }
-                        .background(NavigationLink("", destination: ProfileView(), isActive: $isProfileViewPresented))
+                        .background(NavigationLink("", destination: ProfileViewPink(), isActive: $isProfileViewPresented))
                         
                         
                         Button(action: {
