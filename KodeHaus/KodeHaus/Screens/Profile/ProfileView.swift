@@ -55,6 +55,7 @@ struct ProfileView: View {
                                    Text("Minneapolis, MN ")
                                        .font(.system(size: 15))
                                        .multilineTextAlignment(.center)
+                                       .foregroundColor(.black)
                                }
                            }
                        
