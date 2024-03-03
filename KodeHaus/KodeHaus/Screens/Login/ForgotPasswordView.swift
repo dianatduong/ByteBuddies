@@ -35,7 +35,7 @@ struct ForgotPasswordView: View {
                     .padding(.top, 30)
                     .padding(.bottom, 5)
                 
-                Text("Don't worry! It happens. Please enter the email associated with your account.")
+                Text("Don’t worry! It happens. Please enter the email associated with your account.")
                     .font(.system(size: 18))
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
