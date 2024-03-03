@@ -19,7 +19,7 @@ struct ProfileViewBlue: View {
                ScrollView {
                
                        VStack {
-                           Image("yellow-bkgrd")
+                           Image("blue-bkgrd")
                                .resizable()
                                .frame(width: 450, height: 200)
                                .aspectRatio(contentMode: .fit)
