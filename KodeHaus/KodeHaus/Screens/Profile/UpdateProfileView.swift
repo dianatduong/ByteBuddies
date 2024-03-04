@@ -1,13 +1,14 @@
 //
-//  ProfileView.swift
+//  NameTitle.swift
 //  KodeHaus
 //
-//  Created by Diana Duong on 1/10/24.
+//  Created by Diana Duong on 3/4/24.
 //
 
 import SwiftUI
 
-struct ProfileViewPink: View {
+struct UpdateProfileView: View {
+    
     
     @Environment(\.colorScheme) var colorScheme  //dark mode
 
@@ -60,12 +61,11 @@ struct ProfileViewPink: View {
                                }
                            }
                        
-                           VStack {
-                                 HStack(spacing: 15) {
-                                     SmallPrimaryBtn(icon: "message-50", title: "Message",  color1: Color.magenta1, color2: Color.pink)
-                                     SmallPrimaryBtn(icon: "follow-50", title: "Follow",  color1: Color.magenta1, color2: Color.pink)
-                                 }
-                             }
+                           Button(action: {
+                               print("Create an Account button tapped!")
+                           }) {
+                               SecondaryBtn(title: "Edit Profile")
+                           }
                            .padding(.top, 10)
                        } // end Profile VStack
                        .offset(y: -135)
@@ -85,7 +85,10 @@ struct ProfileViewPink: View {
         .ignoresSafeArea()
     }
 }
+    
+
+
 
 #Preview {
-    ProfileViewPink()
+    UpdateProfileView()
 }

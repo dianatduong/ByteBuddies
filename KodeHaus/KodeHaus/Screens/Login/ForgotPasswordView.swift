@@ -50,7 +50,7 @@ struct ForgotPasswordView: View {
             
             //FORM FIELDS START
             VStack {
-                TextField("@ Email", text: $viewModel.emailLogin)
+                TextField("Email", text: $viewModel.emailLogin)
                     .textFieldStyling()
                     .placeholder(when: viewModel.emailLogin.isEmpty) {
                         Text("Email")
