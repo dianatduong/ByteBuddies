@@ -37,7 +37,9 @@
 		A335FF332B8FE857000DB157 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A335FF322B8FE857000DB157 /* FirebaseRemoteConfigSwift */; };
 		A335FF3C2B950049000DB157 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF3B2B950049000DB157 /* ForgotPasswordView.swift */; };
 		A335FF402B95159D000DB157 /* ProfileViewBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF3F2B95159D000DB157 /* ProfileViewBlue.swift */; };
-		A335FF432B965A91000DB157 /* UpdateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF422B965A91000DB157 /* UpdateProfileView.swift */; };
+		A335FF432B965A91000DB157 /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF422B965A91000DB157 /* MyProfileView.swift */; };
+		A335FF452B965F07000DB157 /* UpdateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF442B965F07000DB157 /* UpdateProfileView.swift */; };
+		A335FF4A2B966BC4000DB157 /* StatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF492B966BC4000DB157 /* StatePicker.swift */; };
 		A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE77C2B4F260400937593 /* KodeHausApp.swift */; };
 		A33EE7812B4F260700937593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7802B4F260700937593 /* Assets.xcassets */; };
 		A33EE7842B4F260700937593 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7832B4F260700937593 /* Preview Assets.xcassets */; };
@@ -61,7 +63,9 @@
 		A335FF0D2B8FE4C3000DB157 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A335FF3B2B950049000DB157 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		A335FF3F2B95159D000DB157 /* ProfileViewBlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewBlue.swift; sourceTree = "<group>"; };
-		A335FF422B965A91000DB157 /* UpdateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileView.swift; sourceTree = "<group>"; };
+		A335FF422B965A91000DB157 /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
+		A335FF442B965F07000DB157 /* UpdateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileView.swift; sourceTree = "<group>"; };
+		A335FF492B966BC4000DB157 /* StatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePicker.swift; sourceTree = "<group>"; };
 		A33EE7792B4F260400937593 /* KodeHaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KodeHaus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33EE77C2B4F260400937593 /* KodeHausApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodeHausApp.swift; sourceTree = "<group>"; };
 		A33EE7802B4F260700937593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 			children = (
 				A31BA0F02B6C3FF600636655 /* String+Ext.swift */,
 				A335FF0B2B8FC536000DB157 /* TextField+Ext.swift */,
+				A335FF492B966BC4000DB157 /* StatePicker.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -210,7 +215,8 @@
 			children = (
 				A33EE7912B4F278100937593 /* ProfileViewPink.swift */,
 				A335FF3F2B95159D000DB157 /* ProfileViewBlue.swift */,
-				A335FF422B965A91000DB157 /* UpdateProfileView.swift */,
+				A335FF422B965A91000DB157 /* MyProfileView.swift */,
+				A335FF442B965F07000DB157 /* UpdateProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -333,11 +339,13 @@
 				A335FEC62B7039C5000DB157 /* SectionView.swift in Sources */,
 				A3E0278F2B5F83510083821C /* PrimaryBtn.swift in Sources */,
 				A335FF3C2B950049000DB157 /* ForgotPasswordView.swift in Sources */,
-				A335FF432B965A91000DB157 /* UpdateProfileView.swift in Sources */,
+				A335FF432B965A91000DB157 /* MyProfileView.swift in Sources */,
 				A335FF0C2B8FC536000DB157 /* TextField+Ext.swift in Sources */,
 				A31BA0EE2B6B57FF00636655 /* KHError.swift in Sources */,
+				A335FF452B965F07000DB157 /* UpdateProfileView.swift in Sources */,
 				A33EE78D2B4F267000937593 /* LoginView.swift in Sources */,
 				A33EE7922B4F278100937593 /* ProfileViewPink.swift in Sources */,
+				A335FF4A2B966BC4000DB157 /* StatePicker.swift in Sources */,
 				A33EE78F2B4F26C000937593 /* TabViews.swift in Sources */,
 				A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */,
 				A335FEC92B715098000DB157 /* SmallPrimaryBtn.swift in Sources */,
