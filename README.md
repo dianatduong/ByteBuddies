@@ -5,7 +5,7 @@ A project-sharing app for career changers with non-technical backgrounds to help
 SWIFT | SWIFTUI | API | Firebase
 
 ### MVP Tech Features 🚧🚧🚧
-* Implement login functionality and utilize LinkedIn API for user profile data.
+* Implement login functionality and data storage via Firebase.
 * Dynamically access project-related data from repositories using GitHub API.
 * Integrate AI for efficient responses in chat conversations.
 
@@ -18,21 +18,35 @@ SWIFT | SWIFTUI | API | Firebase
 <br>
 
 ### Light Mode
-* Login > Create an Account Modal
-<br><img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/7c5965af-f38b-4d97-a0dc-b1c9376d9ccb" width="225">...<img alt="Create an Account Modal" src="https://github.com/dianatduong/KodeHaus/assets/14034457/e13f1f9d-c5e4-4f3e-b9a6-e53683590e30" width="225">
+Login > Create an Account Modal > Forgot Password?
+<br>
+<img alt="Login" src="https://github.com/dianatduong/KodeHaus/assets/14034457/1fd17a44-46b8-4e3f-b3b0-46f62dbff588" width="225">...
+<img alt="Create an Account Modal" src="https://github.com/dianatduong/KodeHaus/assets/14034457/e13f1f9d-c5e4-4f3e-b9a6-e53683590e30" width="225">...
+<img alt="Forgot Password?" src="https://github.com/dianatduong/KodeHaus/assets/14034457/9118c567-8bc2-40fb-8d9b-d2158277c8fd" width="225">
+<br>
+
+Profile Views
+<br>
+<img alt="Profile View - Pink" src="https://github.com/dianatduong/KodeHaus/assets/14034457/68da6f85-5365-44b3-9df4-827c3b8f508d" width="225">...
+<img alt="Profile View - Blue" src="https://github.com/dianatduong/KodeHaus/assets/14034457/bfc2abc8-85c8-4a64-aab8-7b5ad54dbff2" width="225">
 
 <br><br>
 
 
-* Original UI Design > Refactored MVP UI Design
-<br><img alt="Profile" src="https://github.com/dianatduong/KodeHaus/assets/14034457/534289e4-8b97-487a-a662-58c9a53cd52c" width="225">...<img alt="Refactor Profile" src="https://github.com/dianatduong/KodeHaus/assets/14034457/ffc4771c-346b-4e54-a364-d8787de6b939" width="225">
-
-<br>
-
 ### Dark Mode
-* Login > Create an Account Modal
-<br><img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/643f31ca-74b7-42f1-a9e4-e5c589fcf677" width="225">...<img alt="Create an Account Modal" src="https://github.com/dianatduong/KodeHaus/assets/14034457/d0ed1f3b-4462-4026-ba43-a1816c92576a" width="225">
+Login > Create an Account Modal > Forgot Password?
 <br>
+<img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/643f31ca-74b7-42f1-a9e4-e5c589fcf677" width="225">...
+<img alt="Create an Account Modal" src="https://github.com/dianatduong/KodeHaus/assets/14034457/d0ed1f3b-4462-4026-ba43-a1816c92576a" width="225">...
+<img alt="Forgot Password?" src="https://github.com/dianatduong/KodeHaus/assets/14034457/09d9dd94-8770-40d5-80c9-912cbca4535e" width="225">
+
+<br>
+
+Profile Views
+<br>
+<img alt="Profile View - Pink" src="https://github.com/dianatduong/KodeHaus/assets/14034457/2c039ddd-f603-4d20-96ea-a4cb4cf80797" width="225">...
+<img alt="Profile View - Blue" src="https://github.com/dianatduong/KodeHaus/assets/14034457/f856d0f5-bb33-470a-9817-58aef69d7c4a" width="225">
+
 
 
 
