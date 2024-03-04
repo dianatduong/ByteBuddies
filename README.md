@@ -18,8 +18,9 @@ SWIFT | SWIFTUI | API | Firebase
 <br>
 
 ### Light Mode
-* Login > Create an Account Modal
-<br><img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/7c5965af-f38b-4d97-a0dc-b1c9376d9ccb" width="225">...<img alt="Create an Account Modal" src="https://github.com/dianatduong/KodeHaus/assets/14034457/e13f1f9d-c5e4-4f3e-b9a6-e53683590e30" width="225">
+* Login > Create an Account Modal > Forgot Password?
+<br><img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/7c5965af-f38b-4d97-a0dc-b1c9376d9ccb" width="225">...<img alt="Create an Account Modal" src="https://github.com/dianatduong/KodeHaus/assets/14034457/e13f1f9d-c5e4-4f3e-b9a6-e53683590e30" width="225">...<img alt="Forgot Password?" src="https://github.com/dianatduong/KodeHaus/assets/14034457/9118c567-8bc2-40fb-8d9b-d2158277c8fd" width="225">
+
 
 <br><br>
 
@@ -29,10 +30,12 @@ SWIFT | SWIFTUI | API | Firebase
 
 <br>
 
+
 ### Dark Mode
-* Login > Create an Account Modal
-<br><img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/643f31ca-74b7-42f1-a9e4-e5c589fcf677" width="225">...<img alt="Create an Account Modal" src="https://github.com/dianatduong/KodeHaus/assets/14034457/d0ed1f3b-4462-4026-ba43-a1816c92576a" width="225">
+* Login > Create an Account Modal > Forgot Password?
+<br><img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/643f31ca-74b7-42f1-a9e4-e5c589fcf677" width="225">...<img alt="Create an Account Modal" src="https://github.com/dianatduong/KodeHaus/assets/14034457/d0ed1f3b-4462-4026-ba43-a1816c92576a" width="225">...<img alt="Forgot Password?" src="https://github.com/dianatduong/KodeHaus/assets/14034457/09d9dd94-8770-40d5-80c9-912cbca4535e" width="225">
 <br>
+
 
 
 
