@@ -49,17 +49,9 @@ struct ForgotPasswordView: View {
             
             
             //FORM FIELDS START
-            VStack {
-                TextField("Email", text: $viewModel.emailLogin)
-                    .textFieldStyling()
-                    .placeholder(when: viewModel.emailLogin.isEmpty) {
-                        Text("Email")
-                            .foregroundColor(.white)
-                    }
-                Rectangle()
-                    .frame(height: 3)
-                    .foregroundColor(Color.magenta1)
-                    .padding(.bottom, 20)
+            VStack(spacing: 20) {
+                
+                CustomTextField(bindValue: $viewModel.passwordLogin, fieldName: "Password" , color: Color.magenta1, frameHeight: 3, type: .secure)
                 
                 Button(action: {
                     print("Create an Account button tapped!")
