@@ -49,28 +49,11 @@ struct CreateAccountView: View {
             
             
             //FORM FIELDS START
-            VStack {
-                TextField("Email", text: $viewModel.emailLogin)
-                    .textFieldStyling()
-                    .placeholder(when: viewModel.emailLogin.isEmpty) {
-                        Text("Email")
-                            .foregroundColor(.white)
-                    }
-                Rectangle()
-                    .frame(height: 3)
-                    .foregroundColor(Color.magenta1)
-                    .padding(.bottom, 30)
+            VStack(spacing: 20) {
+                CustomTextField(bindValue: $viewModel.emailLogin, fieldName: "Email" , color: Color.magenta1, frameHeight: 3, type: .text)
+
                 
-                SecureField("Password", text: $viewModel.passwordLogin)
-                    .textFieldStyling()
-                    .placeholder(when: viewModel.emailLogin.isEmpty) {
-                        Text("Email")
-                            .foregroundColor(.white)
-                    }
-                Rectangle()
-                    .frame(height: 3)
-                    .foregroundColor(Color.magenta1)
-                    .padding(.bottom, 20)
+                CustomTextField(bindValue: $viewModel.passwordLogin, fieldName: "Password" , color: Color.magenta1, frameHeight: 3, type: .secure)
                 
                 Button(action: {
                     print("Create an Account button tapped!")

@@ -64,7 +64,6 @@ struct LoginView: View {
                         
                         CustomTextField(bindValue: $viewModel.passwordLogin, fieldName: "Password" , color: Color.magenta1, frameHeight: 3, type: .secure)
                         
-                        
                         Button(action: {
                             print("Login Button Tapped")
                             //func to check if form is valid
