@@ -10,33 +10,30 @@ import SwiftUI
 struct UpdateProfileView: View {
     @State private var name = ""
     @State private var email = ""
-    @State private var selectedState = "California" 
+    @State private var selectedState = "California"
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Form {
-                    Section(header: Text("Profile Pic")) {
-                        // Profile pic related content
-                    }
-                    Section(header: Text("Background Pic")) {
-                        // Background pic related content
-                    }
-                    Section(header: Text("Personal Info")) {
-                        TextField("Name", text: $name)
-                        TextField("Email", text: $email)
-                            .keyboardType(.emailAddress)
-                            .autocapitalization(.none)
-                            .disableAutocorrection(true)
-                        
-                        StatePicker()
-                    }
+        
+        VStack(spacing: 10){
+            TextField("Name", text: $name)
+                .textFieldStyling()
+                .placeholder(when: name.isEmpty) {
+                    Text("Name")
+                        .foregroundColor(Color.btnGray3)
                 }
-            }
-            .navigationTitle("Edit Profile")
-        }
+            Rectangle()
+                .frame(width: 350, height: 1)
+                .foregroundColor(Color.btnGray2)
+                .padding(.bottom, 20)
+            
+            TextField("Email", text: $email)
+               
+           // StatePicker()
+        } //end vstack
+        .frame(width: 350)
     }
 }
+
 
 struct UpdateProfileView_Previews: PreviewProvider {
     static var previews: some View {

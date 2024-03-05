@@ -59,27 +59,11 @@ struct LoginView: View {
                     VStack(spacing: 20) {
                         Spacer()
                         
-                        TextField("Email", text: $viewModel.emailLogin)
-                            .textFieldStyling()
-                            .placeholder(when: viewModel.emailLogin.isEmpty) {
-                                Text("Email")
-                                    .foregroundColor(.white)
-                            }
+                        CustomTextField(bindValue: $viewModel.emailLogin, fieldName: "Email" , color: Color.magenta1, frameHeight: 3, type: .text)
+
                         
-                        Rectangle()
-                            .frame(height: 3)
-                            .foregroundColor(Color.magenta1)
+                        CustomTextField(bindValue: $viewModel.passwordLogin, fieldName: "Password" , color: Color.magenta1, frameHeight: 3, type: .secure)
                         
-                        SecureField("Password", text: $viewModel.passwordLogin)
-                            .textFieldStyling()
-                            .placeholder(when: viewModel.passwordLogin.isEmpty) {
-                                Text("Password")
-                                    .foregroundColor(.white)
-                            }
-                        
-                        Rectangle()
-                            .frame(height: 3)
-                            .foregroundColor(Color.magenta1)
                         
                         Button(action: {
                             print("Login Button Tapped")
