@@ -26,7 +26,7 @@ struct EditProfileView: View {
                     
                     // Profile Picture
                     Section(header:
-                                Text("Profile Picture:")
+                                Text("Profile Picture")
                         .textCase(.uppercase)
                         .font(Font.system(size: 18, weight:.bold))
                     ) {
@@ -68,7 +68,7 @@ struct EditProfileView: View {
                         
                         //Personal Info
                         Section(header:
-                                    Text("Profile Info:")
+                                    Text("Profile Info")
                                         .textCase(.uppercase)
                                         .font(Font.system(size: 18, weight:.bold))
                         ) {
@@ -88,7 +88,7 @@ struct EditProfileView: View {
                         
                         //Color Profile
                         Section(header:
-                                    Text("Select color profile:")
+                                    Text("Select color profile")
                                         .textCase(.uppercase)
                                         .font(Font.system(size: 18, weight:.bold))
                         ) {
