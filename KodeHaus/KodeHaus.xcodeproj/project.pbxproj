@@ -38,7 +38,7 @@
 		A335FF3C2B950049000DB157 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF3B2B950049000DB157 /* ForgotPasswordView.swift */; };
 		A335FF402B95159D000DB157 /* ProfileViewBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF3F2B95159D000DB157 /* ProfileViewBlue.swift */; };
 		A335FF432B965A91000DB157 /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF422B965A91000DB157 /* MyProfileView.swift */; };
-		A335FF452B965F07000DB157 /* UpdateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF442B965F07000DB157 /* UpdateProfileView.swift */; };
+		A335FF452B965F07000DB157 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF442B965F07000DB157 /* EditProfileView.swift */; };
 		A335FF4A2B966BC4000DB157 /* StatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF492B966BC4000DB157 /* StatePicker.swift */; };
 		A335FF4D2B97CE85000DB157 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF4C2B97CE85000DB157 /* CustomTextField.swift */; };
 		A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE77C2B4F260400937593 /* KodeHausApp.swift */; };
@@ -65,7 +65,7 @@
 		A335FF3B2B950049000DB157 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		A335FF3F2B95159D000DB157 /* ProfileViewBlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewBlue.swift; sourceTree = "<group>"; };
 		A335FF422B965A91000DB157 /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
-		A335FF442B965F07000DB157 /* UpdateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileView.swift; sourceTree = "<group>"; };
+		A335FF442B965F07000DB157 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		A335FF492B966BC4000DB157 /* StatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePicker.swift; sourceTree = "<group>"; };
 		A335FF4C2B97CE85000DB157 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A33EE7792B4F260400937593 /* KodeHaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KodeHaus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,7 +226,7 @@
 				A33EE7912B4F278100937593 /* ProfileViewPink.swift */,
 				A335FF3F2B95159D000DB157 /* ProfileViewBlue.swift */,
 				A335FF422B965A91000DB157 /* MyProfileView.swift */,
-				A335FF442B965F07000DB157 /* UpdateProfileView.swift */,
+				A335FF442B965F07000DB157 /* EditProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -354,7 +354,7 @@
 				A335FF432B965A91000DB157 /* MyProfileView.swift in Sources */,
 				A335FF0C2B8FC536000DB157 /* TextField+Ext.swift in Sources */,
 				A31BA0EE2B6B57FF00636655 /* KHError.swift in Sources */,
-				A335FF452B965F07000DB157 /* UpdateProfileView.swift in Sources */,
+				A335FF452B965F07000DB157 /* EditProfileView.swift in Sources */,
 				A33EE78D2B4F267000937593 /* LoginView.swift in Sources */,
 				A33EE7922B4F278100937593 /* ProfileViewPink.swift in Sources */,
 				A335FF4A2B966BC4000DB157 /* StatePicker.swift in Sources */,
