@@ -12,7 +12,7 @@ import SwiftUI
 struct EditProfileView: View {
     @State private var profileImage: Image? = Image("bulldog-glasses")
     @State private var fullName = ""
-    @State private var email = ""
+    @State private var techRole = ""
     @State private var location = ""
     
     @State private var primaryColor = Color.magenta1
@@ -22,65 +22,91 @@ struct EditProfileView: View {
         NavigationView {
             VStack {
                 
-                // Profile Picture
-                Section {
-                    Button(action: {
-                        // Add action to change profile picture
-                    }) {
-                        profileImage?
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 160, height: 160)
-                            .clipShape(Circle())
+                VStack {
+                    
+                    // Profile Picture
+                    Section(header:
+                                Text("Profile Picture:")
+                        .textCase(.uppercase)
+                        .font(Font.system(size: 18, weight:.bold))
+                    ) {
+                        HStack(spacing: 40) {
+                            
+                            profileImage?
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 130, height: 130)
+                                .clipShape(Circle())
+                            
+                            VStack(spacing: 10) {
+                                Button(action: {
+                                    // Add action to change profile picture
+                                }) {
+                                    Text("Edit picture")
+                                        .font(Font.system(size: 18, weight: .bold))
+                                        .foregroundColor(.blue)
+                                }
+                                
+                                Button(action: {
+                                    // Add action to change profile picture
+                                }) {
+                                    Text("Delete picture")
+                                        .font(Font.system(size: 18, weight: .bold))
+                                        .foregroundColor(.blue)
+                                }
+                            }
+                        }
+                        .padding(.vertical, 12)
                     }
-                    Text("Edit picture")
-                        .padding(.top, 10)
-                        .font(Font.system(size: 18, weight: .bold))
-                        .foregroundColor(.blue)
+                   
                 }
-
+                .padding(.top, 30)
+                
+                
                 VStack(spacing: 20) {
-                    VStack(spacing:10) {
+                    VStack(spacing: 14) {
                         
                         //Personal Info
                         Section(header:
-                                    Text("Personal Info")
-                            .textCase(.uppercase)
+                                    Text("Profile Info:")
+                                        .textCase(.uppercase)
+                                        .font(Font.system(size: 18, weight:.bold))
                         ) {
                             
                             CustomTextField(bindValue: $fullName, fieldName: "Name" , color: Color.btnGray1, frameHeight: 2, type: .text)
                             
-                            CustomTextField(bindValue: $email, fieldName: "Email" , color: Color.btnGray1, frameHeight: 2, type: .text)
+                            CustomTextField(bindValue: $techRole, fieldName: "Tech Role" , color: Color.btnGray1, frameHeight: 2, type: .text)
                             
                             CustomTextField(bindValue: $location, fieldName: "City/State" , color: Color.btnGray1, frameHeight: 2, type: .text)
                         }
                     }
-                    .padding(.top,30)
+                    .padding(.top, 50)
                     
- 
+                    
+                    
                     VStack(spacing: 10) {
                         
                         //Color Profile
                         Section(header:
                                     Text("Select color profile:")
                                         .textCase(.uppercase)
+                                        .font(Font.system(size: 18, weight:.bold))
                         ) {
-                            
                             ColorPicker("Primary Color", selection: $primaryColor)
                                 .foregroundColor(Color.gray)
                             
                             ColorPicker("Secondary Color", selection: $secondaryColor)
                                 .foregroundColor(Color.gray)
-                            
                         }
                         .font(Font.system(size: 18))
                     }
-                    .padding(.top, 40)
+                    .padding(.vertical, 50)
                 }
-             Spacer()
+                .frame(width: 350)
+                Spacer()
             }
-            .frame(width: 350)
-       }
+            
+        }
     }
 }
 
