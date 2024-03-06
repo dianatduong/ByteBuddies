@@ -84,7 +84,7 @@ struct EditProfileView: View {
                     
                     
                     
-                    VStack(spacing: 10) {
+                    VStack{
                         
                         //Color Profile
                         Section(header:
@@ -92,11 +92,15 @@ struct EditProfileView: View {
                                         .textCase(.uppercase)
                                         .font(Font.system(size: 18, weight:.bold))
                         ) {
-                            ColorPicker("Primary Color", selection: $primaryColor)
-                                .foregroundColor(Color.gray)
-                            
-                            ColorPicker("Secondary Color", selection: $secondaryColor)
-                                .foregroundColor(Color.gray)
+                            VStack(spacing: 14)  {
+                                ColorPicker("Primary Color", selection: $primaryColor)
+                                    .foregroundColor(Color.gray)
+                                
+                                ColorPicker("Secondary Color", selection: $secondaryColor)
+                                    .foregroundColor(Color.gray)
+                                
+                                PrimaryBtnSmall(title: "Example", color1: primaryColor, color2: secondaryColor)
+                            }
                         }
                         .font(Font.system(size: 18))
                     }

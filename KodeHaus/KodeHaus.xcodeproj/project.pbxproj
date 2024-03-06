@@ -12,7 +12,7 @@
 		A31BA0F12B6C3FF600636655 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BA0F02B6C3FF600636655 /* String+Ext.swift */; };
 		A31BA0F32B6C429400636655 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BA0F22B6C429400636655 /* LoginViewModel.swift */; };
 		A335FEC62B7039C5000DB157 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FEC52B7039C5000DB157 /* SectionView.swift */; };
-		A335FEC92B715098000DB157 /* SmallBtnIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FEC82B715098000DB157 /* SmallBtnIcon.swift */; };
+		A335FEC92B715098000DB157 /* IconBtnSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FEC82B715098000DB157 /* IconBtnSmall.swift */; };
 		A335FECC2B729FA1000DB157 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FECB2B729FA1000DB157 /* CreateAccountView.swift */; };
 		A335FECE2B72B01C000DB157 /* KHName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FECD2B72B01C000DB157 /* KHName.swift */; };
 		A335FF0C2B8FC536000DB157 /* TextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF0B2B8FC536000DB157 /* TextField+Ext.swift */; };
@@ -41,6 +41,7 @@
 		A335FF452B965F07000DB157 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF442B965F07000DB157 /* EditProfileView.swift */; };
 		A335FF4A2B966BC4000DB157 /* StatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF492B966BC4000DB157 /* StatePicker.swift */; };
 		A335FF4D2B97CE85000DB157 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF4C2B97CE85000DB157 /* CustomTextField.swift */; };
+		A335FF4F2B990C98000DB157 /* PrimaryBtnSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335FF4E2B990C98000DB157 /* PrimaryBtnSmall.swift */; };
 		A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE77C2B4F260400937593 /* KodeHausApp.swift */; };
 		A33EE7812B4F260700937593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7802B4F260700937593 /* Assets.xcassets */; };
 		A33EE7842B4F260700937593 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7832B4F260700937593 /* Preview Assets.xcassets */; };
@@ -57,7 +58,7 @@
 		A31BA0F02B6C3FF600636655 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		A31BA0F22B6C429400636655 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		A335FEC52B7039C5000DB157 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
-		A335FEC82B715098000DB157 /* SmallBtnIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallBtnIcon.swift; sourceTree = "<group>"; };
+		A335FEC82B715098000DB157 /* IconBtnSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconBtnSmall.swift; sourceTree = "<group>"; };
 		A335FECB2B729FA1000DB157 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		A335FECD2B72B01C000DB157 /* KHName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KHName.swift; sourceTree = "<group>"; };
 		A335FF0B2B8FC536000DB157 /* TextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Ext.swift"; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		A335FF442B965F07000DB157 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		A335FF492B966BC4000DB157 /* StatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePicker.swift; sourceTree = "<group>"; };
 		A335FF4C2B97CE85000DB157 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A335FF4E2B990C98000DB157 /* PrimaryBtnSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryBtnSmall.swift; sourceTree = "<group>"; };
 		A33EE7792B4F260400937593 /* KodeHaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KodeHaus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33EE77C2B4F260400937593 /* KodeHausApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodeHausApp.swift; sourceTree = "<group>"; };
 		A33EE7802B4F260700937593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -245,7 +247,8 @@
 			isa = PBXGroup;
 			children = (
 				A3E0278E2B5F83510083821C /* PrimaryBtn.swift */,
-				A335FEC82B715098000DB157 /* SmallBtnIcon.swift */,
+				A335FF4E2B990C98000DB157 /* PrimaryBtnSmall.swift */,
+				A335FEC82B715098000DB157 /* IconBtnSmall.swift */,
 				A3E027902B5F835F0083821C /* SecondaryBtn.swift */,
 			);
 			path = Buttons;
@@ -360,10 +363,11 @@
 				A335FF4A2B966BC4000DB157 /* StatePicker.swift in Sources */,
 				A33EE78F2B4F26C000937593 /* TabViews.swift in Sources */,
 				A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */,
-				A335FEC92B715098000DB157 /* SmallBtnIcon.swift in Sources */,
+				A335FEC92B715098000DB157 /* IconBtnSmall.swift in Sources */,
 				A335FECC2B729FA1000DB157 /* CreateAccountView.swift in Sources */,
 				A31BA0EC2B6B577D00636655 /* Alerts.swift in Sources */,
 				A31BA0F32B6C429400636655 /* LoginViewModel.swift in Sources */,
+				A335FF4F2B990C98000DB157 /* PrimaryBtnSmall.swift in Sources */,
 				A3E027912B5F835F0083821C /* SecondaryBtn.swift in Sources */,
 				A335FECE2B72B01C000DB157 /* KHName.swift in Sources */,
 			);

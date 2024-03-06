@@ -62,8 +62,8 @@ struct ProfileViewBlue: View {
                        
                            VStack {
                                  HStack(spacing: 15) {
-                                     SmallBtnIcon(icon: "message-50", title: "Message", color1: Color.blue, color2: Color.blue3)
-                                     SmallBtnIcon(icon: "follow-50", title: "Follow", color1: Color.blue, color2: Color.blue3)
+                                     IconBtnSmall(icon: "message-50", title: "Message", color1: Color.blue, color2: Color.blue3)
+                                     IconBtnSmall(icon: "follow-50", title: "Follow", color1: Color.blue, color2: Color.blue3)
                                  }
                              }
                            .padding(.top, 10)
