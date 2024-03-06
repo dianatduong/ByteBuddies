@@ -9,17 +9,6 @@ import SwiftUI
 
 extension View {
     
-    //TEXTFIELD STYLES
-    func textFieldStyling() -> some View {
-        self
-            .keyboardType(.emailAddress)
-            .textInputAutocapitalization(.none)
-            .disableAutocorrection(true)
-            .textFieldStyle(.plain)
-            .multilineTextAlignment(.leading)
-    }
-    
-    
     //PLACEHOLDER TEXT
     func placeholder<Content: View>(
         when shouldShow: Bool,

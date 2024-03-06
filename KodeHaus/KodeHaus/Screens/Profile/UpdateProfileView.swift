@@ -10,24 +10,19 @@ import SwiftUI
 struct UpdateProfileView: View {
     @State private var name = ""
     @State private var email = ""
-    @State private var selectedState = "California"
+    @State private var location = ""
     
     var body: some View {
         
-        VStack(spacing: 10){
-            TextField("Name", text: $name)
-                .textFieldStyling()
-                .placeholder(when: name.isEmpty) {
-                    Text("Name")
-                        .foregroundColor(Color.btnGray3)
-                }
-            Rectangle()
-                .frame(width: 350, height: 1)
-                .foregroundColor(Color.btnGray2)
-                .padding(.bottom, 20)
+        VStack(spacing: 20) {
             
-            TextField("Email", text: $email)
+            CustomTextField(bindValue: $name, fieldName: "Name" , color: Color.btnGray1, frameHeight: 2, type: .text)
+
+            CustomTextField(bindValue: $email, fieldName: "Email" , color: Color.btnGray1, frameHeight: 2, type: .text)
+            
+            CustomTextField(bindValue: $location, fieldName: "City/State" , color: Color.btnGray1, frameHeight: 2, type: .text)
                
+            Spacer()
            // StatePicker()
         } //end vstack
         .frame(width: 350)

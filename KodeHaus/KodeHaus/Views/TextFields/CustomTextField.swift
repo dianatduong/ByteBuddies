@@ -27,7 +27,7 @@ struct CustomTextField: View {
             
                 .placeholder(when: bindValue.isEmpty) {
                     Text(fieldName)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.btnGray2)
                 }
             Rectangle()
                 .frame(height: frameHeight)
@@ -42,7 +42,7 @@ struct CustomTextField: View {
             
                 .placeholder(when: bindValue.isEmpty) {
                     Text(fieldName)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.btnGray2)
                 }
             Rectangle()
                 .frame(height: frameHeight)
