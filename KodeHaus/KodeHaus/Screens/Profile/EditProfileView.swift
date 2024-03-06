@@ -55,7 +55,7 @@ struct EditProfileView: View {
                             CustomTextField(bindValue: $location, fieldName: "City/State" , color: Color.btnGray1, frameHeight: 2, type: .text)
                         }
                     }
-                    .padding(.top, 40)
+                    .padding(.top,30)
                     
  
                     VStack(spacing: 10) {
@@ -80,7 +80,7 @@ struct EditProfileView: View {
              Spacer()
             }
             .frame(width: 350)
-g        }
+       }
     }
 }
 
