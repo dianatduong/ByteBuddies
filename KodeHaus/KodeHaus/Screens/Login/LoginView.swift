@@ -88,7 +88,7 @@ struct LoginView: View {
                                 viewModel.login()
                                 isProfileViewPresented = true // Set flag to present ProfileView
                             }) {
-                                PrimaryBtn50(title: "Login", color1: Color.magenta1, color2: Color.hotPink)
+                                PrimaryBtn50(title: "Login", color1: Color.magenta1, color2: Color.magenta1)
                             }
                             .background(NavigationLink("", destination: MyProfileView(), isActive: $isProfileViewPresented))
                         } //end Hstack

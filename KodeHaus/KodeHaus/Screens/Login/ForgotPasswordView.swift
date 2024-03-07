@@ -57,7 +57,7 @@ struct ForgotPasswordView: View {
                     print("Sign Up button tapped!")
                     viewModel.createAccount()
                 }) {
-                    PrimaryBtn50(title: "Submit", color1: Color.magenta1, color2: Color.hotPink)
+                    PrimaryBtn50(title: "Submit", color1: Color.magenta1, color2: Color.magenta1)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
                 }
                 
