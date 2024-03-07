@@ -64,7 +64,7 @@ struct MyProfileView: View {
                            Button(action: {
                                print("Create an Account button tapped!")
                            }) {
-                               PrimaryBtn(title: "Edit Profile")
+                               PrimaryBtn(title: "Edit Profile", color1: Color.magenta1, color2: Color.hotPink)
                            }
                            .padding(.top, 10)
                        } // end Profile VStack

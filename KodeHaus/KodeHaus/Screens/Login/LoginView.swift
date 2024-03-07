@@ -71,7 +71,7 @@ struct LoginView: View {
                             viewModel.login()
                             isProfileViewPresented = true // Set flag to present ProfileView
                         }) {
-                            PrimaryBtn(title: "Login")
+                            PrimaryBtn(title: "Login", color1: Color.magenta1, color2: Color.hotPink)
                         }
                         .background(NavigationLink("", destination: ProfileViewPink(), isActive: $isProfileViewPresented))
                         

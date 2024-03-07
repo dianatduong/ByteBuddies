@@ -57,7 +57,7 @@ struct ForgotPasswordView: View {
                     print("Create an Account button tapped!")
                     viewModel.createAccount()
                 }) {
-                    PrimaryBtn(title: "Submit")
+                    PrimaryBtn(title: "Submit", color1: Color.magenta1, color2: Color.hotPink)
                 }
                 
             } // end Vstack

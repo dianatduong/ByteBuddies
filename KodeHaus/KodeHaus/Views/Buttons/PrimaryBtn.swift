@@ -10,6 +10,8 @@ import SwiftUI
 struct PrimaryBtn: View {
     
     var title: LocalizedStringKey
+    var color1: Color
+    var color2: Color
     
     var body: some View {
         
@@ -20,11 +22,13 @@ struct PrimaryBtn: View {
             .frame(width:350, height:50)
             .background {
                    RoundedRectangle(cornerRadius: 28, style:.continuous)
-                       .fill(LinearGradient(colors: [Color.magenta1, Color.hotPink], startPoint: .leading, endPoint: .trailing))
+                       .fill(LinearGradient(colors: [color1, color2], 
+                                            startPoint: .leading,
+                                            endPoint: .trailing))
         }
     }
 }
 
 #Preview {
-    PrimaryBtn(title: "Login")
+    PrimaryBtn(title: "Login", color1: Color.magenta1, color2: Color.hotPink)
 }

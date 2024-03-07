@@ -25,8 +25,6 @@ struct SectionView: View {
                 .lineLimit(nil) // Allow the text to wrap onto the next line
                 .fixedSize(horizontal: false, vertical: true)
                 .foregroundColor(.black)
-
-               
         }
         .padding(30)
         .frame(width: 400, height: 150, alignment: .leading)
