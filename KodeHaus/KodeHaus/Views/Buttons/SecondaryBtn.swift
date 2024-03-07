@@ -19,7 +19,7 @@ struct SecondaryBtn: View {
             .foregroundColor(colorScheme == .dark ? .white : .magenta1)
             .fontWeight(.semibold)
             .padding()
-            .frame(width:350, height:50)
+            .frame(width:175, height:50)
             .background(
                 RoundedRectangle(cornerRadius: 15)
                     .stroke(LinearGradient(colors: [Color.magenta1, Color.blue1], startPoint: .leading, endPoint: .trailing), lineWidth: 3)

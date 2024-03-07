@@ -56,10 +56,12 @@ struct CreateAccountView: View {
                 CustomTextField(bindValue: $viewModel.passwordLogin, fieldName: "Password" , color: Color.magenta1, frameHeight: 3, type: .secure)
                 
                 Button(action: {
-                    print("Create an Account button tapped!")
+                    print("Sign Up button tapped!")
                     viewModel.createAccount()
                 }) {
-                    SecondaryBtn(title: "Create an Account")
+                    SecondaryBtn(title: "Sign Up")
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+
                 }
                 
             } // end Vstack

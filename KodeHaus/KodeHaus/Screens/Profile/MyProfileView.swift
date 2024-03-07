@@ -65,14 +65,8 @@ struct MyProfileView: View {
                         Button(action: {
                             print("Edit Button tapped")
                         }) {
-                            PrimaryBtnSmall(title: "Edit Profile", color1: Color.magenta1, color2: Color.pink)
+                            PrimaryBtn100(title: "Edit Profile", color1: Color.magenta1, color2: Color.pink)
                         }
-                        Image(systemName: "gear")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundColor(.magenta1)
-                            //.padding(15)
-                            .frame(width:50, height: 50)
                         
                     }// Hstack
                 } // end Profile VStack

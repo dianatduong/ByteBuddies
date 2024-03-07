@@ -54,10 +54,11 @@ struct ForgotPasswordView: View {
                 CustomTextField(bindValue: $viewModel.passwordLogin, fieldName: "Password" , color: Color.magenta1, frameHeight: 3, type: .secure)
                 
                 Button(action: {
-                    print("Create an Account button tapped!")
+                    print("Sign Up button tapped!")
                     viewModel.createAccount()
                 }) {
-                    PrimaryBtn(title: "Submit", color1: Color.magenta1, color2: Color.hotPink)
+                    PrimaryBtn50(title: "Submit", color1: Color.magenta1, color2: Color.hotPink)
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
                 }
                 
             } // end Vstack

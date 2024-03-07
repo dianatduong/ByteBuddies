@@ -113,7 +113,7 @@ struct EditProfileView: View {
                 
                 VStack {
                     //Example Button
-                    PrimaryBtn(title: "Save Changes", color1: primaryColor, color2: secondaryColor)
+                    PrimaryBtn50(title: "Save Changes", color1: primaryColor, color2: secondaryColor)
                 }
                 .padding(.top, 15)
                 
