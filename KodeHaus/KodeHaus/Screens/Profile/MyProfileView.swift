@@ -63,13 +63,13 @@ struct MyProfileView: View {
                                 .font(.system(size: 15))
                                 .multilineTextAlignment(.center)
                     }
-                 
-                    HStack {
-                        // Edit Profile Button
-                        NavigationLink(destination: EditProfileView()) {
-                            PrimaryBtn100(title: "Edit Profile", color1: Color.magenta1, color2: Color.pink)
-                        }
-                    }// Hstack
+                
+                    // Edit Profile Button
+                    NavigationLink(destination: EditProfileView()) {
+                        PrimaryBtn100(title: "Edit Profile", color1: Color.magenta1, color2: Color.pink)
+                            .padding(.top, 5)
+                    }
+
                 } // end Profile VStack
                 .offset(y: -135)
                 

@@ -10,7 +10,7 @@ import SwiftUI
 import SwiftUI
 
 struct EditProfileView: View {
-    @State private var profileImage: Image? = Image("bulldog-glasses")
+    @State private var profileImage: Image? = Image(systemName: "person.fill")
     @State private var fullName = ""
     @State private var techRole = ""
     @State private var location = ""
@@ -36,9 +36,15 @@ struct EditProfileView: View {
                             // Profile Picture
                             profileImage?
                                 .resizable()
-                                .aspectRatio(contentMode: .fill)
+                                .aspectRatio(contentMode: .fit)
                                 .frame(width: 130, height: 130)
                                 .clipShape(Circle())
+                                .overlay(
+                                 Circle()
+                                     .stroke(LinearGradient(colors: [primaryColor, secondaryColor],
+                                                            startPoint: .leading,
+                                                            endPoint: .trailing), lineWidth: 5)
+                                )
                             
                             VStack(spacing: 10) {
                                 // Edit Picture
