@@ -26,11 +26,9 @@ struct EditProfileView: View {
                     .padding(.top, 20)
                 
                 VStack {
-                    
-                    // Profile Picture
                     Section {
                         HStack(spacing: 40) {
-                            
+                            // Profile Picture
                             profileImage?
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -38,6 +36,7 @@ struct EditProfileView: View {
                                 .clipShape(Circle())
                             
                             VStack(spacing: 10) {
+                                // Edit Picture
                                 Button(action: {
                                     // Add action to change profile picture
                                 }) {
@@ -45,7 +44,7 @@ struct EditProfileView: View {
                                         .font(Font.system(size: 16, weight: .bold))
                                         .foregroundColor(.blue)
                                 }
-                                
+                                // Delete Picture
                                 Button(action: {
                                     // Add action to change profile picture
                                 }) {
@@ -57,16 +56,12 @@ struct EditProfileView: View {
                         }
                         .padding(.vertical, 12)
                     }
-                   
                 }
-                
-                
                 
                 VStack(spacing: 20) {
                     VStack(spacing: 14) {
-                        
-                        //Personal Info
                         Section {
+                            //Personal Info
                             Text("Personal Info:")
                                 .textCase(.uppercase)
                                 .font(Font.system(size: 16, weight: .bold))
@@ -74,22 +69,20 @@ struct EditProfileView: View {
                                 .padding(.leading, 0)
                                 .padding(.bottom, 5)
                             
+                            //Name
                             CustomTextField(bindValue: $fullName, fieldName: "Name" , color: Color.btnGray1, frameHeight: 2, type: .text)
-                            
+                            //Tech Role
                             CustomTextField(bindValue: $techRole, fieldName: "Tech Role" , color: Color.btnGray1, frameHeight: 2, type: .text)
-                            
+                            //City/State
                             CustomTextField(bindValue: $location, fieldName: "City/State" , color: Color.btnGray1, frameHeight: 2, type: .text)
                         }
                     }
                     .padding(.top, 20)
                     
                     
-                    
                     VStack{
-                        
-                        //Color Profile
                         Section {
-                            
+                            //Color Theme
                             Text("Color theme:")
                                 .textCase(.uppercase)
                                 .font(Font.system(size: 16, weight: .bold))
@@ -98,13 +91,13 @@ struct EditProfileView: View {
                                 .padding(.bottom, 5)
                                       
                             VStack(spacing: 14)  {
-                                
+                                //Primary Color picker
                                 ColorPicker("Primary Color", selection: $primaryColor)
                                     .foregroundColor(Color.gray)
-                                
+                                //Secondary Color picker
                                 ColorPicker("Secondary Color", selection: $secondaryColor)
                                     .foregroundColor(Color.gray)
-                                
+                                //Example Button
                                 PrimaryBtnSmall(title: "Example", color1: primaryColor, color2: secondaryColor)
                             }
                         }
