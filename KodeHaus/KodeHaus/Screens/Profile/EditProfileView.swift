@@ -21,15 +21,14 @@ struct EditProfileView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Text("Edit Profile")
+                    .font(Font.system(size: 20, weight: .bold))
+                    .padding(.top, 20)
                 
                 VStack {
                     
                     // Profile Picture
-                    Section(header:
-                                Text("Profile Picture")
-                        .textCase(.uppercase)
-                        .font(Font.system(size: 18, weight:.bold))
-                    ) {
+                    Section {
                         HStack(spacing: 40) {
                             
                             profileImage?
@@ -43,7 +42,7 @@ struct EditProfileView: View {
                                     // Add action to change profile picture
                                 }) {
                                     Text("Edit picture")
-                                        .font(Font.system(size: 18, weight: .bold))
+                                        .font(Font.system(size: 16, weight: .bold))
                                         .foregroundColor(.blue)
                                 }
                                 
@@ -51,7 +50,7 @@ struct EditProfileView: View {
                                     // Add action to change profile picture
                                 }) {
                                     Text("Delete picture")
-                                        .font(Font.system(size: 18, weight: .bold))
+                                        .font(Font.system(size: 16, weight: .bold))
                                         .foregroundColor(.blue)
                                 }
                             }
@@ -60,18 +59,20 @@ struct EditProfileView: View {
                     }
                    
                 }
-                .padding(.top, 30)
+                
                 
                 
                 VStack(spacing: 20) {
                     VStack(spacing: 14) {
                         
                         //Personal Info
-                        Section(header:
-                                    Text("Profile Info")
-                                        .textCase(.uppercase)
-                                        .font(Font.system(size: 18, weight:.bold))
-                        ) {
+                        Section {
+                            Text("Personal Info:")
+                                .textCase(.uppercase)
+                                .font(Font.system(size: 16, weight: .bold))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.leading, 0)
+                                .padding(.bottom, 5)
                             
                             CustomTextField(bindValue: $fullName, fieldName: "Name" , color: Color.btnGray1, frameHeight: 2, type: .text)
                             
@@ -80,19 +81,24 @@ struct EditProfileView: View {
                             CustomTextField(bindValue: $location, fieldName: "City/State" , color: Color.btnGray1, frameHeight: 2, type: .text)
                         }
                     }
-                    .padding(.top, 50)
+                    .padding(.top, 20)
                     
                     
                     
                     VStack{
                         
                         //Color Profile
-                        Section(header:
-                                    Text("Select color profile")
-                                        .textCase(.uppercase)
-                                        .font(Font.system(size: 18, weight:.bold))
-                        ) {
+                        Section {
+                            
+                            Text("Color theme:")
+                                .textCase(.uppercase)
+                                .font(Font.system(size: 16, weight: .bold))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.leading, 0)
+                                .padding(.bottom, 5)
+                                      
                             VStack(spacing: 14)  {
+                                
                                 ColorPicker("Primary Color", selection: $primaryColor)
                                     .foregroundColor(Color.gray)
                                 
@@ -104,7 +110,7 @@ struct EditProfileView: View {
                         }
                         .font(Font.system(size: 18))
                     }
-                    .padding(.vertical, 50)
+                    .padding(.vertical, 30)
                 }
                 .frame(width: 350)
                 Spacer()
