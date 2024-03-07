@@ -23,10 +23,7 @@ struct PrimaryBtnSmall: View {
             Text(title)
                 .font(.system(size: 16))
                 .foregroundColor(.white)
-            
                 .bold()
-            
-            
                 .frame(width: 155, height: 40)
                 .background(LinearGradient(colors: [color1, color2],
                                            startPoint: .leading,
