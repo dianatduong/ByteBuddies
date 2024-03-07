@@ -18,14 +18,17 @@ struct EditProfileView: View {
     @State private var primaryColor = Color.magenta1
     @State private var secondaryColor = Color.pink
     
+    
     var body: some View {
         NavigationView {
             VStack {
                 Text("Edit Profile")
-                    .font(Font.system(size: 24, weight: .semibold))
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    //.padding(.leading, 0)
-                    //.padding(.top, 10)
+                    .font(Font.system(size: 20, weight: .semibold))
+                    .ignoresSafeArea(.all)
+                    .padding(.top, 1)
+                
+                Divider()
+                    .background(.btnGray1)
                 
                 VStack {
                     Section {

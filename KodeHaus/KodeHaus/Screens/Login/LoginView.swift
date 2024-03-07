@@ -90,7 +90,7 @@ struct LoginView: View {
                             }) {
                                 PrimaryBtn50(title: "Login", color1: Color.magenta1, color2: Color.hotPink)
                             }
-                            .background(NavigationLink("", destination: ProfileViewPink(), isActive: $isProfileViewPresented))
+                            .background(NavigationLink("", destination: MyProfileView(), isActive: $isProfileViewPresented))
                         } //end Hstack
                         .padding(.top, 10)
                         
