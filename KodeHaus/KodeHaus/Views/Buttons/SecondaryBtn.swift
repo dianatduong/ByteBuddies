@@ -22,11 +22,7 @@ struct SecondaryBtn: View {
             .frame(width:350, height:50)
             .background(
                 RoundedRectangle(cornerRadius: 15)
-                    .fill(Color.clear)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 15)
-                            .stroke(LinearGradient(colors: [Color.magenta1, Color.blue1], startPoint: .leading, endPoint: .trailing), lineWidth: 3)
-                    )
+                    .stroke(LinearGradient(colors: [Color.magenta1, Color.blue1], startPoint: .leading, endPoint: .trailing), lineWidth: 3)
             )
     }
 }
