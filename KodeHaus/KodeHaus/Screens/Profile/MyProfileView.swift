@@ -39,8 +39,8 @@ struct MyProfileView: View {
                         .offset(y: -140)
                 } //end Vstack
                 
-                VStack(spacing: 10) {
-                    VStack {
+                VStack{
+                    VStack(spacing: 4) {
                         //Name
                         Text("Jane Doe")
                             .font(.system(size: 26))
@@ -52,21 +52,29 @@ struct MyProfileView: View {
                             .font(.system(size: 16))
                             .multilineTextAlignment(.center)
                             .foregroundColor(colorScheme == .dark ? .white : .black)
+                    }
                         //Location
                         HStack(spacing: 2) {
                             Image(colorScheme == .dark ? "location-wht-50" : "location-blk-50" )
                             Text("Minneapolis, MN ")
                                 .font(.system(size: 15))
                                 .multilineTextAlignment(.center)
+                    }
+                    HStack {
+                        //Edit Profile Button
+                        Button(action: {
+                            print("Edit Button tapped")
+                        }) {
+                            PrimaryBtnSmall(title: "Edit Profile", color1: Color.magenta1, color2: Color.pink)
                         }
-                    }
-                    //Edit Profile Button
-                    Button(action: {
-                        print("Edit Button tapped")
-                    }) {
-                        PrimaryBtn(title: "Edit Profile", color1: Color.magenta1, color2: Color.hotPink)
-                    }
-                    .padding(.top, 10)
+                        Image(systemName: "gear")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(.magenta1)
+                            //.padding(15)
+                            .frame(width:50, height: 50)
+                        
+                    }// Hstack
                 } // end Profile VStack
                 .offset(y: -135)
                 

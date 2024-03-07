@@ -56,7 +56,7 @@ struct EditProfileView: View {
                         }
                         .padding(.vertical, 12)
                     }
-                }
+                } //end Vstack
                 
                 VStack(spacing: 20) {
                     VStack(spacing: 14) {
@@ -76,11 +76,10 @@ struct EditProfileView: View {
                             //City/State
                             CustomTextField(bindValue: $location, fieldName: "City/State" , color: Color.btnGray1, frameHeight: 2, type: .text)
                         }
-                    }
+                    }//end vstack
                     .padding(.top, 20)
                     
-                    
-                    VStack{
+                    VStack {
                         Section {
                             //Color Theme
                             Text("Color theme:")
@@ -97,19 +96,28 @@ struct EditProfileView: View {
                                 //Secondary Color picker
                                 ColorPicker("Secondary Color", selection: $secondaryColor)
                                     .foregroundColor(Color.gray)
-                                //Example Button
-                                PrimaryBtnSmall(title: "Example", color1: primaryColor, color2: secondaryColor)
                             }
                         }
                         .font(Font.system(size: 18))
                     }
-                    .padding(.vertical, 30)
-                }
+                    .padding(.vertical, 40)
+                }//end Vstack
                 .frame(width: 350)
+                
+                Divider()
+                    .background(.gray)
+                    .padding(.horizontal, 20)
+                
+                VStack {
+                    //Example Button
+                    PrimaryBtn(title: "Save Changes", color1: primaryColor, color2: secondaryColor)
+                }
+                .padding(.top, 15)
+                
                 Spacer()
-            }
-            
-        }
+                
+            } //end vstack
+        } //end navView
     }
 }
 
