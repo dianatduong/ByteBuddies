@@ -21,7 +21,7 @@ struct PrimaryBtn: View {
             .padding()
             .frame(width:350, height:50)
             .background {
-                   RoundedRectangle(cornerRadius: 28, style:.continuous)
+                   RoundedRectangle(cornerRadius: 15, style:.continuous)
                        .fill(LinearGradient(colors: [color1, color2], 
                                             startPoint: .leading,
                                             endPoint: .trailing))

@@ -22,8 +22,10 @@ struct EditProfileView: View {
         NavigationView {
             VStack {
                 Text("Edit Profile")
-                    .font(Font.system(size: 20, weight: .bold))
-                    .padding(.top, 20)
+                    .font(Font.system(size: 24, weight: .semibold))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    //.padding(.leading, 0)
+                    //.padding(.top, 10)
                 
                 VStack {
                     Section {
@@ -54,7 +56,7 @@ struct EditProfileView: View {
                                 }
                             }
                         }
-                        .padding(.vertical, 12)
+                        .padding(.vertical, 20)
                     }
                 } //end Vstack
                 
@@ -62,9 +64,9 @@ struct EditProfileView: View {
                     VStack(spacing: 14) {
                         Section {
                             //Personal Info
-                            Text("Personal Info:")
+                            Text("About Me:")
                                 .textCase(.uppercase)
-                                .font(Font.system(size: 16, weight: .bold))
+                                .font(Font.system(size: 16, weight: .semibold))
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .padding(.leading, 0)
                                 .padding(.bottom, 5)
@@ -84,7 +86,7 @@ struct EditProfileView: View {
                             //Color Theme
                             Text("Color theme:")
                                 .textCase(.uppercase)
-                                .font(Font.system(size: 16, weight: .bold))
+                                .font(Font.system(size: 16, weight: .semibold))
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .padding(.leading, 0)
                                 .padding(.bottom, 5)
@@ -100,13 +102,14 @@ struct EditProfileView: View {
                         }
                         .font(Font.system(size: 18))
                     }
-                    .padding(.vertical, 40)
+                    .padding(.vertical, 30)
                 }//end Vstack
-                .frame(width: 350)
+           
+                
+                Spacer()
                 
                 Divider()
-                    .background(.gray)
-                    .padding(.horizontal, 20)
+                    .background(.btnGray1)
                 
                 VStack {
                     //Example Button
@@ -114,9 +117,10 @@ struct EditProfileView: View {
                 }
                 .padding(.top, 15)
                 
-                Spacer()
+          
                 
             } //end vstack
+            .frame(width: 350)
         } //end navView
     }
 }

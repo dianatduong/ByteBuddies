@@ -35,7 +35,7 @@ struct IconBtnSmall: View {
                  .background(LinearGradient(colors: [color1, color2],
                                             startPoint: .leading,
                                             endPoint: .trailing))
-                 .cornerRadius(28)
+                 .cornerRadius(15)
                  
              }
             
