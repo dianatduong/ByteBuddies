@@ -81,7 +81,7 @@ struct EditProfileView: View {
                     }
                 } // End of Profile Picture Section
                 
-                VStack(spacing: 10) {
+                VStack(spacing: 12) {
                     // Personal Info
                     Text("About Me:")
                         .textCase(.uppercase)
