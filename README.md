@@ -18,14 +18,15 @@ SWIFT | SWIFTUI | API | Firebase
 <br>
 
 ### Light Mode
-Login > Create an Account Modal > Forgot Password?
+<b>Login<b>
 <br>
-<img alt="Login" src="https://github.com/dianatduong/KodeHaus/assets/14034457/1fd17a44-46b8-4e3f-b3b0-46f62dbff588" width="225">...
-<img alt="Create an Account Modal" src="https://github.com/dianatduong/KodeHaus/assets/14034457/e13f1f9d-c5e4-4f3e-b9a6-e53683590e30" width="225">...
-<img alt="Forgot Password?" src="https://github.com/dianatduong/KodeHaus/assets/14034457/9118c567-8bc2-40fb-8d9b-d2158277c8fd" width="225">
-<br>
+<img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/ebe5994f-399b-4a4a-8802-aab4c05b0156" width="225">...
+<img alt="Create an Account Modal" src="https://github.com/dianatduong/KodeHaus/assets/14034457/9551bd5a-cfbb-4c89-8da9-a8fc960ce0fe" width="225">...
+<img alt="Forgot Password?" src="https://github.com/dianatduong/KodeHaus/assets/14034457/bdd9a9e0-9ca4-43cb-b4c7-1e1a8fccdae1" width="225">
+<br><br>
 
-Profile Views
+
+<b>Profile Views</b>
 <br>
 <img alt="Profile View - Pink" src="https://github.com/dianatduong/KodeHaus/assets/14034457/68da6f85-5365-44b3-9df4-827c3b8f508d" width="225">...
 <img alt="Profile View - Blue" src="https://github.com/dianatduong/KodeHaus/assets/14034457/bfc2abc8-85c8-4a64-aab8-7b5ad54dbff2" width="225">
@@ -33,12 +34,22 @@ Profile Views
 <br><br>
 
 
+<b>Edit Profile</b>
+<br>
+<img alt="Edit Profile - Blue" src="https://github.com/dianatduong/KodeHaus/assets/14034457/8b85ac89-c0eb-4d51-b6c7-2da4f6975d71" width="225">...
+<img alt="Edit Profile" src="https://github.com/dianatduong/KodeHaus/assets/14034457/65a951cf-6542-4824-bff0-dbec64dbcd5e" width="225">
+
+
+<br><br>
+
+
+
 ### Dark Mode
 Login > Create an Account Modal > Forgot Password?
 <br>
-<img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/643f31ca-74b7-42f1-a9e4-e5c589fcf677" width="225">...
-<img alt="Create an Account Modal" src="https://github.com/dianatduong/KodeHaus/assets/14034457/d0ed1f3b-4462-4026-ba43-a1816c92576a" width="225">...
-<img alt="Forgot Password?" src="https://github.com/dianatduong/KodeHaus/assets/14034457/09d9dd94-8770-40d5-80c9-912cbca4535e" width="225">
+<img alt="Login Screen" src="https://github.com/dianatduong/KodeHaus/assets/14034457/ab6b6004-4de3-4db8-9be6-100522cfe86f" width="225">...
+<img alt="Create an Account Modal" src="https://github.com/dianatduong/KodeHaus/assets/14034457/62a5fff1-2fc1-44bf-a5d3-06aeeb5881ac" width="225">...
+<img alt="Forgot Password?" src="https://github.com/dianatduong/KodeHaus/assets/14034457/686e5551-688d-4782-8bdf-dfbacfa4a9c8" width="225">
 
 <br>
 
