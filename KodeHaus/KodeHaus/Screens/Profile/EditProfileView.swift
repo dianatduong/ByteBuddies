@@ -31,119 +31,111 @@ struct EditProfileView: View {
                 Divider()
                     .background(.btnGray1)
                 
-                VStack {
-                    Section {
-                        HStack(spacing: 40) {
-                            // Profile Picture
-                            PhotosPicker(selection: $photosPickerItem, matching: .images) {
-                                Image(uiImage: profileImage ?? UIImage(systemName: "person.crop.circle.fill")!)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width: 120, height: 120)
-                                    .clipShape(Circle())
-                                    .overlay(
-                                     Circle()
-                                         .stroke(LinearGradient(colors: [primaryColor, secondaryColor], startPoint: .leading, endPoint: .trailing), lineWidth: 6))
-                            }
-                            
-                            VStack(spacing: 10) {
-                                // Edit Picture
-                                Button(action: {
-                                    // Add action to change profile picture
-                                }) {
-                                    Text("Edit picture")
-                                        .font(Font.system(size: 16, weight: .bold))
-                                        .foregroundColor(.blue)
-                                }
-                                // Delete Picture
-                                Button(action: {
-                                    // Add action to change profile picture
-                                }) {
-                                    Text("Delete picture")
-                                        .font(Font.system(size: 16, weight: .bold))
-                                        .foregroundColor(.blue)
-                                }
-                            } // end vstack
-                        } //end Hstack
-                        .padding(.vertical, 20)
-                        onChange(of: photosPickerItem) { _, _ in
-                            
-                            Task {
-                                if let photosPickerItem, //if it is not empty
-                                   let data = try? await photosPickerItem.loadTransferable(type: Data.self) { // get data from the photosPickerItem using async await
-                                    if let image = UIImage(data: data) {
-                                        profileImage = image
-                                    }
-                                }
-                                photosPickerItem = nil
-                            }
-                            
-                        }
-                        
-                    } //end section
-                } //end Vstack
-                
-                VStack(spacing: 20) {
-                    VStack(spacing: 14) {
-                        Section {
-                            //Personal Info
-                            Text("About Me:")
-                                .textCase(.uppercase)
-                                .font(Font.system(size: 16, weight: .semibold))
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .padding(.leading, 0)
-                                .padding(.bottom, 5)
-                            
-                            //Name
-                            CustomTextField(bindValue: $fullName, fieldName: "Name" , color: Color.btnGray1, frameHeight: 2, type: .text)
-                            //Tech Role
-                            CustomTextField(bindValue: $techRole, fieldName: "Tech Role" , color: Color.btnGray1, frameHeight: 2, type: .text)
-                            //City/State
-                            CustomTextField(bindValue: $location, fieldName: "City/State" , color: Color.btnGray1, frameHeight: 2, type: .text)
-                        }
-                    }//end vstack
-                    .padding(.top, 20)
-                    
+                Section {
+                    // Profile Picture
                     VStack {
-                        Section {
-                            //Color Theme
-                            Text("Color theme:")
-                                .textCase(.uppercase)
-                                .font(Font.system(size: 16, weight: .semibold))
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .padding(.leading, 0)
-                                .padding(.bottom, 5)
-                                      
-                            VStack(spacing: 14)  {
-                                //Primary Color picker
-                                ColorPicker("Primary Color", selection: $primaryColor)
-                                    .foregroundColor(Color.gray)
-                                //Secondary Color picker
-                                ColorPicker("Secondary Color", selection: $secondaryColor)
-                                    .foregroundColor(Color.gray)
-                            }
+                        PhotosPicker(selection: $photosPickerItem, matching: .images) {
+                            if let image = profileImage {
+                                               Image(uiImage: image)
+                                                   .resizable()
+                                                   .aspectRatio(contentMode: .fill)
+                                                   .frame(width: 130, height: 130)
+                                                   .clipShape(Circle())
+                                                   .overlay(
+                                                       Circle()
+                                                           .stroke(LinearGradient(colors: [primaryColor, secondaryColor], startPoint: .leading, endPoint: .trailing), lineWidth: 5))
+                                           } else {
+                                               Image("default-img")
+                                                   .resizable()
+                                                   .aspectRatio(contentMode: .fit)
+                                                   .frame(width: 130, height: 130)
+                                                   .padding(.leading, 20)
+                                                   .padding(.top, 8)
+                                                   .clipShape(Circle())
+                                                   .overlay(
+                                                       Circle()
+                                                           .stroke(LinearGradient(colors: [primaryColor, secondaryColor], startPoint: .leading, endPoint: .trailing), lineWidth: 5))
+                                           }
                         }
-                        .font(Font.system(size: 18))
+                        // Delete Picture
+                        Button(action: {
+                            profileImage = nil // Delete the profile picture
+                        }) {
+                            Text("Delete picture")
+                                .font(Font.system(size: 16, weight: .bold))
+                                .foregroundColor(.blue)
+                                .padding(.top, 5)
+                        }
+                    } // End of Profile Picture VStack
+                    .padding(.vertical, 20)
+                    .onChange(of: photosPickerItem) { _, _ in
+                        Task {
+                            if let photosPickerItem, //if it is not empty
+                               let data = try? await photosPickerItem.loadTransferable(type: Data.self) { // get data from the photosPickerItem using async await
+                                if let image = UIImage(data: data) {
+                                    profileImage = image
+                                }
+                            }
+                            photosPickerItem = nil
+                        }
                     }
-                    .padding(.vertical, 30)
-                }//end Vstack
-           
+                } // End of Profile Picture Section
+                
+                VStack(spacing: 10) {
+                    // Personal Info
+                    Text("About Me:")
+                        .textCase(.uppercase)
+                        .font(Font.system(size: 16, weight: .semibold))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading, 0)
+                        .padding(.bottom, 5)
+                    
+                    // Name
+                    CustomTextField(bindValue: $fullName, fieldName: "Name", color: Color.btnGray1, frameHeight: 2, type: .text)
+                    
+                    // Tech Role
+                    CustomTextField(bindValue: $techRole, fieldName: "Tech Role", color: Color.btnGray1, frameHeight: 2, type: .text)
+                    
+                    // City/State
+                    CustomTextField(bindValue: $location, fieldName: "City/State", color: Color.btnGray1, frameHeight: 2, type: .text)
+                } // End of Personal Info Section
+                .padding(.top, 10)
+                
+                
+                VStack {
+                    // Color Theme
+                    Text("Color theme:")
+                        .textCase(.uppercase)
+                        .font(Font.system(size: 16, weight: .semibold))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading, 0)
+                        .padding(.bottom, 5)
+                    
+                    VStack(spacing: 12) {
+                        // Primary Color picker
+                        ColorPicker("Primary Color", selection: $primaryColor)
+                            .foregroundColor(Color.gray)
+                        // Secondary Color picker
+                        ColorPicker("Secondary Color", selection: $secondaryColor)
+                            .foregroundColor(Color.gray)
+                    }
+                } // End of Color Theme Section
+                .padding(.top, 25)
+               
                 
                 Spacer()
                 
                 Divider()
                     .background(.btnGray1)
                 
+                // Example Button
                 VStack {
-                    //Example Button
                     PrimaryBtn50(title: "Save Changes", color1: primaryColor, color2: secondaryColor)
                 }
                 .padding(.top, 15)
-                
-          
-                
-            } //end vstack
+            } // End of Main VStack
             .frame(width: 350)
+
         } //end navView
     }
 }
