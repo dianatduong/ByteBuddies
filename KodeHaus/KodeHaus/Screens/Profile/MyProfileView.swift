@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct MyProfileView: View {
     
     @Environment(\.colorScheme) var colorScheme  //dark mode
     @State private var isProfileViewPresented = false
-
+    
+    @State private var profileImage: UIImage?
+    @State private var photosPickerItem: PhotosPickerItem?
+    
     
     
     var body: some View {
@@ -20,13 +24,26 @@ struct MyProfileView: View {
             Color(colorScheme == .dark ? .black : .btnGray1)
             
             ScrollView {
+                
                 VStack {
                     //Background image
-                    Image("pink-bkgrd")
-                        .resizable()
-                        .frame(width: 450, height: 200)
-                        .aspectRatio(contentMode: .fit)
-                        .edgesIgnoringSafeArea(.top)
+                    PhotosPicker(selection: $photosPickerItem, matching: .images) {
+                        if let image = profileImage {
+                            Image(uiImage: image)
+                                .resizable()
+                                .frame(width: 450, height: 200)
+                                .aspectRatio(contentMode: .fit)
+                                .edgesIgnoringSafeArea(.top)
+                            
+                        } else {
+                            Image("pink-bkgrd")
+                                .resizable()
+                                .frame(width: 450, height: 200)
+                                .aspectRatio(contentMode: .fit)
+                                .edgesIgnoringSafeArea(.top)
+                        }
+                    }
+
                     //Profile Image
                     Image("bulldog-glasses")
                         .resizable()
@@ -41,6 +58,17 @@ struct MyProfileView: View {
                         )
                         .offset(y: -140)
                 } //end Vstack
+                .onChange(of: photosPickerItem) { _, _ in
+                    Task {
+                        if let photosPickerItem, //if it is not empty
+                           let data = try? await photosPickerItem.loadTransferable(type: Data.self) { // get data from the photosPickerItem using async await
+                            if let image = UIImage(data: data) {
+                                profileImage = image
+                            }
+                        }
+                        photosPickerItem = nil
+                    }
+                }
                 
                 VStack{
                     VStack(spacing: 4) {
@@ -56,20 +84,20 @@ struct MyProfileView: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(colorScheme == .dark ? .white : .black)
                     }
-                        //Location
-                        HStack(spacing: 2) {
-                            Image(colorScheme == .dark ? "location-wht-50" : "location-blk-50" )
-                            Text("Minneapolis, MN ")
-                                .font(.system(size: 15))
-                                .multilineTextAlignment(.center)
+                    //Location
+                    HStack(spacing: 2) {
+                        Image(colorScheme == .dark ? "location-wht-50" : "location-blk-50" )
+                        Text("Minneapolis, MN ")
+                            .font(.system(size: 15))
+                            .multilineTextAlignment(.center)
                     }
-                
+                    
                     // Edit Profile Button
                     NavigationLink(destination: EditProfileView()) {
                         PrimaryBtn100(title: "Edit Profile", color1: Color.magenta1, color2: Color.pink)
                             .padding(.top, 5)
                     }
-
+                    
                 } // end Profile VStack
                 .offset(y: -135)
                 

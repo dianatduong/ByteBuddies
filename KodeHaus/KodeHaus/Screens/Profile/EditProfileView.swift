@@ -36,26 +36,26 @@ struct EditProfileView: View {
                     VStack {
                         PhotosPicker(selection: $photosPickerItem, matching: .images) {
                             if let image = profileImage {
-                                               Image(uiImage: image)
-                                                   .resizable()
-                                                   .aspectRatio(contentMode: .fill)
-                                                   .frame(width: 130, height: 130)
-                                                   .clipShape(Circle())
-                                                   .overlay(
-                                                       Circle()
-                                                           .stroke(LinearGradient(colors: [primaryColor, secondaryColor], startPoint: .leading, endPoint: .trailing), lineWidth: 5))
-                                           } else {
-                                               Image("default-img")
-                                                   .resizable()
-                                                   .aspectRatio(contentMode: .fit)
-                                                   .frame(width: 130, height: 130)
-                                                   .padding(.leading, 20)
-                                                   .padding(.top, 8)
-                                                   .clipShape(Circle())
-                                                   .overlay(
-                                                       Circle()
-                                                           .stroke(LinearGradient(colors: [primaryColor, secondaryColor], startPoint: .leading, endPoint: .trailing), lineWidth: 5))
-                                           }
+                                Image(uiImage: image)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 130, height: 130)
+                                    .clipShape(Circle())
+                                    .overlay(
+                                        Circle()
+                                            .stroke(LinearGradient(colors: [primaryColor, secondaryColor], startPoint: .leading, endPoint: .trailing), lineWidth: 5))
+                            } else {
+                                Image("default-img")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 130, height: 130)
+                                    .padding(.leading, 20)
+                                    .padding(.top, 8)
+                                    .clipShape(Circle())
+                                    .overlay(
+                                        Circle()
+                                            .stroke(LinearGradient(colors: [primaryColor, secondaryColor], startPoint: .leading, endPoint: .trailing), lineWidth: 5))
+                            }
                         }
                         // Delete Picture
                         Button(action: {
@@ -121,7 +121,7 @@ struct EditProfileView: View {
                     }
                 } // End of Color Theme Section
                 .padding(.top, 25)
-               
+                
                 
                 Spacer()
                 
@@ -135,7 +135,7 @@ struct EditProfileView: View {
                 .padding(.top, 15)
             } // End of Main VStack
             .frame(width: 350)
-
+            
         } //end navView
     }
 }
