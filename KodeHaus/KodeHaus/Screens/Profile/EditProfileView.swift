@@ -10,7 +10,7 @@ import SwiftUI
 import SwiftUI
 
 struct EditProfileView: View {
-    @State private var profileImage: Image? = Image(systemName: "person.fill")
+    @State private var profileImage: Image? = Image(systemName: "person.crop.circle.fill")
     @State private var fullName = ""
     @State private var techRole = ""
     @State private var location = ""
