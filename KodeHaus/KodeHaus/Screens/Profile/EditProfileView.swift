@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
-
-import SwiftUI
+import PhotosUI
 
 struct EditProfileView: View {
-    @State private var profileImage: Image? = Image(systemName: "person.crop.circle.fill")
+    @State private var profileImage: UIImage?
+    @State private var photosPickerItem: PhotosPickerItem?
+    
     @State private var fullName = ""
     @State private var techRole = ""
     @State private var location = ""
@@ -34,17 +35,16 @@ struct EditProfileView: View {
                     Section {
                         HStack(spacing: 40) {
                             // Profile Picture
-                            profileImage?
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 130, height: 130)
-                                .clipShape(Circle())
-                                .overlay(
-                                 Circle()
-                                     .stroke(LinearGradient(colors: [primaryColor, secondaryColor],
-                                                            startPoint: .leading,
-                                                            endPoint: .trailing), lineWidth: 5)
-                                )
+                            PhotosPicker(selection: $photosPickerItem, matching: .images) {
+                                Image(uiImage: profileImage ?? UIImage(systemName: "person.crop.circle.fill")!)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 120, height: 120)
+                                    .clipShape(Circle())
+                                    .overlay(
+                                     Circle()
+                                         .stroke(LinearGradient(colors: [primaryColor, secondaryColor], startPoint: .leading, endPoint: .trailing), lineWidth: 6))
+                            }
                             
                             VStack(spacing: 10) {
                                 // Edit Picture
@@ -63,10 +63,24 @@ struct EditProfileView: View {
                                         .font(Font.system(size: 16, weight: .bold))
                                         .foregroundColor(.blue)
                                 }
-                            }
-                        }
+                            } // end vstack
+                        } //end Hstack
                         .padding(.vertical, 20)
-                    }
+                        onChange(of: photosPickerItem) { _, _ in
+                            
+                            Task {
+                                if let photosPickerItem, //if it is not empty
+                                   let data = try? await photosPickerItem.loadTransferable(type: Data.self) { // get data from the photosPickerItem using async await
+                                    if let image = UIImage(data: data) {
+                                        profileImage = image
+                                    }
+                                }
+                                photosPickerItem = nil
+                            }
+                            
+                        }
+                        
+                    } //end section
                 } //end Vstack
                 
                 VStack(spacing: 20) {
