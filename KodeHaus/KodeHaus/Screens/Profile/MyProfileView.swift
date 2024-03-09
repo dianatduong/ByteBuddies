@@ -17,6 +17,9 @@ struct MyProfileView: View {
     @State private var photosPickerItem: PhotosPickerItem?
     
     
+    @State private var userInput = "hello"
+    
+    
     
     var body: some View {
         
@@ -102,14 +105,24 @@ struct MyProfileView: View {
                 .offset(y: -135)
                 
                 VStack(spacing: 15) {
+                   
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
                     //Tech Stack
-                    SectionView(title: "Tech Stack", subtitle: "Swift, SwiftUI, Xcode, Firebase")
+                    SectionView(title: "Tech Stack", userInput: "Swift, SwiftUI, Xcode, Firebase")
                     //Previous Experience
-                    SectionView(title: "Previous Experience", subtitle: "Ecommerce, Digital Marketing, Web Design, Email Development, UX/UI Design")
+                    SectionView(title: "Previous Experience", userInput: "Ecommerce, Digital Marketing, Web Design, Email Development, UX/UI Design")
                     //Hobbies
-                    SectionView(title: "Hobbies", subtitle: "Traveling, Pickleball, Hiking, Exploring new restaurants")
+                    SectionView(title: "Hobbies", userInput: "Traveling, Pickleball, Hiking, Exploring new restaurants")
                 }
                 .offset(y: -120)
+                .frame(width:350)
                 
             } // end ScrollView
         } // end Zstack

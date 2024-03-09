@@ -71,12 +71,12 @@ struct ProfileViewPink: View {
                        .offset(y: -135)
                        
                    VStack(spacing: 15) {
-                       SectionView(title: "Tech Stack", subtitle: "Swift, SwiftUI, Xcode, Firebase")
+                       SectionView(title: "Tech Stack", userInput: "Swift, SwiftUI, Xcode, Firebase")
                        
                        
-                       SectionView(title: "Previous Experience", subtitle: "Ecommerce, Digital Marketing, Web Design, Email Development, UX/UI Design")
+                       SectionView(title: "Previous Experience", userInput:"Ecommerce, Digital Marketing, Web Design, Email Development, UX/UI Design")
                        
-                       SectionView(title: "Hobbies", subtitle: "Traveling, Pickleball, Hiking, Exploring new restaurants")
+                       SectionView(title: "Hobbies", userInput: "Traveling, Pickleball, Hiking, Exploring new restaurants")
                    }
                    .offset(y: -120)
                    

@@ -18,7 +18,7 @@ struct KodeHausApp: App {
     var body: some Scene {
         
         WindowGroup {
-            MyProfileView()
+           LoginView()
         }
     }
 }

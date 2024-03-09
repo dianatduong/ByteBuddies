@@ -11,6 +11,7 @@ struct ProfileViewBlue: View {
     
     @Environment(\.colorScheme) var colorScheme  //dark mode
 
+
     var body: some View {
         
         ZStack {
@@ -71,11 +72,11 @@ struct ProfileViewBlue: View {
                        .offset(y: -135)
                        
                    VStack(spacing: 15) {
-                       SectionView(title: "Tech Stack", subtitle: "Java, Kotlin, XML")
+                       SectionView(title: "Tech Stack", userInput: "Java, Kotlin, XML")
                        
-                       SectionView(title: "Previous Experience", subtitle: "Restaurant & Hospitality")
+                       SectionView(title: "Previous Experience", userInput: "Restaurant & Hospitality")
                        
-                       SectionView(title: "Hobbies", subtitle: "Hiking, Snowboarding, Playing drums  ")
+                       SectionView(title: "Hobbies", userInput: "Hiking, Snowboarding, Playing drums  ")
                        
                        
                    }

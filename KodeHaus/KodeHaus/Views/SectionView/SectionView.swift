@@ -10,7 +10,7 @@ import SwiftUI
 struct SectionView: View {
     
     var title: String
-    var subtitle: String
+  @State var userInput = ""
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -19,8 +19,8 @@ struct SectionView: View {
                 .font(.system(size: 18))
                 .bold()
                 .padding(.bottom, 10)
-                .foregroundColor(.black)
-            Text(subtitle)
+            
+            TextField("", text: $userInput)
                 .font(.system(size: 16))
                 .lineLimit(nil) // Allow the text to wrap onto the next line
                 .fixedSize(horizontal: false, vertical: true)
@@ -36,6 +36,6 @@ struct SectionView: View {
 struct SectionView_Previews: PreviewProvider {
     
     static var previews: some View {
-        SectionView(title: "Technologies", subtitle: "hello")
+        SectionView(title: "Technologies", userInput: "hello")
     }
 }
