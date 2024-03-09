@@ -20,10 +20,8 @@ struct SectionView: View {
                 .bold()
                 .padding(.bottom, 10)
             
-            TextField("", text: $userInput)
+            TextEditor(text: $userInput)
                 .font(.system(size: 16))
-                .lineLimit(nil) // Allow the text to wrap onto the next line
-                .fixedSize(horizontal: false, vertical: true)
                 .foregroundColor(.black)
         }
         .padding(30)
