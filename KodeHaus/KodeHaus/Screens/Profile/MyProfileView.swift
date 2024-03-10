@@ -105,14 +105,6 @@ struct MyProfileView: View {
                 .offset(y: -135)
                 
                 VStack(spacing: 15) {
-                   
-                    
-                    
-                
-                    
-                    
-                    
-                    
                     
                     //Tech Stack
                     SectionView(title: "Tech Stack", userInput: "Swift, SwiftUI, Xcode, Firebase")
