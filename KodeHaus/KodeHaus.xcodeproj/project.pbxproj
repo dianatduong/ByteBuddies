@@ -47,7 +47,7 @@
 		A33EE7812B4F260700937593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7802B4F260700937593 /* Assets.xcassets */; };
 		A33EE7842B4F260700937593 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33EE7832B4F260700937593 /* Preview Assets.xcassets */; };
 		A33EE78D2B4F267000937593 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE78C2B4F267000937593 /* LoginView.swift */; };
-		A33EE78F2B4F26C000937593 /* TabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE78E2B4F26C000937593 /* TabViews.swift */; };
+		A33EE78F2B4F26C000937593 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE78E2B4F26C000937593 /* TabBar.swift */; };
 		A33EE7922B4F278100937593 /* ProfileViewPink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EE7912B4F278100937593 /* ProfileViewPink.swift */; };
 		A3E0278F2B5F83510083821C /* PrimaryBtn50.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E0278E2B5F83510083821C /* PrimaryBtn50.swift */; };
 		A3E027912B5F835F0083821C /* SecondaryBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E027902B5F835F0083821C /* SecondaryBtn.swift */; };
@@ -77,7 +77,7 @@
 		A33EE7802B4F260700937593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A33EE7832B4F260700937593 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A33EE78C2B4F267000937593 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		A33EE78E2B4F26C000937593 /* TabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViews.swift; sourceTree = "<group>"; };
+		A33EE78E2B4F26C000937593 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		A33EE7912B4F278100937593 /* ProfileViewPink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewPink.swift; sourceTree = "<group>"; };
 		A3E0278E2B5F83510083821C /* PrimaryBtn50.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryBtn50.swift; sourceTree = "<group>"; };
 		A3E027902B5F835F0083821C /* SecondaryBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryBtn.swift; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 		A33EE78B2B4F265700937593 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				A33EE78E2B4F26C000937593 /* TabViews.swift */,
+				A33EE78E2B4F26C000937593 /* TabBar.swift */,
 				A33EE78A2B4F264E00937593 /* Login */,
 				A33EE7902B4F277000937593 /* Profile */,
 			);
@@ -364,7 +364,7 @@
 				A33EE78D2B4F267000937593 /* LoginView.swift in Sources */,
 				A33EE7922B4F278100937593 /* ProfileViewPink.swift in Sources */,
 				A335FF4A2B966BC4000DB157 /* StatePicker.swift in Sources */,
-				A33EE78F2B4F26C000937593 /* TabViews.swift in Sources */,
+				A33EE78F2B4F26C000937593 /* TabBar.swift in Sources */,
 				A335FF512B9A4546000DB157 /* PrimaryBtn100.swift in Sources */,
 				A33EE77D2B4F260400937593 /* KodeHausApp.swift in Sources */,
 				A335FEC92B715098000DB157 /* IconBtnSmall.swift in Sources */,
