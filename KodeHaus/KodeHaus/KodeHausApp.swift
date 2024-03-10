@@ -12,24 +12,33 @@ import FirebaseAuth
 @main
 struct KodeHausApp: App {
     
-    @StateObject var viewModel = LoginViewModel()
+    
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
+    @StateObject var viewModel = LoginViewModel()
+    @State private var selectedTab: Tab = .house
+    
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
 
     var body: some Scene {
-        
         WindowGroup {
-           MyProfileView()
+            LoginView()
+            
+            
         }
+        
+        
     }
 }
 
-
 class AppDelegate: NSObject, UIApplicationDelegate {
-    
-      func application(_ application: UIApplication,
-                       didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-            FirebaseApp.configure()
-
-            return true
-      }
+    // Firebase
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        FirebaseApp.configure()
+        return true
+    }
 }
+

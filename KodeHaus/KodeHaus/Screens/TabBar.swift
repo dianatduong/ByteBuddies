@@ -19,26 +19,22 @@ enum Tab: String, CaseIterable {
 
 struct TabBar: View {
     @Binding var selectedTab: Tab
+    
     private var fillImage: String {
         selectedTab.rawValue + ".fill"
     }
+    
+   
     
     var body: some View {
         
         VStack {
             HStack {
                 ForEach(Tab.allCases, id: \.rawValue) { tab in
-                    
                     Spacer()
-                    
-                    //use fill image when selected
-                    Image(systemName: selectedTab  == tab ? fillImage : tab.rawValue)
-                    
-                        //enlarge icon when selected
-                        .scaleEffect(selectedTab == tab ? 1.25 : 1.0)
-                    
-                        .foregroundColor(selectedTab == tab ? .red : .gray)
-                    
+                    Image(systemName: selectedTab  == tab ? fillImage : tab.rawValue) //fill image when selected
+                        .scaleEffect(selectedTab == tab ? 1.25 : 1.0) //enlarge icon when selected
+                        .foregroundColor(selectedTab == tab ? nil : .gray)
                         .font(.system(size: 22))
                         .onTapGesture {
                             withAnimation(.easeIn(duration: 0.1)) {
@@ -47,7 +43,6 @@ struct TabBar: View {
                         }
                     Spacer()
                 }
-                
             } // end Hstack
             .frame(width: nil, height: 60)
             .background(.thinMaterial)
