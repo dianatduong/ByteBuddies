@@ -7,4 +7,14 @@
 
 import SwiftUI
 
+struct SetUpView: View {
+    
+    var body: some View {
+        Text("Hello")
+    }
+}
 
+
+#Preview {
+    SetUpView()
+}
