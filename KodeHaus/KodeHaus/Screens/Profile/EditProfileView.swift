@@ -12,7 +12,9 @@ struct EditProfileView: View {
     @State private var profileImage: UIImage?
     @State private var photosPickerItem: PhotosPickerItem?
     
-  
+    @State private var fullName = ""
+    @State private var techRole = ""
+    @State private var location = ""
     
     @State private var primaryColor = Color.magenta1
     @State private var secondaryColor = Color.pink
