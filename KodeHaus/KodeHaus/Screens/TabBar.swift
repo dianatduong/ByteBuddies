@@ -9,8 +9,8 @@ import SwiftUI
 
 enum Tab: String, CaseIterable {
     case house
-    case message
     case person
+    case message
     case leaf
     case gearshape
 }

@@ -54,10 +54,10 @@ struct LoginView: View {
                             .foregroundColor(.gray)
                     }
                     .padding(.top, 50)
-                    .padding(.bottom, 20)
+                    //.padding(.bottom, 20)
                     //HEADER END
                     
-                    
+
                     //TEXTFIELDS START
                     VStack(spacing: 20) {
                         
@@ -103,8 +103,7 @@ struct LoginView: View {
                         }
                     } // end vstack
                     .padding(.horizontal, 30)
-                   
-                    
+                        
                     .onAppear {
                         Auth.auth().addStateDidChangeListener { auth, user in
                             if user != nil {
