@@ -14,7 +14,7 @@ struct LoginView: View {
     @Environment(\.colorScheme) var colorScheme  //dark mode
     @StateObject var viewModel = LoginViewModel()
     @State private var showModal = false //modal for CreateAcountView
-     @State private var isProfileViewPresented = false
+    @State private var isProfileViewPresented = false
     @State private var userIsLoggedIn = false
     
     
