@@ -23,13 +23,7 @@ struct EditProfileView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Edit Profile")
-                    .font(Font.system(size: 20, weight: .semibold))
-                    .ignoresSafeArea(.all)
-                    .padding(.top, 1)
                 
-                Divider()
-                    .background(.btnGray1)
                 
                 Section {
                     // Profile Picture
@@ -135,8 +129,11 @@ struct EditProfileView: View {
                 .padding(.top, 15)
             } // End of Main VStack
             .frame(width: 350)
+            .navigationTitle("Edit Profile")
+            .navigationBarTitleDisplayMode(.inline)
             
         } //end navView
+       
     }
 }
 
